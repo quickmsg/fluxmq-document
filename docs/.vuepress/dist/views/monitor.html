@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>运维监测</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="/img/logo.svg">
+    <script src="/js/iframeSizer.contentWindow.min.js"></script>
+    <meta name="description" content="这是fluxmq的官方文档">
+    
+    <link rel="preload" href="/assets/css/0.styles.fb29a6e6.css" as="style"><link rel="preload" href="/assets/js/app.3c98569e.js" as="script"><link rel="preload" href="/assets/js/2.6c5bc1d3.js" as="script"><link rel="preload" href="/assets/js/5.fbfb003a.js" as="script"><link rel="prefetch" href="/assets/js/10.87518919.js"><link rel="prefetch" href="/assets/js/11.38972f2e.js"><link rel="prefetch" href="/assets/js/12.34c255af.js"><link rel="prefetch" href="/assets/js/13.5aff14a4.js"><link rel="prefetch" href="/assets/js/14.a81c46cd.js"><link rel="prefetch" href="/assets/js/15.02365660.js"><link rel="prefetch" href="/assets/js/16.35c154ad.js"><link rel="prefetch" href="/assets/js/17.678602d1.js"><link rel="prefetch" href="/assets/js/18.00be67a1.js"><link rel="prefetch" href="/assets/js/19.3e58f9c5.js"><link rel="prefetch" href="/assets/js/20.94b6ca2b.js"><link rel="prefetch" href="/assets/js/21.b4f6a7d2.js"><link rel="prefetch" href="/assets/js/3.2c8ae17f.js"><link rel="prefetch" href="/assets/js/4.6b0ca6fa.js"><link rel="prefetch" href="/assets/js/6.a0a96ce6.js"><link rel="prefetch" href="/assets/js/7.ab9b4e1c.js"><link rel="prefetch" href="/assets/js/8.3305ec09.js"><link rel="prefetch" href="/assets/js/9.ee8e53b8.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.fb29a6e6.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><a href="/views/product.html" class="sidebar-link">产品介绍</a></li><li><a href="/views/deployment.html" class="sidebar-link">安装部署</a></li><li><a href="/views/guide.html" class="sidebar-link">配置指南</a></li><li><a href="/views/linkManage.html" class="sidebar-link">连接管理</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>规则引擎</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/views/monitor.html" aria-current="page" class="active sidebar-link">运维监测</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/views/monitor.html#mqtt监测" class="sidebar-link">MQTT监测</a></li><li class="sidebar-sub-header"><a href="/views/monitor.html#jvm监测" class="sidebar-link">JVM监测</a></li><li class="sidebar-sub-header"><a href="/views/monitor.html#告警配置" class="sidebar-link">告警配置</a></li><li class="sidebar-sub-header"><a href="/views/monitor.html#告警日志" class="sidebar-link">告警日志</a></li><li class="sidebar-sub-header"><a href="/views/monitor.html#在线调试" class="sidebar-link">在线调试</a></li></ul></li><li><a href="/views/mqtt.html" class="sidebar-link">MQTT协议介绍</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="运维监测"><a href="#运维监测" class="header-anchor">#</a> 运维监测</h1> <p>平台运维监测主要采用集成第三方组件进行展示和通知（Granfna+Prometheus）；直观可视化的展示MQTT和JVM监测（java技术关键监测内容）；当服务器等出现异常时会及时通过用户，做出风险应对措施。</p> <ul><li>比起dashbaord展示更多监测指标和历史趋势，方便运维定位问题。</li></ul> <h2 id="mqtt监测"><a href="#mqtt监测" class="header-anchor">#</a> MQTT监测</h2> <p>实时监测MQTT接入设备和数据量。
+<img src="/assets/img/6.716ecc16.png" alt="image.png"></p> <h2 id="jvm监测"><a href="#jvm监测" class="header-anchor">#</a> JVM监测</h2> <p>JVM是连接和并发量的关键监测指标，可监测运行状态是否超负荷。
+<img src="/assets/img/7.3a27de02.png" alt="image.png"></p> <h2 id="告警配置"><a href="#告警配置" class="header-anchor">#</a> 告警配置</h2> <p>FluxMQ内置监控与告警功能，目前支持监控 CPU 占用率、内存占用率、节点状态等并进行告警。所有告警都将产生一条警告日志并由平台发布到一个主题，方便用户进行订阅来获取告警通知。
+告警通知信息的Payload的Json格式，包含以下字段：</p> <table><thead><tr><th><strong>字段</strong></th> <th><strong>说明</strong></th></tr></thead> <tbody><tr><td>ID</td> <td>告警ID</td></tr> <tr><td>name</td> <td>监控项</td></tr> <tr><td>message</td> <td>人类易读的告警说明</td></tr> <tr><td>alarm_time</td> <td>告警时间</td></tr> <tr><td>send</td> <td>是否已发送</td></tr></tbody></table> <p>具体业务操作界面如下所示：<br> <strong>用户自定义配置告警规则；</strong> <img src="/assets/img/8.3a704b21.png" alt="image.png"> <strong>监控项</strong></p> <table><thead><tr><th><strong>序号</strong></th> <th><strong>监控项</strong></th></tr></thead> <tbody><tr><td>1</td> <td>主机CPU告警</td></tr> <tr><td>2</td> <td>主机内存告警</td></tr> <tr><td>3</td> <td>集群节点状态告警</td></tr> <tr><td>4</td> <td>规则引擎故障告警</td></tr> <tr><td>5</td> <td>非法连接告警</td></tr> <tr><td>6</td> <td>集群状态告警</td></tr></tbody></table> <p><strong>通知渠道</strong></p> <table><thead><tr><th><strong>序号</strong></th> <th><strong>通知渠道</strong></th></tr></thead> <tbody><tr><td>1</td> <td>飞书</td></tr> <tr><td>2</td> <td>钉钉</td></tr> <tr><td>3</td> <td>微信</td></tr></tbody></table> <h2 id="告警日志"><a href="#告警日志" class="header-anchor">#</a> 告警日志</h2> <p>告警日志页面可分类查询系统所有历史告警记录，可通过告警ID和监控项进行筛选查看。
+<img src="/assets/img/9.9bfd399d.png" alt="image.png"></p> <h2 id="在线调试"><a href="#在线调试" class="header-anchor">#</a> 在线调试</h2> <p>FluxMQ提供了简洁的图形界面和操作逻辑，支持 MQTT/MQTT over Websocket 接入以及单/双向 SSL 认证，同时支持 Payload 格式转换、自定义脚本模拟测试数据、 $SYS 主题自动订阅查看流量统计等诸多实用功能。<br> <strong>配置连接和主题</strong><br>
+平台支持ws接口进行在线连接和模拟测试；
+<img src="/assets/img/10.32e6a297.png" alt="image.png"> <strong>在线调试</strong> <img src="/assets/img/11.aaf8e28d.png" alt="image.png"></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/views/gzyq/codec.html" class="prev">
+        编解码
+      </a></span> <span class="next"><a href="/views/mqtt.html">
+        MQTT协议介绍
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.3c98569e.js" defer></script><script src="/assets/js/2.6c5bc1d3.js" defer></script><script src="/assets/js/5.fbfb003a.js" defer></script>
+  </body>
+</html>

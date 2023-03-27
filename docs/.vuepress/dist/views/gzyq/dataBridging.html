@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>数据桥接</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="/img/logo.svg">
+    <script src="/js/iframeSizer.contentWindow.min.js"></script>
+    <meta name="description" content="这是fluxmq的官方文档">
+    
+    <link rel="preload" href="/assets/css/0.styles.fb29a6e6.css" as="style"><link rel="preload" href="/assets/js/app.3c98569e.js" as="script"><link rel="preload" href="/assets/js/2.6c5bc1d3.js" as="script"><link rel="preload" href="/assets/js/6.a0a96ce6.js" as="script"><link rel="prefetch" href="/assets/js/10.87518919.js"><link rel="prefetch" href="/assets/js/11.38972f2e.js"><link rel="prefetch" href="/assets/js/12.34c255af.js"><link rel="prefetch" href="/assets/js/13.5aff14a4.js"><link rel="prefetch" href="/assets/js/14.a81c46cd.js"><link rel="prefetch" href="/assets/js/15.02365660.js"><link rel="prefetch" href="/assets/js/16.35c154ad.js"><link rel="prefetch" href="/assets/js/17.678602d1.js"><link rel="prefetch" href="/assets/js/18.00be67a1.js"><link rel="prefetch" href="/assets/js/19.3e58f9c5.js"><link rel="prefetch" href="/assets/js/20.94b6ca2b.js"><link rel="prefetch" href="/assets/js/21.b4f6a7d2.js"><link rel="prefetch" href="/assets/js/3.2c8ae17f.js"><link rel="prefetch" href="/assets/js/4.6b0ca6fa.js"><link rel="prefetch" href="/assets/js/5.fbfb003a.js"><link rel="prefetch" href="/assets/js/7.ab9b4e1c.js"><link rel="prefetch" href="/assets/js/8.3305ec09.js"><link rel="prefetch" href="/assets/js/9.ee8e53b8.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.fb29a6e6.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><a href="/views/product.html" class="sidebar-link">产品介绍</a></li><li><a href="/views/deployment.html" class="sidebar-link">安装部署</a></li><li><a href="/views/guide.html" class="sidebar-link">配置指南</a></li><li><a href="/views/linkManage.html" class="sidebar-link">连接管理</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>规则引擎</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/views/gzyq/introduce.html" class="sidebar-link">规则引擎介绍</a></li><li><a href="/views/gzyq/grammar.html" class="sidebar-link">规则引擎语法</a></li><li><a href="/views/gzyq/SQLfields.html" class="sidebar-link">SQL中可用字段</a></li><li><a href="/views/gzyq/SQLfunction.html" class="sidebar-link">SQL语句中可用函数</a></li><li><a href="/views/gzyq/shakedownTest.html" class="sidebar-link">创建规则及调试</a></li><li><a href="/views/gzyq/dataBridging.html" aria-current="page" class="active sidebar-link">数据桥接</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/views/gzyq/dataBridging.html#创建数据源" class="sidebar-link">创建数据源</a></li><li class="sidebar-sub-header"><a href="/views/gzyq/dataBridging.html#在规则管理创建响应动作" class="sidebar-link">在规则管理创建响应动作</a></li></ul></li><li><a href="/views/gzyq/dataStorage.html" class="sidebar-link">数据存储</a></li><li><a href="/views/gzyq/codec.html" class="sidebar-link">编解码</a></li></ul></section></li><li><a href="/views/monitor.html" class="sidebar-link">运维监测</a></li><li><a href="/views/mqtt.html" class="sidebar-link">MQTT协议介绍</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="数据桥接"><a href="#数据桥接" class="header-anchor">#</a> 数据桥接</h1> <p>数据桥接是指将来自不同源的物联网设备数据进行整合、转换、处理、传递等操作，使得这些数据能够在一个统一的平台上进行分析、存储和管理。
+目前FLuxMQ支持桥接Kafka， Pulsar，RabbitMQ，RocketMQ等主流企业应用消息中间件。
+具体设置如下：</p> <h2 id="创建数据源"><a href="#创建数据源" class="header-anchor">#</a> 创建数据源</h2> <h3 id="创建kafka数据源"><a href="#创建kafka数据源" class="header-anchor">#</a> 创建Kafka数据源</h3> <p><img src="/assets/img/8.f003d14d.png" alt="image.png"></p> <h3 id="创建mqtt数据源"><a href="#创建mqtt数据源" class="header-anchor">#</a> 创建MQTT数据源</h3> <p><img src="/assets/img/9.a054b693.png" alt="image.png"></p> <h3 id="创建rocketmq数据源"><a href="#创建rocketmq数据源" class="header-anchor">#</a> 创建RocketMQ数据源</h3> <p><img src="/assets/img/10.44ee6fe4.png" alt="image.png"></p> <h3 id="创建rabbitmq数据源"><a href="#创建rabbitmq数据源" class="header-anchor">#</a> 创建RabbitMQ数据源</h3> <p><img src="/assets/img/11.b727f52d.png" alt="image.png"></p> <h2 id="在规则管理创建响应动作"><a href="#在规则管理创建响应动作" class="header-anchor">#</a> 在规则管理创建响应动作</h2> <p>选择对应动作类型和该类型对应数据源<br> <img src="/assets/img/12.37ef4b38.png" alt="image.png"></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/views/gzyq/shakedownTest.html" class="prev">
+        创建规则及调试
+      </a></span> <span class="next"><a href="/views/gzyq/dataStorage.html">
+        数据存储
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.3c98569e.js" defer></script><script src="/assets/js/2.6c5bc1d3.js" defer></script><script src="/assets/js/6.a0a96ce6.js" defer></script>
+  </body>
+</html>

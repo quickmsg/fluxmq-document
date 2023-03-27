@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>规则引擎语法</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="/img/logo.svg">
+    <script src="/js/iframeSizer.contentWindow.min.js"></script>
+    <meta name="description" content="这是fluxmq的官方文档">
+    
+    <link rel="preload" href="/assets/css/0.styles.fb29a6e6.css" as="style"><link rel="preload" href="/assets/js/app.3c98569e.js" as="script"><link rel="preload" href="/assets/js/2.6c5bc1d3.js" as="script"><link rel="preload" href="/assets/js/21.b4f6a7d2.js" as="script"><link rel="prefetch" href="/assets/js/10.87518919.js"><link rel="prefetch" href="/assets/js/11.38972f2e.js"><link rel="prefetch" href="/assets/js/12.34c255af.js"><link rel="prefetch" href="/assets/js/13.5aff14a4.js"><link rel="prefetch" href="/assets/js/14.a81c46cd.js"><link rel="prefetch" href="/assets/js/15.02365660.js"><link rel="prefetch" href="/assets/js/16.35c154ad.js"><link rel="prefetch" href="/assets/js/17.678602d1.js"><link rel="prefetch" href="/assets/js/18.00be67a1.js"><link rel="prefetch" href="/assets/js/19.3e58f9c5.js"><link rel="prefetch" href="/assets/js/20.94b6ca2b.js"><link rel="prefetch" href="/assets/js/3.2c8ae17f.js"><link rel="prefetch" href="/assets/js/4.6b0ca6fa.js"><link rel="prefetch" href="/assets/js/5.fbfb003a.js"><link rel="prefetch" href="/assets/js/6.a0a96ce6.js"><link rel="prefetch" href="/assets/js/7.ab9b4e1c.js"><link rel="prefetch" href="/assets/js/8.3305ec09.js"><link rel="prefetch" href="/assets/js/9.ee8e53b8.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.fb29a6e6.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><a href="/views/product.html" class="sidebar-link">产品介绍</a></li><li><a href="/views/deployment.html" class="sidebar-link">安装部署</a></li><li><a href="/views/guide.html" class="sidebar-link">配置指南</a></li><li><a href="/views/linkManage.html" class="sidebar-link">连接管理</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>规则引擎</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/views/gzyq/introduce.html" class="sidebar-link">规则引擎介绍</a></li><li><a href="/views/gzyq/grammar.html" aria-current="page" class="active sidebar-link">规则引擎语法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/views/gzyq/grammar.html#sql语法" class="sidebar-link">SQL语法</a></li></ul></li><li><a href="/views/gzyq/SQLfields.html" class="sidebar-link">SQL中可用字段</a></li><li><a href="/views/gzyq/SQLfunction.html" class="sidebar-link">SQL语句中可用函数</a></li><li><a href="/views/gzyq/shakedownTest.html" class="sidebar-link">创建规则及调试</a></li><li><a href="/views/gzyq/dataBridging.html" class="sidebar-link">数据桥接</a></li><li><a href="/views/gzyq/dataStorage.html" class="sidebar-link">数据存储</a></li><li><a href="/views/gzyq/codec.html" class="sidebar-link">编解码</a></li></ul></section></li><li><a href="/views/monitor.html" class="sidebar-link">运维监测</a></li><li><a href="/views/mqtt.html" class="sidebar-link">MQTT协议介绍</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="规则引擎语法"><a href="#规则引擎语法" class="header-anchor">#</a> 规则引擎语法</h1> <h2 id="sql语法"><a href="#sql语法" class="header-anchor">#</a> SQL语法</h2> <h3 id="select-查询"><a href="#select-查询" class="header-anchor">#</a> SELECT 查询</h3> <blockquote><p>SELECT &lt;字段名&gt; FROM &lt;主题&gt; [WHERE &lt;条件&gt;]</p></blockquote> <ul><li>SELECT 选择需要转发或操作的字段</li> <li>FROM 订阅某个主题</li> <li>WHERE 对SELECT选择出来的字段进行条件过滤</li></ul> <p>示例：</p> <div class="language- extra-class"><pre class="language-text"><code>SELECT device_id as deviceid FROM &quot;/*/report&quot; WHERE product_id = 'lamp'
+</code></pre></div><h3 id="遍历语法"><a href="#遍历语法" class="header-anchor">#</a> 遍历语法</h3> <blockquote><p>FOREACH &lt;字段名&gt; [DO &lt;条件&gt;] [INCASE &lt;条件&gt;] FROM &lt;主题&gt; [WHERE &lt;条件&gt;]</p></blockquote> <ul><li>**FOREACH **选择数组类型数据中需要操作的字段；</li> <li><strong>DO</strong> 对FOREACH选择出来的数组元素/字段进行变换，并选择需要内容；</li> <li>**INCASE **对DO选择出来的字段进行条件过滤</li></ul> <p>示例：</p> <div class="language- extra-class"><pre class="language-text"><code>FROEACH
+          paylaod. metrics  as m  ## 选择数组类型
+DO                                ##转换数组元素
+           deviceid,
+            m,temp as temp,
+            m.humi as humi
+INCASE                            ##进行条件过滤
+          m.bathtag =1
+FROM &quot;/*/report&quot;                  ##选择某个主题
+</code></pre></div><h3 id="运算符号"><a href="#运算符号" class="header-anchor">#</a> 运算符号</h3> <table><thead><tr><th><strong>函数名</strong></th> <th><strong>描述</strong></th> <th><strong>返回值</strong></th></tr></thead> <tbody><tr><td>+</td> <td>加法/字符串拼接</td> <td>和/或拼接后的字符串</td></tr> <tr><td>-</td> <td>减法</td> <td>差值</td></tr> <tr><td>*</td> <td>乘法</td> <td>乘积</td></tr> <tr><td>/</td> <td>除法</td> <td>商值</td></tr> <tr><td>div</td> <td>除法取整</td> <td>整数商值</td></tr> <tr><td>mod</td> <td>取模</td> <td>模</td></tr> <tr><td>=</td> <td>比较两者是否完全相等</td> <td>true/false</td></tr></tbody></table> <h3 id="比较符号"><a href="#比较符号" class="header-anchor">#</a> 比较符号</h3> <table><thead><tr><th><strong>函数名</strong></th> <th><strong>描述</strong></th> <th><strong>返回值</strong></th></tr></thead> <tbody><tr><td>&gt;</td> <td>大于</td> <td>true/false</td></tr> <tr><td>&lt;</td> <td>小于</td> <td>true/false</td></tr> <tr><td>&lt;=</td> <td>小于等于</td> <td>true/false</td></tr> <tr><td>&gt;=</td> <td>大于等于</td> <td>true/false</td></tr> <tr><td>!=</td> <td>不等于</td> <td>true/false</td></tr></tbody></table></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/views/gzyq/introduce.html" class="prev">
+        规则引擎介绍
+      </a></span> <span class="next"><a href="/views/gzyq/SQLfields.html">
+        SQL中可用字段
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.3c98569e.js" defer></script><script src="/assets/js/2.6c5bc1d3.js" defer></script><script src="/assets/js/21.b4f6a7d2.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "dependencies": {
+    "directory-tree": "^2.2.7",
+    "vue-template-compiler": "^2.7.14"
+  }
+}

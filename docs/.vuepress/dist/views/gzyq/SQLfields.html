@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SQL-中可用字段</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="/img/logo.svg">
+    <script src="/js/iframeSizer.contentWindow.min.js"></script>
+    <meta name="description" content="这是fluxmq的官方文档">
+    
+    <link rel="preload" href="/assets/css/0.styles.fb29a6e6.css" as="style"><link rel="preload" href="/assets/js/app.3c98569e.js" as="script"><link rel="preload" href="/assets/js/2.6c5bc1d3.js" as="script"><link rel="preload" href="/assets/js/19.3e58f9c5.js" as="script"><link rel="prefetch" href="/assets/js/10.87518919.js"><link rel="prefetch" href="/assets/js/11.38972f2e.js"><link rel="prefetch" href="/assets/js/12.34c255af.js"><link rel="prefetch" href="/assets/js/13.5aff14a4.js"><link rel="prefetch" href="/assets/js/14.a81c46cd.js"><link rel="prefetch" href="/assets/js/15.02365660.js"><link rel="prefetch" href="/assets/js/16.35c154ad.js"><link rel="prefetch" href="/assets/js/17.678602d1.js"><link rel="prefetch" href="/assets/js/18.00be67a1.js"><link rel="prefetch" href="/assets/js/20.94b6ca2b.js"><link rel="prefetch" href="/assets/js/21.b4f6a7d2.js"><link rel="prefetch" href="/assets/js/3.2c8ae17f.js"><link rel="prefetch" href="/assets/js/4.6b0ca6fa.js"><link rel="prefetch" href="/assets/js/5.fbfb003a.js"><link rel="prefetch" href="/assets/js/6.a0a96ce6.js"><link rel="prefetch" href="/assets/js/7.ab9b4e1c.js"><link rel="prefetch" href="/assets/js/8.3305ec09.js"><link rel="prefetch" href="/assets/js/9.ee8e53b8.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.fb29a6e6.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><a href="/views/product.html" class="sidebar-link">产品介绍</a></li><li><a href="/views/deployment.html" class="sidebar-link">安装部署</a></li><li><a href="/views/guide.html" class="sidebar-link">配置指南</a></li><li><a href="/views/linkManage.html" class="sidebar-link">连接管理</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>规则引擎</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/views/gzyq/introduce.html" class="sidebar-link">规则引擎介绍</a></li><li><a href="/views/gzyq/grammar.html" class="sidebar-link">规则引擎语法</a></li><li><a href="/views/gzyq/SQLfields.html" aria-current="page" class="active sidebar-link">SQL中可用字段</a></li><li><a href="/views/gzyq/SQLfunction.html" class="sidebar-link">SQL语句中可用函数</a></li><li><a href="/views/gzyq/shakedownTest.html" class="sidebar-link">创建规则及调试</a></li><li><a href="/views/gzyq/dataBridging.html" class="sidebar-link">数据桥接</a></li><li><a href="/views/gzyq/dataStorage.html" class="sidebar-link">数据存储</a></li><li><a href="/views/gzyq/codec.html" class="sidebar-link">编解码</a></li></ul></section></li><li><a href="/views/monitor.html" class="sidebar-link">运维监测</a></li><li><a href="/views/mqtt.html" class="sidebar-link">MQTT协议介绍</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="sql-中可用字段"><a href="#sql-中可用字段" class="header-anchor">#</a> SQL-中可用字段</h1> <p>规则引擎字段说明</p> <table><thead><tr><th><strong>字段</strong></th> <th><strong>描述</strong></th></tr></thead> <tbody><tr><td>id</td> <td>MQTT消息ID</td></tr> <tr><td>clientid</td> <td>消息来源ClientID</td></tr> <tr><td>username</td> <td>消息来源用户名</td></tr> <tr><td>payload</td> <td>MQTT消息体</td></tr> <tr><td>peerhost</td> <td>客户端IP地址</td></tr> <tr><td>topic</td> <td>MQTT消息的主题</td></tr> <tr><td>qos</td> <td>MQTT消息的Qos</td></tr> <tr><td>flags</td> <td>MQTT消息的Flags</td></tr> <tr><td>headers</td> <td>MQTT消息内部于流程处理的额外数据</td></tr> <tr><td>timestamp</td> <td>事件触发时间</td></tr> <tr><td>publish_received_at</td> <td>PUBLISHI消息到达Boroker的时间</td></tr> <tr><td>node</td> <td>节点</td></tr></tbody></table></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/views/gzyq/grammar.html" class="prev">
+        规则引擎语法
+      </a></span> <span class="next"><a href="/views/gzyq/SQLfunction.html">
+        SQL语句中可用函数
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.3c98569e.js" defer></script><script src="/assets/js/2.6c5bc1d3.js" defer></script><script src="/assets/js/19.3e58f9c5.js" defer></script>
+  </body>
+</html>
