@@ -1,10 +1,16 @@
 {
+  "name": "smqtt-doc",
+  "version": "1.1.0",
+  "author": "luxurong",
   "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
-  "dependencies": {
-    "directory-tree": "^2.2.7",
-    "vue-template-compiler": "^2.7.14"
-  }
+  "devDependencies": {
+    "@vuepress-reco/vuepress-plugin-bulletin-popover": "1.6.16",
+    "vuepress": "1.9.2",
+    "vuepress-plugin-readmore-popular": "0.0.14",
+    "vuepress-theme-reco": "1.6.16"
+  },
+  "description": "smqtt-doc"
 }
