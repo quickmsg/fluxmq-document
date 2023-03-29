@@ -7,7 +7,7 @@
 module.exports = {
   title: '',
   description: '这是fluxmq的官方文档',
-  base: '/',
+  base: 'public',
   head: [
     ['link', { rel: 'icon', href: '/img/logo.svg' }],
     ['script', { src: '/js/iframeSizer.contentWindow.min.js' }]
