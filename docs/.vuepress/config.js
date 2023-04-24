@@ -45,8 +45,8 @@ module.exports = {
         ]
       },
       ['/views/monitor', '运维监测'],
-      ['/views/test', '性能压测'],
-      ['/views/test', 'VS EMQX'],
+      ['/views/test.md', '性能压测'],
+      ['/views/vs.md', 'VS EMQX'],
       ['/views/mqtt', 'MQTT协议介绍']
     ]
   }
