@@ -20,7 +20,8 @@ LDAP，PSK和X.509证书等多种身份认证；
 性能卓越，降低硬件需求成本；  
 支持买断和按需付费;   
 ## 架构
-![image.png](../assets/images/1.png)
+![image.png](../assets/images/fluxmq.png)
+
 ## 功能概览
 | 功能 | 说明 |
 | --- | --- |

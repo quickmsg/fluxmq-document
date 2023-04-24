@@ -18,7 +18,15 @@ module.exports = {
     nav: [],
     sidebar: [
       ['/views/product', '产品介绍'],
-      ['/views/deployment', '安装部署'],
+      {
+        title: "安装部署",
+        collapsable: true,
+        sidebarDepth: 1,
+        children: [
+          ['/views/install/optimize', '系统优化'],
+          ['/views/install/deployment', '部署']
+        ]
+      },
       ['/views/guide', '配置指南'],
       ['/views/linkManage', '连接管理'],
       {
@@ -37,6 +45,8 @@ module.exports = {
         ]
       },
       ['/views/monitor', '运维监测'],
+      ['/views/test', '性能压测'],
+      ['/views/test', 'VS EMQX'],
       ['/views/mqtt', 'MQTT协议介绍']
     ]
   }
