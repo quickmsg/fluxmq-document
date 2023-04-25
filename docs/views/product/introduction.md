@@ -21,4 +21,4 @@ LDAP，PSK和X.509证书等多种身份认证；
 支持买断和按需付费; 
 
 ## 技术架构
-![image.png](../assets/images/fluxmq.png)
+![image.png](../../assets/images/fluxmq.png)
