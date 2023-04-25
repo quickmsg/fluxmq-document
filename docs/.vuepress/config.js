@@ -17,7 +17,15 @@ module.exports = {
   themeConfig: {
     nav: [],
     sidebar: [
-      ['/views/product', '产品介绍'],
+      {
+        title: "FluxMQ",
+        collapsable: true,
+        sidebarDepth: 1,
+        children: [
+          ['/views/product/introduction', '产品介绍'],
+          ['/views/product/core', '功能概览']
+        ]
+      },
       {
         title: "安装部署",
         collapsable: true,
