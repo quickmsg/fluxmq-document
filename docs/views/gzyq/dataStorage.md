@@ -3,9 +3,7 @@ FluxMQ支持多种数据库的持久化；包括MySQL， PostgreSQL等关系型�
 ### 通用数据库配置
 ![image.png](../../assets/images/gzyq/13.png)
 ### Mysql配置选项
-
 ![image.png](../../assets/images/gzyq/14.png)
-
 ### PostgreSQL配置选项
 ![image.png](../../assets/images/gzyq/15.png)
 ### MongoDB配置选项

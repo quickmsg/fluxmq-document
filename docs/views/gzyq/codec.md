@@ -15,7 +15,6 @@
 | MQTT Broker | 适用于设备不直接接入平台，而是通过第三方MQTT服务接入的场景。 |
 
 ### 编解码与规则引擎
-
 ![](../../assets/images/gzyq/21.jpeg)
 ### 脚本管理
 ![image.png](../../assets/images/gzyq/22.png)

@@ -11,12 +11,11 @@
 配置转发和数据桥接目标地址
 ![image.png](../../assets/images/gzyq/4.png)
 ## 4. 调试
-选择调试数据类型
+点击 [下一步] 选择调试数据类型
 ![image.png](../../assets/images/gzyq/5.png)
 进行规则调试
 ![image.png](../../assets/images/gzyq/6.png)
 调试成功后，可进行保存
 ## 5. 启动规则
 用户根据需求选择启动/停止规则
-
 ![image.png](../../assets/images/gzyq/7.png)

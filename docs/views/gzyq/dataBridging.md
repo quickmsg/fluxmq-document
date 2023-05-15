@@ -5,7 +5,6 @@
 ## 创建数据源
 ### 创建Kafka数据源
 ![image.png](../../assets/images/gzyq/8.png)
-
 ### 创建MQTT数据源
 ![image.png](../../assets/images/gzyq/9.png)
 ### 创建RocketMQ数据源

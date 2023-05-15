@@ -43,12 +43,12 @@ module.exports = {
         sidebarDepth: 1,
         children: [
           ['/views/gzyq/introduce', '规则引擎介绍'],
-          ['/views/gzyq/grammar', '规则引擎语法'],
-          ['/views/gzyq/SQLfields', 'SQL中可用字段'],
-          ['/views/gzyq/SQLfunction', 'SQL语句中可用函数'],
-          ['/views/gzyq/shakedownTest', '创建规则及调试'],
+          ['/views/gzyq/eventData', '事件数据'],
+          ['/views/gzyq/eventTopic', '事件主题'],
           ['/views/gzyq/dataBridging', '数据桥接'],
           ['/views/gzyq/dataStorage', '数据存储'],
+          ['/views/gzyq/shakedownTest', '创建规则及调试'],
+          ['/views/gzyq/grammar', '规则引擎语法'],
           ['/views/gzyq/codec', '编解码']
         ]
       },
