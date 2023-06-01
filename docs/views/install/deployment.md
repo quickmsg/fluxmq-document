@@ -2,17 +2,17 @@
 ## 源码下载
 > 联系管理员 17512575402 购买企业级软件后，提供私有仓库代码访问权限
 
-## 1.2 源码编译
+## 源码编译
 获取源码后，直接跟根目录执行
 
 ```shell
 mvn clean package -Pjar
 ```
 启动的jar位于module :   fluxmq-starter目录下
-## 新建配置文件
+## 配置文件
 新建配置文件 config.yaml,具体文件参考  `配置指南`
 
-### 1.3.2 启动脚本
+###  启动脚本
 ```shell
 #!/bin/sh
 # author name：root
@@ -145,17 +145,17 @@ status
 esac
 
 ```
-## 1.4. 启动项目
-### 1.4.1 启动服务
+##  启动项目
+###  启动服务
 >  ./fluxmq.sh start
 
-### 1.4.2 重启服务
+###  重启服务
 >  ./fluxmq.sh restart
 
-### 1.4.3 关闭服务
+###  关闭服务
 >  ./fluxmq.sh stop
 
-# 2. IDEA启动
+# IDEA启动
 > fluxmq-starter module下的JarStarter类，启动时指定配置文件的相对路径即可
 ![](../../assets/images/img_1.png)
 

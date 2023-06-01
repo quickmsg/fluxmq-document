@@ -66,6 +66,9 @@ module.exports = {
                     ['/views/gzyq/codec', '编解码']
                 ]
             },
+            ['/views/monitor.md', '监控部署'],
+            ['/views/admin.md', '管理页面部署'],
+            ['/views/log.md', '日志系统部署'],
             ['/views/test.md', '性能压测'],
             ['/views/vs.md', 'VS EMQX'],
             ['/views/mqtt', 'MQTT协议介绍']
