@@ -1,9 +1,9 @@
 # 访问控制
 访问控制是对发布订阅的ACL的权限控制，例如拒绝某个用户向某个主题发布消息；
 主要规则说明：
-![](../assets/images/function/img_22.png)
+![](../../assets/images/function/img_22.png)
 ## 访问控制查询
-![](../assets/images/function/img_23.png)
+![](../../assets/images/function/img_23.png)
 
 | **查询字段** | **说明**                                                                       |
 |----------|------------------------------------------------------------------------------|
@@ -18,34 +18,34 @@
 ### 所有禁止
 
 #### 禁止所有客户端发布topic为test的消息
-![](../assets/images/function/img_24.png)
+![](../../assets/images/function/img_24.png)
 
 #### 禁止所有客户端订阅topic为test的消息
-![](../assets/images/function/img_25.png)
+![](../../assets/images/function/img_25.png)
 
 ### IP禁止
 
 #### 禁止ip为192.168.0.1发布topic为test的消息
-![](../assets/images/function/img_26.png)
+![](../../assets/images/function/img_26.png)
 
 #### 禁止ip为192.168.0.1订阅topic为test的消息
-![](../assets/images/function/img_27.png)
+![](../../assets/images/function/img_27.png)
 
 ### 客户端ID禁止
 #### 禁止客户端Id为test发布topic为test的消息
-![](../assets/images/function/img_28.png)
+![](../../assets/images/function/img_28.png)
 
 #### 禁止客户端Id为test订阅topic为test的消息
-![](../assets/images/function/img_29.png)
+![](../../assets/images/function/img_29.png)
 
 
 ### 用户名禁止
 #### 禁止用户名为user发布topic为test的消息
-![](../assets/images/function/img_30.png)
+![](../../assets/images/function/img_30.png)
 
 #### 禁止用户名为user订阅topic为test的消息
-![](../assets/images/function/img_31.png)
+![](../../assets/images/function/img_31.png)
 
 ## 访问控制删除
-![](../assets/images/function/img_32.png)
+![](../../assets/images/function/img_32.png)
 
