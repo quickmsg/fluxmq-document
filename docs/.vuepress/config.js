@@ -36,7 +36,17 @@ module.exports = {
         ]
       },
       ['/views/guide', '配置指南'],
-      ['/views/linkManage', '连接管理'],
+      {
+        title: "功能",
+        collapsable: true,
+        sidebarDepth: 1,
+        children: [
+          ['/views/function/auth', '认证鉴权'],
+          ['/views/function/control', '访问控制'],
+          ['/views/function/link', '连接管理'],
+          ['/views/function/topic', '主题管理']
+        ]
+      },
       {
         title: "规则引擎",
         collapsable: true,
