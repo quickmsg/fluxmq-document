@@ -1,12 +1,12 @@
 # 安装部署
 ## 源码下载
-> 联系管理员 17512575402 购买企业级软件后，提供私有仓库代码访问权限
+> 联系管理员 18510240791 购买企业级软件后，提供私有仓库代码访问权限
 
 ## 源码编译
 获取源码后，直接跟根目录执行
 
 ```shell
-mvn clean package -Pjar
+mvn clean package -Dmaven.test.skip=true -Pjar 
 ```
 启动的jar位于module :   fluxmq-starter目录下
 ## 配置文件
