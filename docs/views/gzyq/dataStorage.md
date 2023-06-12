@@ -2,17 +2,23 @@
 FluxMQ支持多种数据库的持久化；包括MySQL， PostgreSQL等关系型数据库; TDengine，InfluxDB等实时数据库，MongoDB，Redis，ClickHouse等非关系型数据库。
 ### 通用数据库配置
 ![image.png](../../assets/images/gzyq/13.png)
-### Mysql配置选项
-![image.png](../../assets/images/gzyq/14.png)
-### PostgreSQL配置选项
-![image.png](../../assets/images/gzyq/15.png)
-### MongoDB配置选项
-![image.png](../../assets/images/gzyq/16.png)
-### Redis配置选项
-![image.png](../../assets/images/gzyq/17.png)
-### ClickHouse配置选项
-![image.png](../../assets/images/gzyq/18.png)
-### InfluxDB配置选项
-![image.png](../../assets/images/gzyq/19.png)
-### TDengine配置选项
-![image.png](../../assets/images/gzyq/20.png)
+
+### KAFKA数据库配置
+![img.png](../../assets/images/gzyq/img.png)
+![img_1.png](../../assets/images/gzyq/img_1.png)
+
+### RabbitMQ数据库配置
+![img_2.png](../../assets/images/gzyq/img_2.png)
+
+
+### RocketMQ数据库配置
+![img_3.png](../../assets/images/gzyq/img_3.png)
+### Redis数据库配置
+![img_4.png](../../assets/images/gzyq/img_4.png)
+![img_5.png](../../assets/images/gzyq/img_5.png)
+
+### HTTP数据库配置
+![img_6.png](../../assets/images/gzyq/img_6.png)
+
+### MQTT数据库配置
+![img_7.png](../../assets/images/gzyq/img_7.png)
