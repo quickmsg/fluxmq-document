@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>日志系统部署</title>
+    <meta name="generator" content="VuePress 1.9.2">
+    <link rel="icon" href="/img/logo.svg">
+    <script src="/js/iframeSizer.contentWindow.min.js"></script>
+    <meta name="description" content="这是fluxmq的官方文档">
+    
+    <link rel="preload" href="/assets/css/0.styles.44a7927b.css" as="style"><link rel="preload" href="/assets/js/app.13215411.js" as="script"><link rel="preload" href="/assets/js/3.60395763.js" as="script"><link rel="preload" href="/assets/js/21.412d700e.js" as="script"><link rel="prefetch" href="/assets/js/10.5d1b9726.js"><link rel="prefetch" href="/assets/js/11.27fed6f7.js"><link rel="prefetch" href="/assets/js/12.03dec31d.js"><link rel="prefetch" href="/assets/js/13.543f17e3.js"><link rel="prefetch" href="/assets/js/14.446f12d8.js"><link rel="prefetch" href="/assets/js/15.ebb99594.js"><link rel="prefetch" href="/assets/js/16.145c0eb4.js"><link rel="prefetch" href="/assets/js/17.9cdbe7ed.js"><link rel="prefetch" href="/assets/js/18.633108bb.js"><link rel="prefetch" href="/assets/js/19.72542e4b.js"><link rel="prefetch" href="/assets/js/2.8759835d.js"><link rel="prefetch" href="/assets/js/20.4c41322c.js"><link rel="prefetch" href="/assets/js/22.9a8d4ba6.js"><link rel="prefetch" href="/assets/js/23.b279337a.js"><link rel="prefetch" href="/assets/js/24.a5f11697.js"><link rel="prefetch" href="/assets/js/25.d77f619a.js"><link rel="prefetch" href="/assets/js/26.c83c6b21.js"><link rel="prefetch" href="/assets/js/27.13ada8c6.js"><link rel="prefetch" href="/assets/js/28.be53ca50.js"><link rel="prefetch" href="/assets/js/29.3474541e.js"><link rel="prefetch" href="/assets/js/30.80e91553.js"><link rel="prefetch" href="/assets/js/31.3bce38c9.js"><link rel="prefetch" href="/assets/js/32.5321e2dd.js"><link rel="prefetch" href="/assets/js/33.abf2578a.js"><link rel="prefetch" href="/assets/js/34.b4e4bdce.js"><link rel="prefetch" href="/assets/js/4.c2c13a0b.js"><link rel="prefetch" href="/assets/js/5.831cffcd.js"><link rel="prefetch" href="/assets/js/6.b5a953ec.js"><link rel="prefetch" href="/assets/js/7.79414b51.js"><link rel="prefetch" href="/assets/js/8.dd2ef758.js"><link rel="prefetch" href="/assets/js/9.31d423ed.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.44a7927b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>FluxMQ</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/views/product/introduction.html" class="sidebar-link">产品介绍</a></li><li><a href="/views/product/core.html" class="sidebar-link">功能概览</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>安装部署</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/views/guide.html" class="sidebar-link">配置指南</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>功能</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>规则引擎</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/views/monitor.html" class="sidebar-link">监控部署</a></li><li><a href="/views/admin.html" class="sidebar-link">管理页面部署</a></li><li><a href="/views/log.html" aria-current="page" class="active sidebar-link">日志系统部署</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/views/log.html#安装es" class="sidebar-link">安装ES</a></li><li class="sidebar-sub-header"><a href="/views/log.html#es验证" class="sidebar-link">ES验证</a></li><li class="sidebar-sub-header"><a href="/views/log.html#_2-2-filebeat验证" class="sidebar-link">2.2 filebeat验证</a></li></ul></li><li><a href="/views/test.html" class="sidebar-link">性能压测</a></li><li><a href="/views/vs.html" class="sidebar-link">VS EMQX</a></li><li><a href="/views/mqtt.html" class="sidebar-link">MQTT协议介绍</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="日志系统部署"><a href="#日志系统部署" class="header-anchor">#</a> 日志系统部署</h1> <h2 id="安装es"><a href="#安装es" class="header-anchor">#</a> 安装ES</h2> <blockquote><p>安装包联系管理员获取</p></blockquote> <p>上传安装包install_elk.zip 到服务器上</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">unzip</span> install_elk.zip
+<span class="token comment">#进入解压目录</span>
+<span class="token builtin class-name">cd</span> ~/install_monitor
+<span class="token comment">#脚本赋权</span>
+<span class="token function">chmod</span> +x ./*
+<span class="token comment">#部署(elasticsearch、logstash)</span>
+<span class="token function">sh</span> install_elk.sh  elk
+<span class="token comment">#部署日志采集</span>
+<span class="token comment">#ip1:部署服务器内网ip  ip2/3/4:fluxmq节点内网ip）----ip1 需要到ip2、ip3、ip4免密</span>
+<span class="token comment">#log_path 日志打印目录，比如/soft,注意打印的日志文件须满足：*info.log、*error.log、*warn.log</span>
+<span class="token function">sh</span> install_elk.sh filebeat ip1  ip2,ip3,ip4  log_path
+</code></pre></div><h2 id="es验证"><a href="#es验证" class="header-anchor">#</a> ES验证</h2> <p><img src="/assets/img/img_2.d6052d34.png" alt="img_2.png"> <strong>curl -u elastic:smqttx  localhost:9200</strong>
+返回结果如下：</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">{</span>
+  <span class="token string">&quot;name&quot;</span> <span class="token builtin class-name">:</span> <span class="token string">&quot;es1&quot;</span>,
+  <span class="token string">&quot;cluster_name&quot;</span> <span class="token builtin class-name">:</span> <span class="token string">&quot;mqtt-es&quot;</span>,
+  <span class="token string">&quot;cluster_uuid&quot;</span> <span class="token builtin class-name">:</span> <span class="token string">&quot;cL5q-sK8RtKDmGVMYCxzbQ&quot;</span>,
+  <span class="token string">&quot;version&quot;</span> <span class="token builtin class-name">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;number&quot;</span> <span class="token builtin class-name">:</span> <span class="token string">&quot;7.5.1&quot;</span>,
+    <span class="token string">&quot;build_flavor&quot;</span> <span class="token builtin class-name">:</span> <span class="token string">&quot;default&quot;</span>,
+    <span class="token string">&quot;build_type&quot;</span> <span class="token builtin class-name">:</span> <span class="token string">&quot;docker&quot;</span>,
+    <span class="token string">&quot;build_hash&quot;</span> <span class="token builtin class-name">:</span> <span class="token string">&quot;3ae9ac9a93c95bd0cdc054951cf95d88e1e18d96&quot;</span>,
+    <span class="token string">&quot;build_date&quot;</span> <span class="token builtin class-name">:</span> <span class="token string">&quot;2019-12-16T22:57:37.835892Z&quot;</span>,
+    <span class="token string">&quot;build_snapshot&quot;</span> <span class="token builtin class-name">:</span> false,
+    <span class="token string">&quot;lucene_version&quot;</span> <span class="token builtin class-name">:</span> <span class="token string">&quot;8.3.0&quot;</span>,
+    <span class="token string">&quot;minimum_wire_compatibility_version&quot;</span> <span class="token builtin class-name">:</span> <span class="token string">&quot;6.8.0&quot;</span>,
+    <span class="token string">&quot;minimum_index_compatibility_version&quot;</span> <span class="token builtin class-name">:</span> <span class="token string">&quot;6.0.0-beta1&quot;</span>
+  <span class="token punctuation">}</span>,
+  <span class="token string">&quot;tagline&quot;</span> <span class="token builtin class-name">:</span> <span class="token string">&quot;You Know, for Search&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_2-2-filebeat验证"><a href="#_2-2-filebeat验证" class="header-anchor">#</a> 2.2 filebeat验证</h2> <p>日志采集服务器上执行：ps -ef|grep beat
+<img src="/assets/img/img_1.d46b7af4.png" alt="img_1.png"></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/views/admin.html" class="prev">
+        管理页面部署
+      </a></span> <span class="next"><a href="/views/test.html">
+        性能压测
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.13215411.js" defer></script><script src="/assets/js/3.60395763.js" defer></script><script src="/assets/js/21.412d700e.js" defer></script>
+  </body>
+</html>

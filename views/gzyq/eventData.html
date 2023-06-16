@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>事件数据</title>
+    <meta name="generator" content="VuePress 1.9.2">
+    <link rel="icon" href="/img/logo.svg">
+    <script src="/js/iframeSizer.contentWindow.min.js"></script>
+    <meta name="description" content="这是fluxmq的官方文档">
+    
+    <link rel="preload" href="/assets/css/0.styles.44a7927b.css" as="style"><link rel="preload" href="/assets/js/app.13215411.js" as="script"><link rel="preload" href="/assets/js/3.60395763.js" as="script"><link rel="preload" href="/assets/js/30.80e91553.js" as="script"><link rel="prefetch" href="/assets/js/10.5d1b9726.js"><link rel="prefetch" href="/assets/js/11.27fed6f7.js"><link rel="prefetch" href="/assets/js/12.03dec31d.js"><link rel="prefetch" href="/assets/js/13.543f17e3.js"><link rel="prefetch" href="/assets/js/14.446f12d8.js"><link rel="prefetch" href="/assets/js/15.ebb99594.js"><link rel="prefetch" href="/assets/js/16.145c0eb4.js"><link rel="prefetch" href="/assets/js/17.9cdbe7ed.js"><link rel="prefetch" href="/assets/js/18.633108bb.js"><link rel="prefetch" href="/assets/js/19.72542e4b.js"><link rel="prefetch" href="/assets/js/2.8759835d.js"><link rel="prefetch" href="/assets/js/20.4c41322c.js"><link rel="prefetch" href="/assets/js/21.412d700e.js"><link rel="prefetch" href="/assets/js/22.9a8d4ba6.js"><link rel="prefetch" href="/assets/js/23.b279337a.js"><link rel="prefetch" href="/assets/js/24.a5f11697.js"><link rel="prefetch" href="/assets/js/25.d77f619a.js"><link rel="prefetch" href="/assets/js/26.c83c6b21.js"><link rel="prefetch" href="/assets/js/27.13ada8c6.js"><link rel="prefetch" href="/assets/js/28.be53ca50.js"><link rel="prefetch" href="/assets/js/29.3474541e.js"><link rel="prefetch" href="/assets/js/31.3bce38c9.js"><link rel="prefetch" href="/assets/js/32.5321e2dd.js"><link rel="prefetch" href="/assets/js/33.abf2578a.js"><link rel="prefetch" href="/assets/js/34.b4e4bdce.js"><link rel="prefetch" href="/assets/js/4.c2c13a0b.js"><link rel="prefetch" href="/assets/js/5.831cffcd.js"><link rel="prefetch" href="/assets/js/6.b5a953ec.js"><link rel="prefetch" href="/assets/js/7.79414b51.js"><link rel="prefetch" href="/assets/js/8.dd2ef758.js"><link rel="prefetch" href="/assets/js/9.31d423ed.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.44a7927b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>FluxMQ</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>安装部署</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/views/guide.html" class="sidebar-link">配置指南</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>功能</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>规则引擎</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/views/gzyq/introduce.html" class="sidebar-link">规则引擎介绍</a></li><li><a href="/views/gzyq/eventData.html" aria-current="page" class="active sidebar-link">事件数据</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/views/gzyq/eventData.html#发布数据" class="sidebar-link">发布数据</a></li><li class="sidebar-sub-header"><a href="/views/gzyq/eventData.html#连接数据" class="sidebar-link">连接数据</a></li><li class="sidebar-sub-header"><a href="/views/gzyq/eventData.html#订阅数据" class="sidebar-link">订阅数据</a></li><li class="sidebar-sub-header"><a href="/views/gzyq/eventData.html#取消订阅数据" class="sidebar-link">取消订阅数据</a></li><li class="sidebar-sub-header"><a href="/views/gzyq/eventData.html#ping数据" class="sidebar-link">PING数据</a></li><li class="sidebar-sub-header"><a href="/views/gzyq/eventData.html#disconnect数据" class="sidebar-link">Disconnect数据</a></li><li class="sidebar-sub-header"><a href="/views/gzyq/eventData.html#close数据" class="sidebar-link">Close数据</a></li></ul></li><li><a href="/views/gzyq/eventTopic.html" class="sidebar-link">事件主题</a></li><li><a href="/views/gzyq/dataBridging.html" class="sidebar-link">数据桥接</a></li><li><a href="/views/gzyq/dataStorage.html" class="sidebar-link">数据存储</a></li><li><a href="/views/gzyq/shakedownTest.html" class="sidebar-link">创建规则及调试</a></li><li><a href="/views/gzyq/grammar.html" class="sidebar-link">规则引擎语法</a></li><li><a href="/views/gzyq/codec.html" class="sidebar-link">编解码</a></li></ul></section></li><li><a href="/views/monitor.html" class="sidebar-link">监控部署</a></li><li><a href="/views/admin.html" class="sidebar-link">管理页面部署</a></li><li><a href="/views/log.html" class="sidebar-link">日志系统部署</a></li><li><a href="/views/test.html" class="sidebar-link">性能压测</a></li><li><a href="/views/vs.html" class="sidebar-link">VS EMQX</a></li><li><a href="/views/mqtt.html" class="sidebar-link">MQTT协议介绍</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="事件数据"><a href="#事件数据" class="header-anchor">#</a> 事件数据</h1> <blockquote><p>系统内置的事件数据</p></blockquote> <h2 id="发布数据"><a href="#发布数据" class="header-anchor">#</a> 发布数据</h2> <div class="language-发布 extra-class"><pre class="language-text"><code>{
+    &quot;msg&quot;: {},
+    &quot;messageId&quot;: 1,
+    &quot;topic&quot;: &quot;test&quot;,
+    &quot;qos&quot;: 1,
+    &quot;retain&quot;: false,
+    &quot;time&quot;: &quot;2022 12-22 12:00:00&quot;,
+    &quot;clientId&quot;: &quot;A1212313&quot;
+}
+</code></pre></div><h2 id="连接数据"><a href="#连接数据" class="header-anchor">#</a> 连接数据</h2> <div class="language-连接 extra-class"><pre class="language-text"><code>{
+    &quot;clientIp&quot;: &quot;192.168.0.100&quot;,
+    &quot;nodeIp&quot;: &quot;127.0.0.1&quot;,
+    &quot;version&quot;: &quot;MQTT_3_1&quot;,
+    &quot;keepalive&quot;: 120,
+    &quot;cleanSession&quot;: false,
+    &quot;auth&quot;: {
+        &quot;username&quot;: &quot;fluxmq&quot;,
+        &quot;password&quot;: &quot;fluxmq&quot;
+    },
+    &quot;will&quot;: {
+        &quot;isRetain&quot;: false,
+        &quot;willTopic&quot;: &quot;willTest&quot;,
+        &quot;willQos&quot;: 1,
+        &quot;willMessage&quot;: &quot;&quot;
+    },
+    &quot;time&quot;: &quot;2022 12-22 12:00:00&quot;,
+    &quot;clientId&quot;: &quot;A1212313&quot;
+}
+</code></pre></div><h2 id="订阅数据"><a href="#订阅数据" class="header-anchor">#</a> 订阅数据</h2> <div class="language-订阅 extra-class"><pre class="language-text"><code>{
+    &quot;messageId&quot;: 1,
+    &quot;subscribeTopics&quot;: [
+        {
+            &quot;topicFilter&quot;: &quot;test&quot;,
+            &quot;qos&quot;: 1
+        }
+    ],
+    &quot;time&quot;: &quot;2022 12-22 12:00:00&quot;,
+    &quot;clientId&quot;: &quot;A1212313&quot;
+}
+</code></pre></div><h2 id="取消订阅数据"><a href="#取消订阅数据" class="header-anchor">#</a> 取消订阅数据</h2> <div class="language-取消订阅 extra-class"><pre class="language-text"><code>{
+    &quot;messageId&quot;: 1,
+    &quot;topics&quot;: [
+        &quot;test&quot;
+    ],
+    &quot;time&quot;: &quot;2022 12-22 12:00:00&quot;,
+    &quot;clientId&quot;: &quot;A1212313&quot;
+}
+</code></pre></div><h2 id="ping数据"><a href="#ping数据" class="header-anchor">#</a> PING数据</h2> <div class="language-心跳 extra-class"><pre class="language-text"><code>{
+    &quot;clientId&quot;: &quot;A1212313&quot;,
+    &quot;time&quot;: &quot;2022 12-22 12:00:00&quot;
+}
+</code></pre></div><h2 id="disconnect数据"><a href="#disconnect数据" class="header-anchor">#</a> Disconnect数据</h2> <div class="language-断开连接 extra-class"><pre class="language-text"><code>{
+    &quot;time&quot;: &quot;2022 12-22 12:00:00&quot;,
+    &quot;clientId&quot;: &quot;A1212313&quot;
+}
+</code></pre></div><h2 id="close数据"><a href="#close数据" class="header-anchor">#</a> Close数据</h2> <div class="language-关闭连接 extra-class"><pre class="language-text"><code>{
+    &quot;messageId&quot;: 1,
+    &quot;reason&quot;: &quot;&quot;,
+    &quot;time&quot;: &quot;2022 12-22 12:00:00&quot;,
+    &quot;clientId&quot;: &quot;A1212313&quot;
+}
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/views/gzyq/introduce.html" class="prev">
+        规则引擎介绍
+      </a></span> <span class="next"><a href="/views/gzyq/eventTopic.html">
+        事件主题
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.13215411.js" defer></script><script src="/assets/js/3.60395763.js" defer></script><script src="/assets/js/30.80e91553.js" defer></script>
+  </body>
+</html>

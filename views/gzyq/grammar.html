@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>规则引擎语法</title>
+    <meta name="generator" content="VuePress 1.9.2">
+    <link rel="icon" href="/img/logo.svg">
+    <script src="/js/iframeSizer.contentWindow.min.js"></script>
+    <meta name="description" content="这是fluxmq的官方文档">
+    
+    <link rel="preload" href="/assets/css/0.styles.44a7927b.css" as="style"><link rel="preload" href="/assets/js/app.13215411.js" as="script"><link rel="preload" href="/assets/js/3.60395763.js" as="script"><link rel="preload" href="/assets/js/32.5321e2dd.js" as="script"><link rel="prefetch" href="/assets/js/10.5d1b9726.js"><link rel="prefetch" href="/assets/js/11.27fed6f7.js"><link rel="prefetch" href="/assets/js/12.03dec31d.js"><link rel="prefetch" href="/assets/js/13.543f17e3.js"><link rel="prefetch" href="/assets/js/14.446f12d8.js"><link rel="prefetch" href="/assets/js/15.ebb99594.js"><link rel="prefetch" href="/assets/js/16.145c0eb4.js"><link rel="prefetch" href="/assets/js/17.9cdbe7ed.js"><link rel="prefetch" href="/assets/js/18.633108bb.js"><link rel="prefetch" href="/assets/js/19.72542e4b.js"><link rel="prefetch" href="/assets/js/2.8759835d.js"><link rel="prefetch" href="/assets/js/20.4c41322c.js"><link rel="prefetch" href="/assets/js/21.412d700e.js"><link rel="prefetch" href="/assets/js/22.9a8d4ba6.js"><link rel="prefetch" href="/assets/js/23.b279337a.js"><link rel="prefetch" href="/assets/js/24.a5f11697.js"><link rel="prefetch" href="/assets/js/25.d77f619a.js"><link rel="prefetch" href="/assets/js/26.c83c6b21.js"><link rel="prefetch" href="/assets/js/27.13ada8c6.js"><link rel="prefetch" href="/assets/js/28.be53ca50.js"><link rel="prefetch" href="/assets/js/29.3474541e.js"><link rel="prefetch" href="/assets/js/30.80e91553.js"><link rel="prefetch" href="/assets/js/31.3bce38c9.js"><link rel="prefetch" href="/assets/js/33.abf2578a.js"><link rel="prefetch" href="/assets/js/34.b4e4bdce.js"><link rel="prefetch" href="/assets/js/4.c2c13a0b.js"><link rel="prefetch" href="/assets/js/5.831cffcd.js"><link rel="prefetch" href="/assets/js/6.b5a953ec.js"><link rel="prefetch" href="/assets/js/7.79414b51.js"><link rel="prefetch" href="/assets/js/8.dd2ef758.js"><link rel="prefetch" href="/assets/js/9.31d423ed.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.44a7927b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>FluxMQ</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>安装部署</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/views/guide.html" class="sidebar-link">配置指南</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>功能</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>规则引擎</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/views/gzyq/introduce.html" class="sidebar-link">规则引擎介绍</a></li><li><a href="/views/gzyq/eventData.html" class="sidebar-link">事件数据</a></li><li><a href="/views/gzyq/eventTopic.html" class="sidebar-link">事件主题</a></li><li><a href="/views/gzyq/dataBridging.html" class="sidebar-link">数据桥接</a></li><li><a href="/views/gzyq/dataStorage.html" class="sidebar-link">数据存储</a></li><li><a href="/views/gzyq/shakedownTest.html" class="sidebar-link">创建规则及调试</a></li><li><a href="/views/gzyq/grammar.html" aria-current="page" class="active sidebar-link">规则引擎语法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/views/gzyq/grammar.html#sql语法" class="sidebar-link">SQL语法</a></li></ul></li><li><a href="/views/gzyq/codec.html" class="sidebar-link">编解码</a></li></ul></section></li><li><a href="/views/monitor.html" class="sidebar-link">监控部署</a></li><li><a href="/views/admin.html" class="sidebar-link">管理页面部署</a></li><li><a href="/views/log.html" class="sidebar-link">日志系统部署</a></li><li><a href="/views/test.html" class="sidebar-link">性能压测</a></li><li><a href="/views/vs.html" class="sidebar-link">VS EMQX</a></li><li><a href="/views/mqtt.html" class="sidebar-link">MQTT协议介绍</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="规则引擎语法"><a href="#规则引擎语法" class="header-anchor">#</a> 规则引擎语法</h1> <p>创建数据转发规则时，需要编写SQL来解析和处理设备上报的JSON数据。本文主要介绍如何编写数据转发规则的SQL表达式。</p> <h2 id="sql语法"><a href="#sql语法" class="header-anchor">#</a> SQL语法</h2> <p>SQL语句由SELECT子句和WHERE子句组成，每个子句不能大于500个字符。SELECT子句和WHERE子句里的内容大小写敏感，SELECT和WHERE，AS等关键字大小写不敏感。
+以设备消息上报为SQL源数据示例:</p> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;msg&quot;: {
+      &quot;temperature&quot; : 40,
+      &quot;humidity&quot; : 24
+    },
+    &quot;messageId&quot;: 1,
+    &quot;topic&quot;: &quot;test&quot;,
+    &quot;qos&quot;: 1,
+    &quot;retain&quot;: false,
+    &quot;time&quot;: &quot;2022 12-22 12:00:00&quot;,
+    &quot;clientId&quot;: &quot;A1212313&quot;
+}
+</code></pre></div><p>在源数据中，消息中的msg是设备消息上报的数据，设置当设备上报数据中temperature大于38时触发条件，并筛选出clientId、msg，不需要任何其他字段时，SQL语句示例如下：</p> <div class="language- extra-class"><pre class="language-text"><code>SELECT clientId as client_id, msg from &quot;test/fluxmq&quot; Where msg.temperature&gt;38
+</code></pre></div><p>当设备上报消息中temperature大于38度时，会触发转发，转发后的数据格式如下：</p> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;msg&quot;: {
+      &quot;temperature&quot; : 40,
+      &quot;humidity&quot; : 24
+    },
+    &quot;client_id&quot;: &quot;A1212313&quot;
+}
+</code></pre></div><h3 id="where"><a href="#where" class="header-anchor">#</a> WHERE</h3> <p>在WHERE子句中，您可以用JSON变量进行布尔运算，进行一些非空判断，然后使用AND， OR关键字把结果组合起来。</p> <ul><li><strong>为空判断 IS NULL， IS NOT NULL</strong>
+为空判断可以用在WHERE子句中，如果JSON变量抽取不到数据，或者抽取到的数组为空，那么IS NULL成立，反之IS NOT NULL成立。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>WHERE data IS NULL
+WHERE data IS NOT NULL
+</code></pre></div><ul><li><strong>包含判断 LIKE， NOT LIKE</strong>
+LIKE运算符可以用于WHERE子句中，如果目标值包含指定字符，则匹配成功，那么LIKE成立，反之NOT LIKE成立，注意指定字符与源数据匹配区分大小写</li></ul> <div class="language- extra-class"><pre class="language-text"><code>WHERE client.product_id LIKE '%B2%'&quot;
+WHERE client.product_id LIKE '%A2%'&quot;
+</code></pre></div><ul><li><strong>大于小于运算符 &gt; &lt;</strong>
+大于小于运算符可以用于WHERE子句中，当且仅当JSON变量的值为常量整数时，可以进行两个JSON变量的比较或者JSON变量和常量的比较。大于小于运算符也可以用于常量和常量的比较。也可以通过AND或者OR来连接起来运算
+比如</li></ul> <div class="language- extra-class"><pre class="language-text"><code>WHERE data.number &gt; 5 可以抽取出json表达式大于5的信息 
+WHERE data.tag &lt; 4 可以抽取出json表达式中小于4的信息 
+WHERE data.number &gt; 5 AND data.tag &lt; 4 可以抽取出json表达式data.number大于5的信息并且json表达式data.tag中小于4的信息
+</code></pre></div><ul><li><strong>等于运算符 =</strong>
+=运算符可以用于WHERE子句中，用于JSON变量和JSON变量的比较、JSON变量整数和整数常量的比较、JSON变量字符串和字符串常量的比较。如果两个JSON变量IS NULL成立，那么=比较结果为false。也可以通过AND或者OR来连接起来运算</li></ul> <div class="language- extra-class"><pre class="language-text"><code>WHERE data.number = 5 可以抽取出json表达式等于5的信息 
+WHERE data.tag = 4 可以抽取出json表达式中等于4的信息 
+WHERE data.number = 5 OR data.tag = 4 可以抽取出json表达式data.number等于5的信息或者json表达式data.tag中等于4的信息
+</code></pre></div><h3 id="使用限制"><a href="#使用限制" class="header-anchor">#</a> 使用限制</h3> <p><strong>表1</strong> SQL语句使用限制</p> <table><thead><tr><th><strong>对象</strong></th> <th><strong>限制</strong></th></tr></thead> <tbody><tr><td>FROM 子句</td> <td>1个目标源</td></tr></tbody></table> <h3 id="调试sql语句"><a href="#调试sql语句" class="header-anchor">#</a> 调试SQL语句</h3> <p>详情见 【创建规则及调试】 文档说明</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/views/gzyq/shakedownTest.html" class="prev">
+        创建规则及调试
+      </a></span> <span class="next"><a href="/views/gzyq/codec.html">
+        编解码
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.13215411.js" defer></script><script src="/assets/js/3.60395763.js" defer></script><script src="/assets/js/32.5321e2dd.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>规则引擎介绍</title>
+    <meta name="generator" content="VuePress 1.9.2">
+    <link rel="icon" href="/img/logo.svg">
+    <script src="/js/iframeSizer.contentWindow.min.js"></script>
+    <meta name="description" content="这是fluxmq的官方文档">
+    
+    <link rel="preload" href="/assets/css/0.styles.44a7927b.css" as="style"><link rel="preload" href="/assets/js/app.13215411.js" as="script"><link rel="preload" href="/assets/js/3.60395763.js" as="script"><link rel="preload" href="/assets/js/23.b279337a.js" as="script"><link rel="prefetch" href="/assets/js/10.5d1b9726.js"><link rel="prefetch" href="/assets/js/11.27fed6f7.js"><link rel="prefetch" href="/assets/js/12.03dec31d.js"><link rel="prefetch" href="/assets/js/13.543f17e3.js"><link rel="prefetch" href="/assets/js/14.446f12d8.js"><link rel="prefetch" href="/assets/js/15.ebb99594.js"><link rel="prefetch" href="/assets/js/16.145c0eb4.js"><link rel="prefetch" href="/assets/js/17.9cdbe7ed.js"><link rel="prefetch" href="/assets/js/18.633108bb.js"><link rel="prefetch" href="/assets/js/19.72542e4b.js"><link rel="prefetch" href="/assets/js/2.8759835d.js"><link rel="prefetch" href="/assets/js/20.4c41322c.js"><link rel="prefetch" href="/assets/js/21.412d700e.js"><link rel="prefetch" href="/assets/js/22.9a8d4ba6.js"><link rel="prefetch" href="/assets/js/24.a5f11697.js"><link rel="prefetch" href="/assets/js/25.d77f619a.js"><link rel="prefetch" href="/assets/js/26.c83c6b21.js"><link rel="prefetch" href="/assets/js/27.13ada8c6.js"><link rel="prefetch" href="/assets/js/28.be53ca50.js"><link rel="prefetch" href="/assets/js/29.3474541e.js"><link rel="prefetch" href="/assets/js/30.80e91553.js"><link rel="prefetch" href="/assets/js/31.3bce38c9.js"><link rel="prefetch" href="/assets/js/32.5321e2dd.js"><link rel="prefetch" href="/assets/js/33.abf2578a.js"><link rel="prefetch" href="/assets/js/34.b4e4bdce.js"><link rel="prefetch" href="/assets/js/4.c2c13a0b.js"><link rel="prefetch" href="/assets/js/5.831cffcd.js"><link rel="prefetch" href="/assets/js/6.b5a953ec.js"><link rel="prefetch" href="/assets/js/7.79414b51.js"><link rel="prefetch" href="/assets/js/8.dd2ef758.js"><link rel="prefetch" href="/assets/js/9.31d423ed.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.44a7927b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>FluxMQ</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>安装部署</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/views/guide.html" class="sidebar-link">配置指南</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>功能</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>规则引擎</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/views/gzyq/introduce.html" aria-current="page" class="active sidebar-link">规则引擎介绍</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/views/gzyq/introduce.html#简介" class="sidebar-link">简介</a></li><li class="sidebar-sub-header"><a href="/views/gzyq/introduce.html#消息发布" class="sidebar-link">消息发布</a></li><li class="sidebar-sub-header"><a href="/views/gzyq/introduce.html#事件触发" class="sidebar-link">事件触发</a></li><li class="sidebar-sub-header"><a href="/views/gzyq/introduce.html#规则引擎组成" class="sidebar-link">规则引擎组成</a></li><li class="sidebar-sub-header"><a href="/views/gzyq/introduce.html#规则引擎典型应用场景举例" class="sidebar-link">规则引擎典型应用场景举例</a></li></ul></li><li><a href="/views/gzyq/eventData.html" class="sidebar-link">事件数据</a></li><li><a href="/views/gzyq/eventTopic.html" class="sidebar-link">事件主题</a></li><li><a href="/views/gzyq/dataBridging.html" class="sidebar-link">数据桥接</a></li><li><a href="/views/gzyq/dataStorage.html" class="sidebar-link">数据存储</a></li><li><a href="/views/gzyq/shakedownTest.html" class="sidebar-link">创建规则及调试</a></li><li><a href="/views/gzyq/grammar.html" class="sidebar-link">规则引擎语法</a></li><li><a href="/views/gzyq/codec.html" class="sidebar-link">编解码</a></li></ul></section></li><li><a href="/views/monitor.html" class="sidebar-link">监控部署</a></li><li><a href="/views/admin.html" class="sidebar-link">管理页面部署</a></li><li><a href="/views/log.html" class="sidebar-link">日志系统部署</a></li><li><a href="/views/test.html" class="sidebar-link">性能压测</a></li><li><a href="/views/vs.html" class="sidebar-link">VS EMQX</a></li><li><a href="/views/mqtt.html" class="sidebar-link">MQTT协议介绍</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="规则引擎介绍"><a href="#规则引擎介绍" class="header-anchor">#</a> 规则引擎介绍</h1> <h2 id="简介"><a href="#简介" class="header-anchor">#</a> 简介</h2> <p>FluxMQ Rule Engine (以下简称规则引擎) 用于配置FluxMQ 消息流与设备事件的处理、响应规则。规则引擎不仅提供了清晰、灵活的 &quot;配置式&quot; 的业务集成方案，简化了业务开发流程，提升用户易用性，降低业务系统与 FluxMQ 的耦合度；也为 FluxMQ 的私有功能定制提供了一个更优秀的基础架构。
+FluxMQ 在 消息发布或事件触发 时将触发规则引擎，满足触发条件的规则将执行各自的 SQL 语句筛选并处理消息和事件的上下文信息；</p> <h2 id="消息发布"><a href="#消息发布" class="header-anchor">#</a> 消息发布</h2> <p>规则引擎借助响应动作可将特定主题的消息处理结果存储到数据库，发送到 HTTP Server，转发到消息队列 Kafka 或 RabbitMQ，重新发布到新的主题甚至是另一个 Broker 集群中，每个规则可以配置多个响应动作。</p> <div class="language-选择发布到 topic 主题的消息，并筛选出全部字段 extra-class"><pre class="language-text"><code>SELECT * FROM &quot;topic&quot;
+</code></pre></div>&quot; 字段 extra-class&quot;&gt;<pre class="language-text"><code>SELECT payload.x as x FROM &quot;t/a&quot;
+</code></pre> <h2 id="事件触发"><a href="#事件触发" class="header-anchor">#</a> 事件触发</h2> <p>规则引擎使用 $EVENT. 开头的虚拟主题（事件主题）处理 FluxMQ 内置事件，内置事件提供更精细的消息控制和客户端动作处理能力，可用在 QoS 1 QoS 2 的消息抵达记录、设备上下线记录等业务中。</p> <div class="language-选择客户端连接事件，筛选 username 为 'fluxmq' 的设备并获取连接信息 extra-class"><pre class="language-text"><code>SELECT clientid, connected_at FROM &quot;$EVENT.CONNECT&quot; WHERE username = 'fluxmq'
+</code></pre></div><p>规则引擎数据和 SQL 语句格式，事件主题 列表详细教程参见 规则引擎语法。</p> <h2 id="规则引擎组成"><a href="#规则引擎组成" class="header-anchor">#</a> 规则引擎组成</h2> <p>规则描述了 <strong>数据从哪里来</strong>、<strong>如何筛选并处理数据</strong>、<strong>处理结果到哪里去</strong> 三个配置，即一条可用的规则包含三个要素：</p> <ul><li><strong>触发事件</strong>：规则通过事件触发，触发时事件给规则注入事件的上下文信息（数据源），通过 SQL 的 FROM 子句指定事件类型；</li> <li><strong>处理规则（SQL）</strong>：使用 SELECT 子句 和 WHERE 子句以及内置处理函数， 从上下文信息中过滤和处理数据；</li> <li><strong>响应动作</strong>：如果有处理结果输出，规则将执行相应的动作，如持久化到数据库、重新发布处理后的消息、转发消息到消息队列等。
+如图所示是一条简单的规则，该条规则用于处理 消息发布 时的数据，将全部主题消息的 msg 字段，消息 topic 、qos 筛选出来，发送到数据源
+<img src="/assets/img/23.3b652730.png" alt="">
+使用 FluxMQ 的规则引擎可以灵活地处理消息和事件。使用规则引擎可以方便地实现诸如将消息转换成指定格式，然后存入数据库表，或者发送到消息队列等。
+与 FluxMQ 规则引擎相关的概念包括: 规则(rule)、动作(action)、资源(resource) 和 资源类型(resource-type)。</li></ul> <div class="language-规则、动作、资源的关系: extra-class"><pre class="language-text"><code>规则: {
+    SQL 语句,
+    动作: 
+        {
+            动作1,
+            动作参数,
+            绑定资源: {
+                资源配置
+            }
+        }
+}
+</code></pre></div><h2 id="规则引擎典型应用场景举例"><a href="#规则引擎典型应用场景举例" class="header-anchor">#</a> 规则引擎典型应用场景举例</h2> <ul><li><strong>动作监听</strong>：智慧家庭智能门锁开发中，门锁会因为网络、电源故障、人为破坏等原因离线导致功能异常，使用规则引擎配置监听离线事件向应用服务推送该故障信息，可以在接入层实现第一时间的故障检测的能力；</li> <li><strong>数据筛选</strong>：车辆网的卡车车队管理，车辆传感器采集并上报了大量运行数据，应用平台仅关注车速大于 40 km/h 时的数据，此场景下可以使用规则引擎对消息进行条件过滤，向业务消息队列写入满足条件的数据；</li> <li><strong>消息路由</strong>：智能计费应用中，终端设备通过不同主题区分业务类型，可通过配置规则引擎将计费业务的消息接入计费消息队列并在消息抵达设备端后发送确认通知到业务系统，非计费信息接入其他消息队列，实现业务消息路由配置；</li> <li><strong>消息编解码</strong>：其他公共协议 / 私有 TCP 协议接入、工控行业等应用场景下，可以通过规则引擎的本地处理函数（可在 FluxMQ 上定制开发）做二进制 / 特殊格式消息体的编解码工作；亦可通过规则引擎的消息路由将相关消息流向外部计算资源如函数计算进行处理（可由用户自行开发处理逻辑），将消息转为业务易于处理的 JSON 格式，简化项目集成难度、提升应用快速开发交付能力。</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/views/function/device.html" class="prev">
+        设备模拟
+      </a></span> <span class="next"><a href="/views/gzyq/eventData.html">
+        事件数据
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.13215411.js" defer></script><script src="/assets/js/3.60395763.js" defer></script><script src="/assets/js/23.b279337a.js" defer></script>
+  </body>
+</html>
