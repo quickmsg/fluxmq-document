@@ -42,12 +42,18 @@ module.exports = {
                 sidebarDepth: 1,
                 children: [
                     ['/views/function/dashboard', 'Dashboard'],
+                    ['/views/function/ps ', '发布订阅']
+                    ['/views/function/share', '共享订阅'],
+                    ['/views/function/retain', '保留消息'],
+                    ['/views/function/session', '会话消息'],
+                    ['/views/function/delay', '延迟消息'],
                     ['/views/function/auth', '认证鉴权'],
                     ['/views/function/control', '访问控制'],
                     ['/views/function/link', '连接管理'],
                     ['/views/function/topic', '主题管理'],
                     ['/views/function/monitor', '运维监控'],
-                    ['/views/function/device', '设备模拟']
+                    ['/views/function/device', '设备模拟'],
+                    ['/views/function/protocol', '多协议']
 
                 ]
             },
