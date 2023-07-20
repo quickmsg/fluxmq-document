@@ -42,7 +42,7 @@ module.exports = {
                 sidebarDepth: 1,
                 children: [
                     ['/views/function/dashboard', 'Dashboard'],
-                    ['/views/function/ps ', '发布订阅']
+                    ['/views/function/ps ', '发布订阅'],
                     ['/views/function/share', '共享订阅'],
                     ['/views/function/session', '会话消息'],
                     ['/views/function/delay', '延迟消息'],
