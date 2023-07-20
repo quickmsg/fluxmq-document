@@ -44,7 +44,6 @@ module.exports = {
                     ['/views/function/dashboard', 'Dashboard'],
                     ['/views/function/ps ', '发布订阅']
                     ['/views/function/share', '共享订阅'],
-                    ['/views/function/retain', '保留消息'],
                     ['/views/function/session', '会话消息'],
                     ['/views/function/delay', '延迟消息'],
                     ['/views/function/auth', '认证鉴权'],
