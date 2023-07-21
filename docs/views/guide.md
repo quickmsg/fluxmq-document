@@ -125,7 +125,7 @@ application:
 | name | 应用名称     | 修改后影响Metrics的Application，以及Dashboard里的节点名称 |
 | version | FluxMQ版本 | Dashboard显示的版本                             |
 
-## 9. EventBus 配置
+## 9. EventBus配置
 
 | 参数名  | 描述         | 默认值   |
 |------|------------|-------|
@@ -134,7 +134,7 @@ application:
 | batchSize | 单次批量传输size | 1000  |
 | batchDuration | 批量窗口       | 50 ms |
 
-## 10. ShareSubscribe
+## 10. ShareSubscribe配置
 
 | 参数名  | 描述        | 默认值    |
 |------|-----------|--------|
