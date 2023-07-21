@@ -37,6 +37,14 @@ elasticsearch:
   url: 114.116.8.76:9200
   userName: elastic
   password: smqttx  
+eventbus:
+  compressed: true
+  batch: true
+  batchSize: 2000
+  batchDuration: 50
+shareSubscribe:
+  strategy: RANDOM 
+  maxShareSubscribeSize: 100  
 application:
   name: fluxmq
   version: 2.0.0
@@ -116,3 +124,19 @@ application:
 |------|----------|--------------------------------------------|
 | name | 应用名称     | 修改后影响Metrics的Application，以及Dashboard里的节点名称 |
 | version | FluxMQ版本 | Dashboard显示的版本                             |
+
+## 9. EventBus 配置
+
+| 参数名  | 描述         | 默认值   |
+|------|------------|-------|
+| compressed | 是否压缩       | 开启    |
+| batch | 是否批量       | 开启    |
+| batchSize | 单次批量传输size | 1000  |
+| batchDuration | 批量窗口       | 50 ms |
+
+## 10. ShareSubscribe
+
+| 参数名  | 描述        | 默认值    |
+|------|-----------|--------|
+| strategy | 策略        | RANDOM |
+| maxShareSubscribeSize | 最大订阅数     | 不限制    |
