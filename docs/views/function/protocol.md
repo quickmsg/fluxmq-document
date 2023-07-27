@@ -10,7 +10,9 @@
 ### 上行指令
 > 通过规则引擎配置选择扩展协议数据类型
 
-`select * from "$EVENT.EXTENSION WHERE protocol = 'I1' "`
+```
+select * from "$EVENT.EXTENSION" WHERE protocol = 'I1'
+ ```
 
 传输的数据格式如下：
 
