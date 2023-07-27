@@ -39,12 +39,12 @@
 #### 新增一个转发WEBSOCKET协议的报文
 SQL如下：
 ```
-select * from "$EVENT.EXTENSION WHERE protocol='WEBSOCKET'"
+select * from "$EVENT.EXTENSION" WHERE protocol='WEBSOCKET'
 ```
 #### 新增一个转发WEBSOCKET 上报协议的报文
 SQL如下：
 ```
-select * from "$EVENT.EXTENSION WHERE protocol='WEBSOCKET' AND cmd ='PUBLISH'
+select * from "$EVENT.EXTENSION" WHERE protocol='WEBSOCKET' AND cmd ='PUBLISH'
 ```
 
 
