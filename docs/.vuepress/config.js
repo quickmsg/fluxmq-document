@@ -72,7 +72,7 @@ module.exports = {
                             ['/views/gzyq/rule/FUNCTION', '函数'],
                             ['/views/gzyq/rule/EVENTTOPIC', '事件主题'],
                             ['/views/gzyq/rule/EVENTDATA', '事件数据'],
-                            [{
+                            {
                                 title: "创建规则",
                                 collapsable: true,
                                 sidebarDepth: 1,
@@ -86,8 +86,7 @@ module.exports = {
                                     ['/views/gzyq/rule/REDIS', 'REDIS'],
                                     ['/views/gzyq/rule/ROCKETMQ', 'ROCKETMQ']
                                 ]
-                            }]
-
+                            }
                         ]
                     },
                     {
