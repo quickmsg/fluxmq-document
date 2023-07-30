@@ -26,7 +26,7 @@ SELECT clientid, connected_at FROM "$EVENT.CONNECT" WHERE username = 'fluxmq'
 - **处理规则（SQL）**：使用 SELECT 子句 和 WHERE 子句以及内置处理函数， 从上下文信息中过滤和处理数据；
 - **响应动作**：如果有处理结果输出，规则将执行相应的动作，如持久化到数据库、重新发布处理后的消息、转发消息到消息队列等。
 如图所示是一条简单的规则，该条规则用于处理 消息发布 时的数据，将全部主题消息的 msg 字段，消息 topic 、qos 筛选出来，发送到数据源
-![](../../assets/images/gzyq/23.png)
+![](../../../assets/images/gzyq/23.png)
 使用 FluxMQ 的规则引擎可以灵活地处理消息和事件。使用规则引擎可以方便地实现诸如将消息转换成指定格式，然后存入数据库表，或者发送到消息队列等。
 与 FluxMQ 规则引擎相关的概念包括: 规则(rule)、动作(action)、资源(resource) 和 资源类型(resource-type)。
 ```规则、动作、资源的关系:

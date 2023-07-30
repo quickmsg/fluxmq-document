@@ -51,6 +51,7 @@ module.exports = {
                     ['/views/function/link', '连接管理'],
                     ['/views/function/topic', '主题管理'],
                     ['/views/function/monitor', '运维监控'],
+                    ['/views/function/script', '脚本引擎'],
                     ['/views/function/device', '设备模拟'],
                     ['/views/function/protocol', '多协议']
 
@@ -61,14 +62,49 @@ module.exports = {
                 collapsable: true,
                 sidebarDepth: 1,
                 children: [
-                    ['/views/gzyq/introduce', '规则引擎介绍'],
-                    ['/views/gzyq/eventData', '事件数据'],
-                    ['/views/gzyq/eventTopic', '事件主题'],
-                    ['/views/gzyq/dataBridging', '数据桥接'],
-                    ['/views/gzyq/dataStorage', '数据存储'],
-                    ['/views/gzyq/shakedownTest', '创建规则及调试'],
-                    ['/views/gzyq/grammar', '规则引擎语法'],
-                    ['/views/gzyq/codec', '编解码']
+                    {
+                        title: "规则配置",
+                        collapsable: true,
+                        sidebarDepth: 1,
+                        children: [
+                            ['/views/gzyq/rule/INTRODUCE', '介绍'],
+                            ['/views/gzyq/rule/GRAMMAR', '语法'],
+                            ['/views/gzyq/rule/FUNCTION', '函数'],
+                            ['/views/gzyq/rule/EVENTOPIC', '事件主题'],
+                            ['/views/gzyq/rule/EVENTDATA', '事件数据'],
+                            [{
+                                title: "创建规则",
+                                collapsable: true,
+                                sidebarDepth: 1,
+                                children: [
+                                    ['/views/gzyq/rule/DATABASE', '数据库'],
+                                    ['/views/gzyq/rule/WEBHOOK', 'WEBHOOK'],
+                                    ['/views/gzyq/rule/KAFKA', 'KAFKA'],
+                                    ['/views/gzyq/rule/LOG', '日志文件'],
+                                    ['/views/gzyq/rule/MQTT', 'MQTT'],
+                                    ['/views/gzyq/rule/RABBITMQ', 'RABBITMQ'],
+                                    ['/views/gzyq/rule/REDIS', 'REDIS'],
+                                    ['/views/gzyq/rule/ROCKETMQ', 'ROCKETMQ']
+                                ]
+                            }]
+
+                        ]
+                    },
+                    {
+                        title: "数据源配置",
+                        collapsable: true,
+                        sidebarDepth: 1,
+                        children: [
+                            ['/views/gzyq/source/DATABASE', '数据库'],
+                            ['/views/gzyq/source/WEBHOOK', 'WEBHOOK'],
+                            ['/views/gzyq/source/KAFKA', 'KAFKA'],
+                            ['/views/gzyq/source/LOG', '日志文件'],
+                            ['/views/gzyq/source/MQTT', 'MQTT'],
+                            ['/views/gzyq/source/RABBITMQ', 'RABBITMQ'],
+                            ['/views/gzyq/source/REDIS', 'REDIS'],
+                            ['/views/gzyq/source/ROCKETMQ', 'ROCKETMQ']
+                        ]
+                    }
                 ]
             },
             ['/views/monitor.md', '监控部署'],
@@ -76,7 +112,8 @@ module.exports = {
             ['/views/log.md', '日志系统部署'],
             ['/views/test.md', '性能压测'],
             ['/views/vs.md', 'VS EMQX'],
-            ['/views/mqtt', 'MQTT协议介绍']
+            ['/views/mqtt', 'MQTT协议介绍'],
+            ['/views/FAQ', 'FAQ']
         ]
     }
 }

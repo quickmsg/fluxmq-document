@@ -8,7 +8,7 @@
     "topic": "test",
     "qos": 1,
     "retain": false,
-    "time": "2022 12-22 12:00:00",
+    "timestamp": 1690599987495,
     "clientId": "A1212313"
 }
 ```
@@ -30,7 +30,7 @@
         "willQos": 1,
         "willMessage": ""
     },
-    "time": "2022 12-22 12:00:00",
+    "timestamp": 1690599987495,
     "clientId": "A1212313"
 }
 ```
@@ -44,7 +44,7 @@
             "qos": 1
         }
     ],
-    "time": "2022 12-22 12:00:00",
+    "timestamp": 1690599987495,
     "clientId": "A1212313"
 }
 ```
@@ -55,7 +55,7 @@
     "topics": [
         "test"
     ],
-    "time": "2022 12-22 12:00:00",
+    "timestamp": 1690599987495,
     "clientId": "A1212313"
 }
 ```
@@ -63,13 +63,13 @@
 ```心跳
 {
     "clientId": "A1212313",
-    "time": "2022 12-22 12:00:00"
+    "timestamp": 1690599987495
 }
 ```
 ## Disconnect数据
 ```断开连接
 {
-    "time": "2022 12-22 12:00:00",
+    "timestamp": 1690599987495,
     "clientId": "A1212313"
 }
 ```
@@ -78,7 +78,20 @@
 {
     "messageId": 1,
     "reason": "",
-    "time": "2022 12-22 12:00:00",
+    "timestamp": 1690599987495,
     "clientId": "A1212313"
+}
+```
+## 扩展协议
+```扩展协议
+{
+    "protocol": "I1",
+    "cmd": "PUBLISH",
+    "messageId": 0,
+    "time": "2023-07-11 21:59:23",
+    "clientId": "clientId",
+    "nodeIp": "127.0.0.1",
+    "clientIp": "127.0.0.1:19999",
+    "body": "body"
 }
 ```

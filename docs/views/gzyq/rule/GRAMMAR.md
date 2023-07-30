@@ -61,9 +61,15 @@ WHERE data.tag = 4 可以抽取出json表达式中等于4的信息
 WHERE data.number = 5 OR data.tag = 4 可以抽取出json表达式data.number等于5的信息或者json表达式data.tag中等于4的信息
 ```
 ### 使用限制
-**表1** SQL语句使用限制
+
+SQL语句使用限制
+
+
 | **对象** | **限制** |
 | --- | --- |
-| FROM 子句 | 1个目标源 |
+|  FROM 子句 | 1个目标源 |
+| SELECT 子句 | 1个目标源 |
 ### 调试SQL语句
-详情见 【创建规则及调试】 文档说明
+在创建规则时，可以通过调试SQL语句来查看SQL语句的执行结果，首先选择调试的数据类型，然后输入SQL语句，点击调试按钮，即可查看SQL语句的执行结果。
+
+![img.png](img88.png)
