@@ -65,7 +65,7 @@ module.exports = {
                     {
                         title: "规则配置",
                         collapsable: true,
-                        sidebarDepth: 1,
+                        sidebarDepth: 2,
                         children: [
                             ['/views/gzyq/rule/INTRODUCE', '介绍'],
                             ['/views/gzyq/rule/GRAMMAR', '语法'],
@@ -75,7 +75,7 @@ module.exports = {
                             {
                                 title: "创建规则",
                                 collapsable: true,
-                                sidebarDepth: 1,
+                                sidebarDepth: 3,
                                 children: [
                                     ['/views/gzyq/rule/DATABASE', '数据库'],
                                     ['/views/gzyq/rule/WEBHOOK', 'WEBHOOK'],
@@ -92,7 +92,7 @@ module.exports = {
                     {
                         title: "数据源配置",
                         collapsable: true,
-                        sidebarDepth: 1,
+                        sidebarDepth: 2,
                         children: [
                             ['/views/gzyq/source/DATABASE', '数据库'],
                             ['/views/gzyq/source/WEBHOOK', 'WEBHOOK'],
