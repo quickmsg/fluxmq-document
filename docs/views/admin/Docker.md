@@ -15,3 +15,4 @@ docker run -e fluxmq_address="123.249.9.130:60000" -it -p 8089:80 fluxmq/admin
 ```
 ## 访问
 > 浏览器访问：http://宿主机ip:8089
+![img_1.png](../../assets/images/img_LOGIN.png)

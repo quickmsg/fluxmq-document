@@ -31,4 +31,4 @@ docker run -d -it --name=nginx-docs -p 80:80 -v /root/docs/:/usr/share/nginx/htm
 ### 上传打包文件
 
 给前面打包的文件夹`dist`上传到服务器的`/root/docs/`目录下,即可访问`http://ip`查看管理平台是否启动成功
-![img_1.png](../assets/images/img_LOGIN.png)
+![img_1.png](../../assets/images/img_LOGIN.png)
