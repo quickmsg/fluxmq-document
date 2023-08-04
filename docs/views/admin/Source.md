@@ -1,22 +1,17 @@
-2# 管理页面部署
-> FluxMQ 管理平台是独立部署的应用
-## 打包
-> 联系管理员获取FluxMQ管理平台源码
-
-### 安装依赖
-
+# 源码安装
+> FluxMQ 管理平台是独立部署的应用，官网下载源码包,打包前需要安装nodejs环境，打包后需要安装nginx环境
+## 安装依赖
 项目根目录打包Console，执行以下命令
 ```shell
 npm install --registry=https://registry.npm.taobao.org
 ```
-### 打包
+## 打包
 配置下生产环境的后台HTTP服务器地址
 再`.env.production`文件中修改`VUE_APP_BASE_API`的值为后台HTTP服务器地址，如下：
 ```shell
 ENV='production'
 VUE_APP_BASE_API='http://114.116.8.76:60000'
 ```        
-
 
 进入项目根目录，并直行打包命令，指令如下：
 ```
