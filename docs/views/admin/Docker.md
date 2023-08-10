@@ -3,7 +3,7 @@
 ## 拉取镜像
 ```bash
 
-docker pull fluxmq/fluxmq-admin:latest
+docker pull fluxmq/admin:latest
 
 ```
 
