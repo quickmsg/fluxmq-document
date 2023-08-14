@@ -5,7 +5,7 @@ SQL语句由SELECT子句和WHERE子句组成，每个子句不能大于500个字
 以设备消息上报为SQL源数据示例:
 ```
 {
-    "msg": {
+    "payload": {
       "temperature" : 40,
       "humidity" : 24
     },
@@ -19,12 +19,12 @@ SQL语句由SELECT子句和WHERE子句组成，每个子句不能大于500个字
 ```
 在源数据中，消息中的msg是设备消息上报的数据，设置当设备上报数据中temperature大于38时触发条件，并筛选出clientId、msg，不需要任何其他字段时，SQL语句示例如下：
 ```
-SELECT clientId as client_id, msg from "test/fluxmq" Where msg.temperature>38
+SELECT clientId as client_id, msg from "test/fluxmq" Where payload.temperature>38
 ```
 当设备上报消息中temperature大于38度时，会触发转发，转发后的数据格式如下：
 ```
 {
-    "msg": {
+    "payload": {
       "temperature" : 40,
       "humidity" : 24
     },

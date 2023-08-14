@@ -3,7 +3,7 @@
 ## 发布数据
 ```发布
 {
-    "msg": {},
+    "payload": {},
     "messageId": 1,
     "topic": "test",
     "qos": 1,
