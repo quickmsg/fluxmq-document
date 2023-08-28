@@ -94,7 +94,12 @@ module.exports = {
                         collapsable: true,
                         sidebarDepth: 2,
                         children: [
-                            ['/views/gzyq/source/DATABASE', '数据库'],
+                            ['/views/gzyq/source/MYSQL', '数据库'],
+                            ['/views/gzyq/source/ORACLE', '数据库'],
+                            ['/views/gzyq/source/POSTGRESQL', '数据库'],
+                            ['/views/gzyq/source/SQLSERVER', '数据库'],
+                            ['/views/gzyq/source/TDENGINE', '数据库'],
+                            ['/views/gzyq/source/CLICKHOUSE', '数据库'],
                             ['/views/gzyq/source/WEBHOOK', 'WEBHOOK'],
                             ['/views/gzyq/source/KAFKA', 'KAFKA'],
                             ['/views/gzyq/source/LOG', '日志文件'],
