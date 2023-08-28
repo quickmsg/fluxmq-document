@@ -94,6 +94,7 @@ module.exports = {
                         collapsable: true,
                         sidebarDepth: 2,
                         children: [
+                            ['/views/gzyq/source/BEFORE', '前言'],
                             ['/views/gzyq/source/MYSQL', 'MYSQL'],
                             ['/views/gzyq/source/ORACLE', 'ORACLE'],
                             ['/views/gzyq/source/POSTGRESQL', 'POSTGRESQL'],
