@@ -52,9 +52,7 @@ module.exports = {
                     ['/views/function/topic', '主题管理'],
                     ['/views/function/monitor', '运维监控'],
                     ['/views/function/script', '脚本引擎'],
-                    ['/views/function/device', '设备模拟'],
-                    ['/views/function/protocol', '多协议']
-
+                    ['/views/function/device', '设备模拟']
                 ]
             },
             {
@@ -110,6 +108,18 @@ module.exports = {
                             ['/views/gzyq/source/ROCKETMQ', 'ROCKETMQ']
                         ]
                     }
+                ]
+            },
+            {
+                title: "多协议",
+                collapsable: true,
+                sidebarDepth: 1,
+                children: [
+                    ['/views/protocol/coap', 'COAP'],
+                    ['/views/protocol/32960', 'GBT32960'],
+                    ['/views/protocol/ocpp', 'OCPP'],
+                    ['/views/protocol/websocket', 'WEBSOCKET'],
+                    ['/views/protocol/i1', 'i1']
                 ]
             },
             ['/views/monitor.md', '监控部署'],
