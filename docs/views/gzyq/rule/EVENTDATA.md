@@ -1,8 +1,10 @@
 # 事件数据
 > 系统内置的事件数据
 ## 发布数据
+> 支持多协议
 ```发布
 {
+    "protocol":"MQTT",
     "payload": {},
     "messageId": 1,
     "topic": "test",
@@ -13,8 +15,10 @@
 }
 ```
 ## 连接数据
+> 支持多协议
 ```连接
 {
+    "protocol":"MQTT",
     "clientIp": "192.168.0.100",
     "nodeIp": "127.0.0.1",
     "version": "MQTT_3_1",
@@ -35,8 +39,10 @@
 }
 ```
 ## 订阅数据
+> 支持多协议
 ```订阅
 {
+    "protocol":"MQTT",
     "messageId": 1,
     "subscribeTopics": [
         {
@@ -51,6 +57,7 @@
 ## 取消订阅数据
 ```取消订阅
 {
+    "protocol":"MQTT",
     "messageId": 1,
     "topics": [
         "test"
@@ -74,24 +81,13 @@
 }
 ```
 ## Close数据
+> 支持多协议
 ```关闭连接
 {
+    "protocol":"MQTT",
     "messageId": 1,
     "reason": "",
     "timestamp": 1690599987495,
     "clientId": "A1212313"
-}
-```
-## 扩展协议
-```扩展协议
-{
-    "protocol": "I1",
-    "cmd": "PUBLISH",
-    "messageId": 0,
-    "time": "2023-07-11 21:59:23",
-    "clientId": "clientId",
-    "nodeIp": "127.0.0.1",
-    "clientIp": "127.0.0.1:19999",
-    "body": "body"
 }
 ```
