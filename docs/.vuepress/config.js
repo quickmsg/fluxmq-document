@@ -77,7 +77,12 @@ module.exports = {
                                 collapsable: true,
                                 sidebarDepth: 3,
                                 children: [
-                                    ['/views/gzyq/rule/DATABASE', '数据库'],
+                                    ['/views/gzyq/rule/MYSQL', 'MYSQL'],
+                                    ['/views/gzyq/rule/ORACLE', 'ORACLE'],
+                                    ['/views/gzyq/rule/POSTGRESQL', 'POSTGRESQL'],
+                                    ['/views/gzyq/rule/SQLSERVER', 'SQLSERVER'],
+                                    ['/views/gzyq/rule/TDENGINE', 'TDENGINE'],
+                                    ['/views/gzyq/rule/CLICKHOUSE', 'CLICKHOUSE'],
                                     ['/views/gzyq/rule/WEBHOOK', 'WEBHOOK'],
                                     ['/views/gzyq/rule/KAFKA', 'KAFKA'],
                                     ['/views/gzyq/rule/LOG', '日志文件'],

@@ -1,8 +1,8 @@
-# SQL Server数据库
+# SQLServer数据库
 ## 版本支持
 - **6.2.0.jre8**
 
-## SQL Server配置
+## SQLServer配置
 
 ![img_sqlserver.png](../../../assets/images/gzyq/source/img_sqlserver.png)
 
