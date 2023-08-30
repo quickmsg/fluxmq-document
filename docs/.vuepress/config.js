@@ -35,7 +35,23 @@ module.exports = {
                     ['/views/install/deployment', '部署']
                 ]
             },
-            ['/views/guide', '配置指南'],
+            {
+                title: "配置指南",
+                collapsable: true,
+                sidebarDepth: 1,
+                children: [
+                    ['/views/config/read', '前言'],
+                    ['/views/config/mqtt', 'MQTT配置'],
+                    ['/views/config/pool', '连接池配置'],
+                    ['/views/config/cluster', '集群配置'],
+                    ['/views/config/http', 'HTTP配置'],
+                    ['/views/config/eventbus', 'EVENTBUS配置'],
+                    ['/views/config/store', '配置持久化'],
+                    ['/views/config/shareSubscribe', '共享订阅配置'],
+                    ['/views/config/es', 'ES配置'],
+                    ['/views/config/application', '应用配置']
+                ]
+            },
             {
                 title: "功能",
                 collapsable: true,
@@ -52,9 +68,7 @@ module.exports = {
                     ['/views/function/topic', '主题管理'],
                     ['/views/function/monitor', '运维监控'],
                     ['/views/function/script', '脚本引擎'],
-                    ['/views/function/device', '设备模拟'],
-                    ['/views/function/protocol', '多协议']
-
+                    ['/views/function/device', '设备模拟']
                 ]
             },
             {
@@ -99,6 +113,7 @@ module.exports = {
                         collapsable: true,
                         sidebarDepth: 2,
                         children: [
+                            ['/views/gzyq/source/BEFORE', '前言'],
                             ['/views/gzyq/source/MYSQL', 'MYSQL'],
                             ['/views/gzyq/source/ORACLE', 'ORACLE'],
                             ['/views/gzyq/source/POSTGRESQL', 'POSTGRESQL'],
@@ -114,6 +129,18 @@ module.exports = {
                             ['/views/gzyq/source/ROCKETMQ', 'ROCKETMQ']
                         ]
                     }
+                ]
+            },
+            {
+                title: "多协议",
+                collapsable: true,
+                sidebarDepth: 1,
+                children: [
+                    ['/views/protocol/coap', 'COAP'],
+                    ['/views/protocol/32960', 'GBT32960'],
+                    ['/views/protocol/ocpp', 'OCPP'],
+                    ['/views/protocol/websocket', 'WEBSOCKET'],
+                    ['/views/protocol/i1', 'i1']
                 ]
             },
             ['/views/monitor.md', '监控部署'],
