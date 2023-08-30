@@ -35,7 +35,23 @@ module.exports = {
                     ['/views/install/deployment', '部署']
                 ]
             },
-            ['/views/guide', '配置指南'],
+            {
+                title: "配置指南",
+                collapsable: true,
+                sidebarDepth: 1,
+                children: [
+                    ['/views/config/read', '前言'],
+                    ['/views/config/mqtt', 'MQTT配置'],
+                    ['/views/config/pool', '连接池配置'],
+                    ['/views/config/cluster', '集群配置'],
+                    ['/views/config/http', 'HTTP配置'],
+                    ['/views/config/eventbus', 'EVENTBUS配置'],
+                    ['/views/config/store', '配置持久化'],
+                    ['/views/config/shareSubscribe', '共享订阅配置'],
+                    ['/views/config/es', 'ES配置'],
+                    ['/views/config/application', '应用配置']
+                ]
+            },
             {
                 title: "功能",
                 collapsable: true,
