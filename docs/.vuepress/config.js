@@ -154,7 +154,21 @@ module.exports = {
                 ]
             },
             ['/views/log.md', '日志系统部署'],
-            ['/views/test.md', '性能压测'],
+            {
+                title: "性能压测",
+                collapsable: true,
+                sidebarDepth: 1,
+                children: [
+                    ['/views/test/Conn', '连接数压测'],
+                    ['/views/test/Broad', '广播压测'],
+                    ['/views/test/Bridge', '桥接压测（kafka）'],
+                    ['/views/test/ConnConcurrent', '连接&并发测试'],
+                    ['/views/test/MoreTopic', '多topic压测对比'],
+                    ['/views/test/SingleTopic', '单topic压测对比'],
+                    ['/views/test/ShareTopic', '共享订阅压测对比'],
+                    ['/views/test/Wildcard', '通配符压测对比'],
+                ]
+            },
             ['/views/vs.md', 'VS EMQX'],
             ['/views/mqtt', 'MQTT协议介绍'],
             ['/views/FAQ', 'FAQ']
