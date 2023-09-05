@@ -1,5 +1,4 @@
-
-
+# 桥接压测（KAFKA）
 
 ![image.png](../../assets/images/test/img.png)
 ```shell
@@ -7,7 +6,6 @@
 ```
 > 仅仅部署一台MQTT节点进行压测
 
-## 桥接压测（KAFKA）
 ### 新建kafka数据源
 
 ![](../../assets/images/test/img_24.png)
@@ -80,31 +78,7 @@
 
 **1024B压测截图：**
 
-
 ![Dashboard](../../assets/images/test/img_49.png)
 ![MQTT](../../assets/images/test/img_50.png)
 ![MQTT](../../assets/images/test/img_51.png)
 ![JVM](../../assets/images/test/img_52.png)
-
-## 连接&&并发测试
-
-### 95W连接 && 5W TPS
-![Dashboard](../../assets/images/test/img_53.png)
-![MQTT](../../assets/images/test/img_54.png)
-![MQTT](../../assets/images/test/img_55.png)
-![JVM](../../assets/images/test/img_56.png)
-![JVM](../../assets/images/test/img_57.png)
-
-### 97W连接 && 7W TPS
-![Dashboard](../../assets/images/test/img_58.png)
-![MQTT](../../assets/images/test/img_59.png)
-![MQTT](../../assets/images/test/img_60.png)
-![JVM](../../assets/images/test/img_61.png)
-![JVM](../../assets/images/test/img_62.png)
-
-### 100W连接 && 10W TPS
-![Dashboard](../../assets/images/test/img_63.png)
-![MQTT](../../assets/images/test/img_64.png)
-![MQTT](../../assets/images/test/img_65.png)
-![JVM](../../assets/images/test/img_66.png)
-![JVM](../../assets/images/test/img_67.png)
