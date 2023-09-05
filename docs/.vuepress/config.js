@@ -144,9 +144,9 @@ module.exports = {
                     ['/views/protocol/i1', 'i1']
                 ]
             },
-            ['/views/monitor.md', '监控部署'],
+            ['/views/monitor.md', '系统监控'],
             {
-                title: "管理页面部署",
+                title: "管理系统",
                 collapsable: true,
                 sidebarDepth: 1,
                 children: [
@@ -154,7 +154,7 @@ module.exports = {
                     ['/views/admin/Source', '源码安装']
                 ]
             },
-            ['/views/log.md', '日志系统部署'],
+            ['/views/log.md', '日志监控'],
             {
                 title: "性能压测",
                 collapsable: true,
