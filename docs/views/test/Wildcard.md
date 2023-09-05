@@ -1,4 +1,4 @@
-## 通配符压测
+# 通配符压测
 
 ### 压测准备 - 使用emqtt-bench压测工具
 >https://github.com/emqx/emqtt-bench

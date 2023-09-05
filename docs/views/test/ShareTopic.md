@@ -1,4 +1,4 @@
-## 共享订阅压测
+# 共享订阅压测
 
 ### 压测准备 - 使用emqtt-bench压测工具
 >https://github.com/emqx/emqtt-bench
