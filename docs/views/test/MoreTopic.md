@@ -1,18 +1,5 @@
 # 多Topic压测
 
-.table-1 table{
-    th:nth-of-type(1) {
-    width: 55%;
-    }
-    th:nth-of-type(2) {
-    width: 15%;
-    }
-    th:nth-of-type(3) {
-    width: 15%;
-    }
-    th:nth-of-type(4) {
-    width: 15%;
-}
 
 ### 压测准备 - 使用emqtt-bench压测工具
 >https://github.com/emqx/emqtt-bench
