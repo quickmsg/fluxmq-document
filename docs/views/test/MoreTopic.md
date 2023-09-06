@@ -1,10 +1,10 @@
 # 多Topic压测
 
-.table table{
-    th:first-of-type {
-    min-width: 55%;
+.table-1 table{
+    th:nth-of-type(1) {
+    width: 55%;
     }
-    th:nth-of-type(2) {c
+    th:nth-of-type(2) {
     width: 15%;
     }
     th:nth-of-type(3) {
@@ -29,7 +29,7 @@
 
 ### 压测指标
 
-<div class="table">
+<div class="table-1">
 
 |          压测目标(CPU使用率)          | FluxMQ | BifrMQ | EMQX |  HiveMQ  |
 |:------------------------------:|:------:|:------:|:----:|:--------:|
