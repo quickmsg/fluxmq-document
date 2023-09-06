@@ -1,5 +1,19 @@
 # 多Topic压测
 
+.table table{
+    th:first-of-type {
+    min-width: 55%;
+    }
+    th:nth-of-type(2) {c
+    width: 15%;
+    }
+    th:nth-of-type(3) {
+    width: 15%;
+    }
+    th:nth-of-type(4) {
+    width: 15%;
+}
+
 ### 压测准备 - 使用emqtt-bench压测工具
 >https://github.com/emqx/emqtt-bench
 
@@ -14,6 +28,9 @@
 ```
 
 ### 压测指标
+
+<div class="table">
+
 |          压测目标(CPU使用率)          | FluxMQ | BifrMQ | EMQX |  HiveMQ  |
 |:------------------------------:|:------:|:------:|:----:|:--------:|
 | multi_5K_5K_0_1_1024_100000000 |   3%   |   8%   | 16%  |    8%    |
@@ -23,6 +40,7 @@
 | multi_5W_5W_1_2_1024_100000000 |  `崩溃`  |  `崩溃`  | `崩溃` |   `崩溃`   |
 | multi_3W_3W_2_1_1024_100000000 |  31%   |  47%   | 80%  |   61%    |
 
+</div>
 
 ### 压测明细
 >连接数_订阅数_QOS_频率(每秒)_数据包大小_数据包总数
