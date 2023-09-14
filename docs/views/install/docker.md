@@ -77,3 +77,7 @@ docker run -it -d  -p 1883:1883 -p 8883:8883 -v /root/logs:/logs -v /root/fluxmq
 ## 运行日志
 
 运行位置在/logs下包含INFO、ERROR日志，启动容器可以将目录映射宿主机
+
+## 管理页面
+- 管理页面单独安装请参考文档`管理系统/Docker安装`
+- 可以使用Docker-compose一键安装FluxMQ跟管理平台
