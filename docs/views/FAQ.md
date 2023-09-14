@@ -5,7 +5,7 @@
 当集群新增节点时候，只需要新增的节点配置已启动集群节点的任一IP,即可完成集群的动态接入，无需重源节点机器
 
 ## 规则引擎桥接MQTT的PUBLISH消息,payload用什么类型进行接收？
-默认FluxMQ会将payload字段转成字符串进行传输，如果想用byte[]接收，可以在SQL中使用函数进行转换
+默认FluxMQ会将payload字段转成字符串(编码：ISO-8859-1)进行传输，如果想用byte[]接收，可以在SQL中使用函数进行转换
 ```
 select bytes(payload) payload from '/mqtt/publish/#'
 ```

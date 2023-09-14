@@ -26,7 +26,7 @@ mvn clean package -Dmaven.test.skip=true -Pjar
 # echo $0 status 是查看服务状态
 
 # 指定JAR包文件夹，将来运行的时候，此文件需要与jar包同级
-AppName=fluxmq-bootstrap.jar
+AppName=fluxmq-starter.jar
 Console=console.log
 
 
