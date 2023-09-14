@@ -32,8 +32,8 @@ module.exports = {
                 sidebarDepth: 1,
                 children: [
                     ['/views/install/optimize', '系统优化'],
-                    ['/views/install/docker', 'Docker安装'],
-                    ['/views/install/docker-compose', 'Docker-Compose安装'],
+                    ['/views/install/docker', 'Docker'],
+                    ['/views/install/docker-compose', 'Docker-Compose'],
                     ['/views/install/deployment', "系统安装"]
                 ]
             },
