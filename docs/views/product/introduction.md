@@ -17,4 +17,4 @@ FluxMQ基于Netty开发，底层采用Reactor3反应堆模型，具备低延迟�
 
 
 ## 技术架构
-![image.png](../../assets/images/fluxmq.png)
+![d](../../assets/images/Demo1.png)
