@@ -173,6 +173,14 @@ module.exports = {
                     ['/views/test/Wildcard', '通配符压测对比'],
                 ]
             },
+            {
+                title: "可观测",
+                collapsable: true,
+                sidebarDepth: 1,
+                children: [
+                    ['/views/view/metrics', 'Metrics'],
+                ]
+            },
             ['/views/vs.md', 'VS EMQX'],
             ['/views/mqtt', 'MQTT协议介绍'],
             ['/views/FAQ', 'FAQ']

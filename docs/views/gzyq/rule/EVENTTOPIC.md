@@ -14,7 +14,6 @@
 | $EVENT.PUBLISH_ACK | 消息发布确认  |
 | $EVENT.SUBSCRIBE | 订阅      |
 | $EVENT.UNSUBSCRIBE | 取消订阅    |
-| $EVENT.EXTENSION | 第三方扩展协议 |
 ```SQL实例
 SELECT
   clientid,
