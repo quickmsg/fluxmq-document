@@ -147,7 +147,7 @@ module.exports = {
                     ['/views/protocol/i1', 'i1']
                 ]
             },
-            ['/views/monitor.md', '系统监控'],
+
             {
                 title: "管理系统",
                 collapsable: true,
@@ -157,7 +157,16 @@ module.exports = {
                     ['/views/admin/Source', '源码安装']
                 ]
             },
-            ['/views/log.md', '日志监控'],
+            {
+                title: "工具",
+                collapsable: true,
+                sidebarDepth: 1,
+                children: [
+                    ['/views/tools/ssl', '证书生成'],
+                    ['/views/tools/monitor', '系统监控'],
+                    ['/views/tools/log', '日志监控']
+                ]
+            },
             {
                 title: "性能压测",
                 collapsable: true,

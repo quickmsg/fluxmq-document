@@ -2,7 +2,7 @@
 ## 1. 执行安装脚本
 > 脚本联系管理员获取
 上传安装包install_monitor.zip 到服务器上，解压后包含以下文件
-![img_1.png](../assets/images/monitor/img_1.png)
+![img_1.png](../../assets/images/monitor/img_1.png)
 
 ```shell
 > 
@@ -15,16 +15,16 @@ sh install_monitor.sh  192.168.1.12:60000,192.168.2.14:60000
 ```
 ## 2. 验证
 prometheus ui界面 ：http://ip:9090
-![img_2.png](../assets/images/monitor/img_2.png)
+![img_2.png](../../assets/images/monitor/img_2.png)
 grafana ui界面：http://ip:3000/login
-![img_3.png](../assets/images/monitor/img_3.png)
+![img_3.png](../../assets/images/monitor/img_3.png)
 
 ## 3. grafana 图表导入
 浏览器打开http://ip:3000/login,输入用户名、密码(admin/admin)
-![img_4.png](../assets/images/monitor/img_4.png)
+![img_4.png](../../assets/images/monitor/img_4.png)
 
 ## 4. 导入json
 > 再解压后有三个json文件，分别是mqtt-info.json、mqtt-netty.json、mqtt-jvm.json
-![img_5.png](../assets/images/monitor/img_5.png)
-![img_6.png](../assets/images/monitor/img_6.png)
-![img_7.png](../assets/images/monitor/img_7.png)
+![img_5.png](../../assets/images/monitor/img_5.png)
+![img_6.png](../../assets/images/monitor/img_6.png)
+![img_7.png](../../assets/images/monitor/img_7.png)
