@@ -1,6 +1,9 @@
 # 监控系统
-## 1. 执行安装脚本
-> 脚本联系管理员获取
+## 1. 下载安装脚本
+```shell
+https://fluxmq.obs.cn-east-3.myhuaweicloud.com/install_monitor.zip
+```
+
 上传安装包install_monitor.zip 到服务器上，解压后包含以下文件
 ![img_1.png](../../assets/images/monitor/img_1.png)
 

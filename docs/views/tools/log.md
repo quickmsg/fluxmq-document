@@ -1,6 +1,8 @@
 # 日志系统部署
 ## 1. 安装ES
-> 安装包联系管理员获取
+```shell
+https://fluxmq.obs.cn-east-3.myhuaweicloud.com/install_elk.zip
+```
 
 上传安装包install_elk.zip 到服务器上
 ```shell
