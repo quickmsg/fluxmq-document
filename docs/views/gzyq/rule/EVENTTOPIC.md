@@ -17,7 +17,7 @@
 ```SQL实例
 SELECT
   clientid,
-  username,
+  clientIp,
   keepalive
 FROM
   "$EVENT.CONNECT"
