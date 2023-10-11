@@ -1,6 +1,8 @@
 # 日志系统部署
 ## 1. 安装ES
-> 安装包联系管理员获取
+```shell
+https://fluxmq.obs.cn-east-3.myhuaweicloud.com/install_elk.zip
+```
 
 上传安装包install_elk.zip 到服务器上
 ```shell
@@ -17,7 +19,7 @@ sh install_elk.sh  elk
 sh install_elk.sh filebeat ip1  ip2,ip3,ip4  log_path
 ```
 ## 2. ES验证
-![img_2.png](../assets/images/log/img_2.png)
+![img_2.png](../../assets/images/log/img_2.png)
 **curl -u elastic:smqttx  localhost:9200**
 返回结果如下：
 ```shell
@@ -42,5 +44,5 @@ sh install_elk.sh filebeat ip1  ip2,ip3,ip4  log_path
 
 ## 3. filebeat验证
 日志采集服务器上执行：ps -ef|grep beat
-![img_1.png](../assets/images/log/img_1.png)
+![img_1.png](../../assets/images/log/img_1.png)
 

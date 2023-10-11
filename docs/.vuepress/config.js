@@ -32,7 +32,9 @@ module.exports = {
                 sidebarDepth: 1,
                 children: [
                     ['/views/install/optimize', '系统优化'],
-                    ['/views/install/deployment', '部署']
+                    ['/views/install/docker', 'Docker'],
+                    ['/views/install/docker-compose', 'Docker-Compose'],
+                    ['/views/install/deployment', "系统安装"]
                 ]
             },
             {
@@ -69,6 +71,7 @@ module.exports = {
                     ['/views/function/monitor', '运维监控'],
                     ['/views/function/script', '脚本引擎'],
                     ['/views/function/device', '设备模拟'],
+                    ['/views/function/cluster', '配置集群'],
                     ['/views/function/store', '配置持久化']
                 ]
             },
@@ -144,9 +147,9 @@ module.exports = {
                     ['/views/protocol/i1', 'i1']
                 ]
             },
-            ['/views/monitor.md', '监控部署'],
+
             {
-                title: "管理页面部署",
+                title: "管理系统",
                 collapsable: true,
                 sidebarDepth: 1,
                 children: [
@@ -154,7 +157,16 @@ module.exports = {
                     ['/views/admin/Source', '源码安装']
                 ]
             },
-            ['/views/log.md', '日志系统部署'],
+            {
+                title: "工具",
+                collapsable: true,
+                sidebarDepth: 1,
+                children: [
+                    ['/views/tools/monitor', '系统监控'],
+                    ['/views/tools/log', '日志监控'],
+                    ['/views/tools/ssl', '证书生成']
+                ]
+            },
             {
                 title: "性能压测",
                 collapsable: true,
@@ -168,6 +180,14 @@ module.exports = {
                     ['/views/test/SingleTopic', '单topic压测对比'],
                     ['/views/test/ShareTopic', '共享订阅压测对比'],
                     ['/views/test/Wildcard', '通配符压测对比'],
+                ]
+            },
+            {
+                title: "可观测",
+                collapsable: true,
+                sidebarDepth: 1,
+                children: [
+                    ['/views/view/metrics', 'Metrics'],
                 ]
             },
             ['/views/vs.md', 'VS EMQX'],

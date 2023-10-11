@@ -1,2 +1,14 @@
 # FAQ
 
+## 集群新增节点、下线节点需要重启集群吗？
+
+当集群新增节点时候，只需要新增的节点配置已启动集群节点的任一IP,即可完成集群的动态接入，无需重源节点机器
+
+## 规则引擎桥接MQTT的PUBLISH消息,payload用什么类型进行接收？
+默认FluxMQ会将payload字段转成字符串(编码：ISO-8859-1)进行传输，如果想用byte[]接收，可以在SQL中使用函数进行转换
+```
+select bytes(payload) payload from '/mqtt/publish/#'
+```
+## FluxMQ同一个ClientID集群中可以重复连接吗？
+
+FluxMQ默认同一集群采用互踢策略，一个ClientID同一时间只允许一个在线，后者会将前者剔除下线
