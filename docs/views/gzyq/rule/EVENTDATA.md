@@ -11,7 +11,7 @@
     "qos": 1,
     "retain": false,
     "timestamp": 1690599987495,
-    "clientId": "A1212313"
+    "clientId": "dev1212313"
 }
 ```
 ## 连接数据
@@ -35,7 +35,7 @@
         "willMessage": ""
     },
     "timestamp": 1690599987495,
-    "clientId": "A1212313"
+    "clientId": "dev1212313"
 }
 ```
 ## 订阅数据
@@ -51,7 +51,7 @@
         }
     ],
     "timestamp": 1690599987495,
-    "clientId": "A1212313"
+    "clientId": "dev1212313"
 }
 ```
 ## 取消订阅数据
@@ -63,13 +63,13 @@
         "test"
     ],
     "timestamp": 1690599987495,
-    "clientId": "A1212313"
+    "clientId": "dev1212313"
 }
 ```
 ## PING数据
 ```心跳
 {
-    "clientId": "A1212313",
+    "clientId": "dev1212313",
     "timestamp": 1690599987495
 }
 ```
@@ -77,7 +77,7 @@
 ```断开连接
 {
     "timestamp": 1690599987495,
-    "clientId": "A1212313"
+    "clientId": "dev1212313"
 }
 ```
 ## Close数据
@@ -88,6 +88,6 @@
     "messageId": 1,
     "reason": "",
     "timestamp": 1690599987495,
-    "clientId": "A1212313"
+    "clientId": "dev1212313"
 }
 ```
