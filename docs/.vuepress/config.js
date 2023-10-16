@@ -74,7 +74,8 @@ module.exports = {
                     ['/views/function/script', '脚本引擎'],
                     ['/views/function/device', '设备模拟'],
                     ['/views/function/cluster', '配置集群'],
-                    ['/views/function/store', '配置持久化']
+                    ['/views/function/store', '配置持久化'],
+                    ['/views/function/license', '配置license']
                 ]
             },
             {
