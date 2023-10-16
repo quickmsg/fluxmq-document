@@ -194,7 +194,8 @@ module.exports = {
             },
             ['/views/vs.md', 'VS EMQX'],
             ['/views/mqtt', 'MQTT协议介绍'],
-            ['/views/FAQ', 'FAQ']
+            ['/views/FAQ', 'FAQ'],
+            ['/views/License', 'LICENSE']
         ]
     }
 }
