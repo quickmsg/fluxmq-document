@@ -34,7 +34,9 @@ module.exports = {
                     ['/views/install/optimize', '系统优化'],
                     ['/views/install/docker', 'Docker'],
                     ['/views/install/docker-compose', 'Docker-Compose'],
-                    ['/views/install/deployment', "系统安装"]
+                    ['/views/install/Linux', "Linux安装"],
+                    ['/views/install/Linux', "Windows安装"],
+                    ['/views/install/MacOS', "MacOS安装"]
                 ]
             },
             {
