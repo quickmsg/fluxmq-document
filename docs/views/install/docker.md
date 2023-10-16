@@ -23,21 +23,19 @@ pool:
   eventThreadSize: 16  # 业务线程数 默认=cpu核心数
   bufferSize: 512  #  ringBuffer大小
   eventMessageSize: 500000 # 最大缓冲消息数
-  # globalReadWriteSize: 10000000,100000000  全局读写大小限制
-  # channelReadWriteSize: 10000000,100000000 单个channel读写大小限制
 mqtt: # tcp配置
-  port: 1887 # mqtt端口号
+  port: 1883 # mqtt端口号
   wiretap: false  # 二进制日志 前提是 smqtt.logLevel = DEBUG
   messageMaxSize: 4194304 # 接收消息的最大限制 默认4194304(4M)
   options:
     SO_BACKLOG: 2000
 http: # http相关配置 端口固定60000
-  port: 60000
+  port: 8080
   accessLog: false # http访问日志
   username: fluxmq # 访问用户名
   password: fluxmq # 访问密码
 ws: # websocket配置
-  port: 8999 # 端口
+  port: 8883 # 端口
   path: /mqtt # ws 的访问path mqtt.js请设置此选项a
   messageMaxSize: 4194304 # 接收消息的最大限制 默认4194304(4M)
 cluster: # 集群配置
@@ -71,7 +69,7 @@ application:
 ```
 #### 启动FluxMQ
 ```shell
-docker run -it -d  -p 1883:1883 -p 8883:8883 -v /root/logs:/logs -v /root/fluxmq/config.yaml:/config/config.yaml docker.fluxmq.com/fluxmq/fluxmq
+docker run -it -d  -p 1883:1883 -p 8883:8883 -p 8080:8080 -v /root/logs:/logs -v /root/fluxmq/config.yaml:/config/config.yaml docker.fluxmq.com/fluxmq/fluxmq
 ```
 
 ## 运行日志
@@ -79,5 +77,7 @@ docker run -it -d  -p 1883:1883 -p 8883:8883 -v /root/logs:/logs -v /root/fluxmq
 运行位置在/logs下包含INFO、ERROR日志，启动容器可以将目录映射宿主机
 
 ## 管理页面
-- 管理页面单独安装请参考文档`管理系统/Docker安装`
-- 可以使用Docker-compose一键安装FluxMQ跟管理平台
+> 版本>2.0.8 FluxMQ会默认包含UI，无需单独安装，其他低版本需要参考`管理系统`安装
+```shell
+http://ip:8080/
+```

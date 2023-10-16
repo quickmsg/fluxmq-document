@@ -152,15 +152,6 @@ module.exports = {
             },
 
             {
-                title: "管理系统",
-                collapsable: true,
-                sidebarDepth: 1,
-                children: [
-                    ['/views/admin/Docker', 'Docker安装'],
-                    ['/views/admin/Source', '源码安装']
-                ]
-            },
-            {
                 title: "工具",
                 collapsable: true,
                 sidebarDepth: 1,
