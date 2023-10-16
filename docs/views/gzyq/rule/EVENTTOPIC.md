@@ -17,15 +17,15 @@
 ```SQL实例
 SELECT
   clientid,
-  username,
+  clientIp,
   keepalive
 FROM
   "$EVENT.CONNECT"
 ```
 ```输出
 {
-  "username": "u_fluxmq",
-  "keepalive": 60
+  "clientIp": "192.168.0.100",
+  "keepalive": 60,
   "clientid": "c_fluxmq"
 }
 ```
