@@ -61,6 +61,7 @@ module.exports = {
                 collapsable: true,
                 sidebarDepth: 1,
                 children: [
+                    ['/views/function/admin', '管理页面'],
                     ['/views/function/dashboard', 'Dashboard'],
                     ['/views/function/ps', '发布订阅'],
                     ['/views/function/share', '共享订阅'],
