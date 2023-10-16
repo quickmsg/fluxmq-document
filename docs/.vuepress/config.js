@@ -35,7 +35,7 @@ module.exports = {
                     ['/views/install/docker', 'Docker'],
                     ['/views/install/docker-compose', 'Docker-Compose'],
                     ['/views/install/Linux', "Linux安装"],
-                    ['/views/install/Linux', "Windows安装"],
+                    ['/views/install/Windows', "Windows安装"],
                     ['/views/install/MacOS', "MacOS安装"]
                 ]
             },
