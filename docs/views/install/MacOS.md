@@ -18,3 +18,9 @@ sh add-executable-permission.sh
 ```shell
 ./fluxmq.sh
 ```
+
+## 管理页面
+> 版本>2.0.8 FluxMQ会默认包含UI，无需单独安装，其他低版本需要参考`管理系统`安装
+```shell
+http://ip:8080/
+```

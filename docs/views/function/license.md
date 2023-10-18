@@ -1,4 +1,4 @@
-# STORE
+# License
 ```yaml
 license: license.base64
 ```

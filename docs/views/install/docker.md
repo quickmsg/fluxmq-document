@@ -6,9 +6,9 @@ docker pull docker.fluxmq.com/fluxmq/fluxmq:latest
 ```
 
 ## 启动FluxMQ
-> 默认会启动MQTT、MQTT over Websocket端口
+> 默认会启动MQTT、MQTT over Websocket、HTTP端口
 ```shell
-docker run -it -d  -p 1883:1883 -p 8883:8883 -v /root/logs:/logs  docker.fluxmq.com/fluxmq/fluxmq
+docker run -it -d  -p 1883:1883 -p 8883:8883 -p 8080:8080 -v /root/logs:/logs  docker.fluxmq.com/fluxmq/fluxmq
 ```
 
 ### 覆盖FluxMQ默认配置
