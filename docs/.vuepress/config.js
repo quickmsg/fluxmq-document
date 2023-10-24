@@ -147,8 +147,8 @@ module.exports = {
                     ['/views/command/KAFKA', 'KAFKA'],
                     ['/views/command/ROCKETMQ', 'ROCKETMQ'],
                     ['/views/command/RABBITMQ', 'RABBITMQ'],
-                    ['/views/command/pulsar', 'PULSAR'],
-                    ['/views/command/PULSAR', 'NACOS']
+                    ['/views/command/PULSAR', 'PULSAR'],
+                    ['/views/command/NACOS', 'NACOS']
                 ]
             },
             {
