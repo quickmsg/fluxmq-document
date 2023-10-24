@@ -140,6 +140,18 @@ module.exports = {
                 ]
             },
             {
+                title: "指令消费",
+                collapsable: true,
+                sidebarDepth: 1,
+                children: [
+                    ['/views/command/KAFKA', 'KAFKA'],
+                    ['/views/command/ROCKETMQ', 'ROCKETMQ'],
+                    ['/views/command/RABBITMQ', 'RABBITMQ'],
+                    ['/views/command/pulsar', 'PULSAR'],
+                    ['/views/command/PULSAR', 'NACOS']
+                ]
+            },
+            {
                 title: "多协议",
                 collapsable: true,
                 sidebarDepth: 1,
