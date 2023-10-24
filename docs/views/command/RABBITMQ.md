@@ -8,7 +8,7 @@
 ## 前提条件
 - 拥有可使用的RabbitMQ实例
 
-## 配置转发规则
+## 配置指令消费实例
 ### 1. 选择左侧导航栏的“指令消费”，单击左上角的“+”来新建指令消费配置。
 ![rabbitmq_cmd_1.png](../../assets/images/command/rabbitmq_cmd_1.png)
 

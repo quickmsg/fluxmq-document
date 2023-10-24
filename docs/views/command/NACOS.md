@@ -1,12 +1,12 @@
-# Nacos注册
+# Nacos实现
 
 ## 场景说明
-支持Nacos注册中心，通过HTTP请求，方便使用feign进行服务接口调用，默认POST请求 "/public/mqtt/publish"
+支持Nacos注册中心，通过HTTP请求，方便使用feign进行服务接口调用完成指令下发，默认POST请求 "/public/mqtt/publish"
 
 ## 前提条件
 - 拥有可使用的Nacos实例
 
-## 配置转发规则
+## 配置指令消费实例
 ### 1. 选择左侧导航栏的“指令消费”，单击左上角的“+”来新建指令消费配置。
 ![nacos_cmd_1.png](../../assets/images/command/nacos_cmd_1.png)
 
