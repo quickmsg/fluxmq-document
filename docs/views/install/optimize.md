@@ -1,6 +1,15 @@
 # 系统优化
 
 ## 操作系统参数优化
+
+### 内存分配策略
+
+编辑: vim /etc/sysctl.conf
+```shell    
+vm.overcommit_memory=1
+```
+执行`sysctl -p`刷新
+
 ### 系统全局最大文件句柄
 ```shell    
 sysctl -w fs.file-max=1048576
