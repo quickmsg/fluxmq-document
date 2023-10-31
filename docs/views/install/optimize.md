@@ -3,6 +3,7 @@
 ## 操作系统参数优化
 
 ### 内存分配策略
+> 必须修改
 
 编辑: vim /etc/sysctl.conf
 ```shell    
