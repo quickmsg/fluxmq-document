@@ -3,7 +3,7 @@
 ## 介绍
 FluxMQ为用户提供了丰富的指标来帮助用户与运维人员了解当前服务状态，监测和排除系统的性能问题。
 
-可通过 FluxMQ Dashboard 或 HTTP API 和系统主题来获取 EMQX 指标信息。
+可通过 FluxMQ Dashboard 或 HTTP API 和系统主题来获取 FluxMQ 指标信息。
 
 用户可以在 FluxMQ Dashboard 的 运维监测 页面看到这些数据。
 
