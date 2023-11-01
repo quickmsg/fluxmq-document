@@ -17,7 +17,7 @@ FluxMQ为用户提供了丰富的指标来帮助用户与运维人员了解当�
 ![metrics.png](../../assets/images/metrics/metrics.png)
 
 ## 指标明细
-**FluxMQ 目前提供的Metrics大致划分了 统计、事件、路由、协议 四个维度**
+**FluxMQ 目前提供的Metrics大致划分了 统计、事件、路由、协议、桥接 五个维度**
 
 统计 (statistics)
 
