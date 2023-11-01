@@ -11,7 +11,6 @@
 ![nacos_cmd_1.png](../../assets/images/command/nacos_cmd_1.png)
 
 ### 2. 配置界面参考下表参数说明，填写相关内容。以下参数取值仅为示例，填写完成后单击“提交”。
-![nacos_cmd_2.png](../../assets/images/command/nacos_cmd_2.png)
 #### 编辑指令消费
 | **参数名**    | **参数说明**                       |
 |------------|--------------------------------|
@@ -23,12 +22,12 @@
 | 分组         | namespace下的分组，默认：DEFAULT_GROUP |
 | 用户名        | 访问Nacos的用户名                    |
 | 密码         | 访问Nacos的密码                     |
+![nacos_cmd_2.png](../../assets/images/command/nacos_cmd_2.png)
 
-
-3. 管理指令消费实例，可以通过看板界面继续编辑、启停用、删除操作
+### 3. 管理指令消费实例，可以通过看板界面继续编辑、启停用、删除操作
 ![nacos_cmd_3.png](../../assets/images/command/nacos_cmd_3.png)
 
-4. 服务调用代码Demo
+### 4. 服务调用代码Demo
 ```
 @FeignClient("fluxmq")//服务名称
 public interface MqttPulishService {
