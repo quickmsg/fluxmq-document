@@ -19,7 +19,7 @@ FluxMQ为用户提供了丰富的指标来帮助用户与运维人员了解当�
 ## 指标明细
 **FluxMQ 目前提供的Metrics大致划分了 统计、事件、路由、协议、桥接 五个维度**
 
-统计 (statistics)
+### 统计 (statistics)
 
 | **Metrics**            | **描述**  | **Tag** |
 |------------------------|---------|---------|
@@ -27,13 +27,13 @@ FluxMQ为用户提供了丰富的指标来帮助用户与运维人员了解当�
 | mqtt.subscribe.count   | 当前订阅数   |
 | mqtt.rule.count        | 当前转发规则数 |
 
-事件 (event)
+### 事件 (event)
 
-| **Metrics**                  | **描述**  | **Tag** |
-|------------------------------|---------|---------|
-| mqtt.publish.event.count     | 消息发布数   |
+| **Metrics**                  | **描述**  | **Tag**  |
+|------------------------------|---------|----------|
+| mqtt.publish.event.count     | 消息发布数   | 服务级别：qos |
 | mqtt.publish.retry.count     | 消息重发量   |
-| mqtt.write.event.count       | 消息写入数   |
+| mqtt.write.event.count       | 消息写入数   |服务级别：qos |
 | mqtt.write.error.count       | 消息写入失败数 |
 | mqtt.connect.event.count     | 连接事件数   |
 | mqtt.subscribe.event.count   | 订阅事件数   |
@@ -41,30 +41,34 @@ FluxMQ为用户提供了丰富的指标来帮助用户与运维人员了解当�
 | mqtt.disconnect.event.count  | 断开连接事件数 |
 | mqtt.close.event.count       | 关闭连接事件数 |
 
-路由 (event_bus)
+### 路由 (event_bus)
 
 | **Metrics**                  | **描述**  | **Tag** |
 |------------------------------|---------|---------|
-| eventbus.send.success.count  | 消息路由成功数 |
+| eventbus.send.success.count  | 消息路由成功数 | 五       |
 | eventbus.send.error.count    | 消息路由异常数 |
 | eventbus.receive.count       | 路由消息接收数 |
 | eventbus.discard.count       | 路由消息丢失数 |
 
-协议 (protocol)
+### 协议 (protocol)
 
-| **Metrics**                        | **描述**      | **Tag** |
-|------------------------------------|-------------|---------|
-| mqtt.protocol.connect              | 扩展协议当前连接数   |
-| mqtt.protocol.connect.event.count  | 扩展协议连接事件数   |
-| mqtt.protocol.close.event.count    | 扩展协议关闭连接事件数 |
-| mqtt.protocol.bridge.event.count   | 扩展协议桥接事件数   |
-| mqtt.protocol.write.event.count    | 扩展协议写入事件数   |
-| mqtt.protocol.bridge.event.count   | 扩展协议桥接事件数   |
+| **Metrics**                        | **描述**      | **Tag**       |
+|------------------------------------|-------------|---------------|
+| mqtt.protocol.connect              | 扩展协议当前连接数   | 协议类型：protocol |
+| mqtt.protocol.connect.event.count  | 扩展协议连接事件数   |协议类型：protocol |
+| mqtt.protocol.close.event.count    | 扩展协议关闭连接事件数 |协议类型：protocol |
+| mqtt.protocol.bridge.event.count   | 扩展协议桥接事件数   |协议类型：protocol |
+| mqtt.protocol.write.event.count    | 扩展协议写入事件数   |协议类型：protocol |
+| mqtt.protocol.bridge.event.count   | 扩展协议桥接事件数   |协议类型：protocol |
 
-桥接 (bridge)
+### 桥接 (bridge)
 
-| **Metrics**                       | **描述**    | **Tag** |
-|-----------------------------------|-----------|---------|
-| mqtt.bridge.success.event.count   | 消息桥接成功数   |
-| mqtt.bridge.error.event.count     | 消息桥接异常数   |
-| command.receiver.event.count      | 指令消费数     |
+| **Metrics**                       | **描述**    | **Tag**       |
+|-----------------------------------|-----------|---------------|
+| mqtt.bridge.success.event.count   | 消息桥接成功数   | 规则名称：ruleName |
+| mqtt.bridge.error.event.count     | 消息桥接异常数   | 规则名称：ruleName             |
+
+### 指令消费
+| **Metrics Key**                 | **描述**    | **Tag**                |
+|---------------------------------|-----------|------------------------|
+| command.receiver.event.count    | 指令消费数     | 指令类型：command |
