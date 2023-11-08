@@ -7,20 +7,29 @@
 
 ## 配置
 
-> 默认使用LOCAL方式进行存储，可以使用MYSQL进行存储，配置如下：
 
 ### LOCAL
+> 本地存储，会持久化数据，重启后数据不会丢失
+```yaml
+store:
+  storeType: LOCAL # MYSQL,LOCAL，MEMORY
+```
+
+### MEMORY
+> 内存模式，不会持久化数据，重启后数据会丢失
 
 ```yaml
 store:
-  storeType: LOCAL # MYSQL,LOCAL
+  storeType: MEMORY # MYSQL,LOCAL，MEMORY
 ```
 
+
 ### MYSQL
+> MYSQL模式，会持久化数据，重启后数据不会丢失
 
 下载SQL语句初始化FluxMQ持久化所需要的表结构：
 
-[点击下载初始化表SQL](https://fluxmq.obs.cn-east-3.myhuaweicloud.com/fluxmq-2.0.7.sql)
+[点击下载初始化表SQL](https://fluxmq.obs.cn-east-3.myhuaweicloud.com/fluxmq-2.0.8.sql)
 
 
 ```yaml

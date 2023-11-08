@@ -1,7 +1,7 @@
 # STORE
 ```yaml
 store:
-  storeType: MYSQL # MYSQL,LOCAL
+  storeType: MYSQL # MYSQL,LOCAL,MEMORY
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/ignite2?useSSL=false
     username:  root
