@@ -7,12 +7,14 @@ pool:
   eventThreadSize: 16  # 业务线程数 默认=cpu核心数
   bufferSize: 512  #  ringBuffer大小
   eventMessageSize: 500000 # 最大缓冲消息数
+  waitStrategy: BLOCKING # 等待策略
   lowWaterMark:  32768
   highWaterMark:  65536
   globalReadSize: 102400 # 全局读字节数/s 默认不限制
   globalWriteSize: 102400 #   全局写字节数/s 默认不限制
   channelReadSize: 1024 #  单连接读字节数/s 默认不限制
   channelWriteSize: 1024 #  单连接写字节数/s 默认不限制
+  
 
 ```
 
@@ -25,6 +27,7 @@ pool:
 | **eventThreadSize** | MQTT事件消费线程，主要处理规则引擎等耗时操作，       | 默认cpu+2 |
 | **bufferSize** | MQTT事件消费RIngBufer大小             | 默认1024  |
 | **eventMessageSize** | 全局读写限制：每秒字节数                    | 默认50000 |
+| **waitStrategy** | 等待策略：BLOCKING, SLEEPING, YIELDING | 默认BLOCKING |
 | **globalReadSize** | 全局读限制：每秒字节数读| 不推荐配置   |
 | **globalWriteSize** | 全局写限制：每秒字节数读| 不推荐配置   |
 | **channelReadSize** | 单个连接读限制：每秒字节数读 | 不推荐配置   |

@@ -25,18 +25,17 @@ FluxMQ为用户提供了丰富的指标来帮助用户与运维人员了解当�
 |------------------------|---------|---------|
 | mqtt.connect.count     | 当前连接数   |
 | mqtt.subscribe.count   | 当前订阅数   |
-| mqtt.rule.count        | 当前转发规则数 |
 
 ### 事件 (event)
 
-| **Metrics**                  | **描述**  | **Tag**  |
-|------------------------------|---------|----------|
-| mqtt.publish.event.count     | 消息发布数   | 服务级别：qos |
-| mqtt.publish.retry.count     | 消息重发量   |
-| mqtt.write.event.count       | 消息写入数   |服务级别：qos |
+| **Metrics**                  | **描述** | **Tag** |
+|------------------------------|--------|---------|
+| mqtt.publish.event.count     | 消息发布数  |服务级别：qos |
+| mqtt.write.event.count       | 消息写入数  |服务级别：qos |
+| mqtt.write.retry.count       | 消息重发数  |
 | mqtt.write.error.count       | 消息写入失败数 |
-| mqtt.connect.event.count     | 连接事件数   |
-| mqtt.subscribe.event.count   | 订阅事件数   |
+| mqtt.connect.event.count     | 连接事件数  |
+| mqtt.subscribe.event.count   | 订阅事件数  |
 | mqtt.unsubscribe.event.count | 取消订阅事件数 |
 | mqtt.disconnect.event.count  | 断开连接事件数 |
 | mqtt.close.event.count       | 关闭连接事件数 |
@@ -50,16 +49,6 @@ FluxMQ为用户提供了丰富的指标来帮助用户与运维人员了解当�
 | eventbus.receive.count       | 路由消息接收数 |
 | eventbus.discard.count       | 路由消息丢失数 |
 
-### 协议 (protocol)
-
-| **Metrics**                        | **描述**      | **Tag**       |
-|------------------------------------|-------------|---------------|
-| mqtt.protocol.connect              | 扩展协议当前连接数   | 协议类型：protocol |
-| mqtt.protocol.connect.event.count  | 扩展协议连接事件数   |协议类型：protocol |
-| mqtt.protocol.close.event.count    | 扩展协议关闭连接事件数 |协议类型：protocol |
-| mqtt.protocol.bridge.event.count   | 扩展协议桥接事件数   |协议类型：protocol |
-| mqtt.protocol.write.event.count    | 扩展协议写入事件数   |协议类型：protocol |
-| mqtt.protocol.bridge.event.count   | 扩展协议桥接事件数   |协议类型：protocol |
 
 ### 桥接 (bridge)
 
