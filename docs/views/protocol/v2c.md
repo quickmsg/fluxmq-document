@@ -354,7 +354,7 @@
 {
   "type": 0x5C,
   "version": 1,
-  "controllerData: 24,
+  "controllerData": 24,
   "data": {
        }
 }
@@ -366,7 +366,7 @@
 {
   "type": 0x36,
   "version": 1,
-  "controllerData: 24,
+  "controllerData": 24,
   "data": {
      "vehicleId": "123456789",
       "data": [72, 101, 108, 108]
@@ -380,7 +380,7 @@
 {
   "type": 0x3C,
   "version": 1,
-  "controllerData: 24,
+  "controllerData": 24,
   "data": {
 	 "vehicleId": "123456789",
 	 "dataLen": 63,
@@ -403,7 +403,7 @@
 {
   "type": 0x3C,
   "version": 1,
-  "controllerData: 24,
+  "controllerData": 24,
   "data": {
 	 "vehicleId": "123456789",
 	 "dataLen": 55,
@@ -422,7 +422,7 @@
 {
   "type": 0x3C,
   "version": 1,
-  "controllerData: 24,
+  "controllerData": 24,
   "data": {
 	 "vehicleId": "123456789",
 	 "dataLen": 120,
@@ -465,7 +465,7 @@
 {
   "type": 0x3C,
   "version": 1,
-  "controllerData: 24,
+  "controllerData": 24,
   "data": {
 	"vehicleId": "123456789",
 	"dataLen": 128,
@@ -478,15 +478,15 @@
 	"alertPath": [{
 		"latitude": 37.123456,
 		"longitude": -122.987654,
-		elevation:34
+		"elevation":34
 	}, {
 		"latitude": 37.987654,
 		"longitude": -122.123456,
-		elevation:34
+        "elevation":34
 	}, {
 		"latitude": 38.765432,
 		"longitude": -121.234567,
-		elevation:34
+        "elevation":34
 	}],
 	"dtc": 10,
 	"ttc": 5
@@ -499,7 +499,7 @@
 {
   "type": 0x3C,
   "version": 1,
-  "controllerData: 24,
+  "controllerData": 24,
   "data": {
 	"vehicleId": "123456789",
 	"dataLen":123,
@@ -531,7 +531,7 @@
 {
   "type": 0x3C,
   "version": 1,
-  "controllerData: 24,
+  "controllerData": 24,
   "data": {
 	"vehicleId": "123456789",
 	"dataLen": 123,
@@ -566,7 +566,7 @@
 {
   "type": 0x3C,
   "version": 1,
-  "controllerData: 24,
+  "controllerData": 24,
   "data": {
 	"vehicleId": "123456789",
 	"dataLen": 0,
@@ -598,7 +598,7 @@
 {
   "type": 0x3C,
   "version": 1,
-  "controllerData: 24,
+  "controllerData": 24,
   "data": {
 	"vehicleId": "123456789",
 	"dataLen": 78,
@@ -629,7 +629,7 @@
 {
   "type": 0x3C,
   "version": 1,
-  "controllerData: 24,
+  "controllerData": 24,
   "data": {
 	"vehicleId": "123456789",
 	"dataLen": 0,
@@ -677,7 +677,7 @@
 		"referenceLinksNum": 2,
 		"referenceLinks": [{
 			"upstreamNodeId": 789,
-			"downstreamNodeId": 012,
+			"downstreamNodeId": 12,
 			"referenceLanesNum": 3,
 			"referenceLanes": [3, 4, 5]
 		}, {
@@ -705,7 +705,7 @@
 {
   "type": 0x3C,
   "version": 1,
-  "controllerData: 24,
+  "controllerData": 24,
   "data": {
 	"vehicleId": "123456789",
 	"dataLen": 78,
@@ -732,7 +732,7 @@
 {
   "type": 0x1E,
   "version": 1,
-  "controllerData: 24,
+  "controllerData": 24,
   "data": {
 	"vehicleId": "123456789",
 	"instructMode": 1,
@@ -765,7 +765,7 @@
 {
   "type": 0x1E,
   "version": 1,
-  "controllerData: 24,
+  "controllerData": 24,
   "data": {
 	"vehicleId": "123456789",
 	"instructMode": 2,
@@ -822,7 +822,7 @@
 {
   "type": 0x1F,
   "version": 1,
-  "controllerData: 24,
+  "controllerData": 24,
   "data": {
 	"vehicleId": "123456789",
 	"cloudMessageId": 12345,
@@ -842,7 +842,7 @@
 {
   "type": 0x1F,
   "version": 1,
-  "controllerData: 24,
+  "controllerData": 24,
   "data": {
 	"vehicleId": "123456789",
 	"cloudMessageId": 12345,
@@ -864,7 +864,7 @@
 {
   "type": 0x3E,
   "version": 1,
-  "controllerData: 24,
+  "controllerData": 24,
   "data": {
 	"vehicleId": "123456789",
 	"dataLen": 36,
@@ -887,7 +887,7 @@
 {
   "type": 0x3E,
   "version": 1,
-  "controllerData: 24,
+  "controllerData": 24,
   "data": {
 	"vehicleId": "123456789",
 	"dataLen": 0,
@@ -910,7 +910,7 @@
 {
   "type": 0x3E,
   "version": 1,
-  "controllerData: 24,
+  "controllerData": 24,
   "data": {
 	"vehicleId": "123456789",
 	"dataLen": 0,
@@ -931,7 +931,7 @@
 {
   "type": 0x3E,
   "version": 1,
-  "controllerData: 24,
+  "controllerData": 24,
   "data": {
 	"vehicleId": "123456789",
 	"dataLen": 0,
@@ -975,7 +975,7 @@
 {
   "type": 0x3E,
   "version": 1,
-  "controllerData: 24,
+  "controllerData": 24,
   "data": {
 	"vehicleId": "123456789",
 	"dataLen": 0,
@@ -995,7 +995,7 @@
 {
   "type": 0x3E,
   "version": 1,
-  "controllerData: 24,
+  "controllerData": 24,
   "data": {
 	"vehicleId": "123456789",
 	"dataLen": 0,
@@ -1077,7 +1077,7 @@
 {
   "type": 0x5C,
   "version": 1,
-  "controllerData: 24,
+  "controllerData": 24,
   "data": {
 	"vehicleId": "123456789",
 	"dataLen": 0,
