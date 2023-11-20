@@ -158,6 +158,7 @@ module.exports = {
                 children: [
                     ['/views/protocol/coap', 'COAP'],
                     ['/views/protocol/32960', 'GBT32960'],
+                    ['/views/protocol/v2c', 'V2C'],
                     ['/views/protocol/ocpp', 'OCPP'],
                     ['/views/protocol/websocket', 'WEBSOCKET'],
                     ['/views/protocol/i1', 'i1']
