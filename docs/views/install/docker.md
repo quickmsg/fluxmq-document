@@ -2,17 +2,17 @@
 
 ## 镜像拉取
 ```shell
-docker pull docker.fluxmq.com/fluxmq/fluxmq:latest 
+docker pull fluxmq/enterprise:2.0.8
 ```
 
 ## 启动FluxMQ
 > 默认会启动MQTT、MQTT over Websocket、HTTP端口
 ```shell
-docker run -it -d  -p 1883:1883 -p 8883:8883 -p 8080:8080 -v /root/logs:/logs  docker.fluxmq.com/fluxmq/fluxmq
+docker run -it -d  -v /app/logs:/logs  -p 8080:8080 -p 1883:1883 -p 8883:8883 fluxmq/enterprise:2.0.8
 ```
 
 ### 覆盖FluxMQ默认配置
-
+> 配置文件目录：/app/config/config.yaml
 #### FluxMQ配置文件，
 ```yaml
 logLevel: INFO # 系统日志
@@ -69,15 +69,24 @@ application:
 ```
 #### 启动FluxMQ
 ```shell
-docker run -it -d  -p 1883:1883 -p 8883:8883 -p 8080:8080 -v /root/logs:/logs -v /root/fluxmq/config.yaml:/config/config.yaml docker.fluxmq.com/fluxmq/fluxmq
+docker run -it -d  -v /app/logs:/app/logs /app/config/config.yaml:/app/config/config.yaml  -p 8080:8080 -p 1883:1883 -p 8883:8883 fluxmq/enterprise:2.0.8
 ```
+## License配置
+
+> 配置文件目录：/app/license.base64
+```shell
+docker run -it -d  -v /app/license.base64:/app/license.base64  -v /app/logs:/app/logs /app/config/config.yaml:/app/config/config.yaml  -p 8080:8080 -p 1883:1883 -p 8883:8883 fluxmq/enterprise:2.0.8
+```
+
+
+## 持久化
+如果采用本地数据持久化模式：LOCAl,务必需要将容器目录~/fluxmq目录映射到宿主机
 
 ## 运行日志
 
 运行位置在/logs下包含INFO、ERROR日志，启动容器可以将目录映射宿主机
 
 ## 管理页面
-> 版本>2.0.8 FluxMQ会默认包含UI，无需单独安装，其他低版本需要参考`管理系统`安装
 ```shell
-http://ip:8080/
+http://宿主机ip:8080/
 ```
