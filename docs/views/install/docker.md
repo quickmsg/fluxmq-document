@@ -78,6 +78,10 @@ docker run -it -d  -v /app/logs:/app/logs /app/config/config.yaml:/app/config/co
 docker run -it -d  -v /app/license.base64:/app/license.base64  -v /app/logs:/app/logs /app/config/config.yaml:/app/config/config.yaml  -p 8080:8080 -p 1883:1883 -p 8883:8883 fluxmq/enterprise:2.0.8
 ```
 
+
+## 持久化
+如果采用本地数据持久化模式：LOCAl,务必需要将容器目录~/fluxmq目录映射到宿主机
+
 ## 运行日志
 
 运行位置在/logs下包含INFO、ERROR日志，启动容器可以将目录映射宿主机
