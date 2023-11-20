@@ -97,68 +97,82 @@
 ```
 ```JSON
 {
-     "type": 0x15,
-     "version": 2,
-     "data": [{
-	    "vehicleId": "123456789",
-	    "messageId": 12345,
-	    "timestampGNSS": 1629372000000,
-	    "velocityGNSS": 80,
-	    "position": {
-	    	"latitude": 37.123456,
-	    	"longitude": -122.987654,
-	    	"elevation": 100
-	    },
-	    "heading": 90,
-	    "tapPos": 2,
-	    "steeringAngle": 45,
-	    "velocityCAN": 60,
-	    "accelerationLon": 5,
-	    "accelerationLat": 2,
-	    "accelerationVer": 1,
-	    "yawRate": 30,
-	    "accelPos": 70,
-	    "engineSpeed": 3000,
-	    "engineTorque": 250,
-	    "brakeFlag": 1,
-	    "brakePos": 50,
-	    "brakePressure": 100,
-	    "fuelConsumtion": 20,
-	    "driveMode": 1,
-	    "destLocation": {
-	    	"latitude": 37.987654,
-	    	"longitude": -122.123456
-	    }
-           },{
-	    "absFlag": 1,
-	    "tcsFlag": 0,
-	    "espFlag": 1,
-	    "lkaFlag": 0,
-	    "accMode": 2,
-	    "fcwFlag": 1,
-	    "ldwFlag": 0,
-	    "aebFlag": 1,
-	    "lcaFlag": 0,
-	    "dmsFlag": 1,
-	    "mileage": 50000,
-	    "fuelGauge": 75,
-	    "soc": 50,
-	    "temperature": 25,
-	    "endurance": 200,
-	    "vehFault": 3,
-	    "motorspeed": 3000,
-	    "motortorque": 250,
-	    "vehMode": 2,
-	    "chargeState": 1,
-	    "battVol": 12,
-	    "battCur": 20,
-	    "hornState": 1,
-	    "wheelVelocity": [60, 55, 65, 60],
-	    "tirePressure": [30, 32, 31, 30],
-	    "lights": 7,
-	    "doors": 4,
-	    "userdefinedData": "Test Data"
-          }]
+  "type": 0x15,
+  "version": 2,
+  "data": [
+    {
+      "vehicleId": "123456789",
+      "messageId": 12345,
+      "timestampGNSS": 1629372000000,
+      "velocityGNSS": 80,
+      "position": {
+        "latitude": 37.123456,
+        "longitude": -122.987654,
+        "elevation": 100
+      },
+      "heading": 90,
+      "tapPos": 2,
+      "steeringAngle": 45,
+      "velocityCAN": 60,
+      "accelerationLon": 5,
+      "accelerationLat": 2,
+      "accelerationVer": 1,
+      "yawRate": 30,
+      "accelPos": 70,
+      "engineSpeed": 3000,
+      "engineTorque": 250,
+      "brakeFlag": 1,
+      "brakePos": 50,
+      "brakePressure": 100,
+      "fuelConsumtion": 20,
+      "driveMode": 1,
+      "destLocation": {
+        "latitude": 37.987654,
+        "longitude": -122.123456
+      }
+    },
+    {
+      "absFlag": 1,
+      "tcsFlag": 0,
+      "espFlag": 1,
+      "lkaFlag": 0,
+      "accMode": 2,
+      "fcwFlag": 1,
+      "ldwFlag": 0,
+      "aebFlag": 1,
+      "lcaFlag": 0,
+      "dmsFlag": 1,
+      "mileage": 50000,
+      "fuelGauge": 75,
+      "soc": 50,
+      "temperature": 25,
+      "endurance": 200,
+      "vehFault": 3,
+      "motorspeed": 3000,
+      "motortorque": 250,
+      "vehMode": 2,
+      "chargeState": 1,
+      "battVol": 12,
+      "battCur": 20,
+      "hornState": 1,
+      "wheelVelocity": [
+        60,
+        55,
+        65,
+        60
+      ],
+      "tirePressure": [
+        30,
+        32,
+        31,
+        30
+      ],
+      "lights": 7,
+      "doors": 4,
+      "userdefinedData": "Test Data"
+    }
+  ]
+}
 ```
 ```JSON
 {
