@@ -11,10 +11,11 @@
     "qos": 1,
     "retain": false,
     "timestamp": 1690599987495,
+    "clientIp": "183.136.225.31:21950"
     "clientId": "dev1212313"
 }
 ```
-## 连接数据
+## 连接数据 <$EVENT.CONNECT>
 > 支持多协议
 ```连接
 {
@@ -38,7 +39,7 @@
     "clientId": "dev1212313"
 }
 ```
-## 订阅数据
+## 订阅数据 <$EVENT.SUBSCRIBE>
 > 支持多协议
 ```订阅
 {
@@ -54,7 +55,7 @@
     "clientId": "dev1212313"
 }
 ```
-## 取消订阅数据
+## 取消订阅数据 <$EVENT.UNSUBSCRIBE>
 ```取消订阅
 {
     "protocol":"MQTT",
@@ -66,28 +67,50 @@
     "clientId": "dev1212313"
 }
 ```
-## PING数据
+## PING数据 <$EVENT.PING>
 ```心跳
 {
     "clientId": "dev1212313",
     "timestamp": 1690599987495
 }
 ```
-## Disconnect数据
+## Disconnect数据 <$EVENT.DISCONNECT>
 ```断开连接
 {
     "timestamp": 1690599987495,
     "clientId": "dev1212313"
 }
 ```
-## Close数据
+## Close数据 <$EVENT.CLOSE>
 > 支持多协议
 ```关闭连接
 {
     "protocol":"MQTT",
     "messageId": 1,
-    "reason": "",
+    "reason": "枚举值",
     "timestamp": 1690599987495,
     "clientId": "dev1212313"
+}
+```
+
+| **原因类型**       | **说明**                 |
+|----------------|------------------------|
+| normal         | 客户端主动关闭  |
+| kicked         | 服务端主动关闭              |
+| timeout        | 客户端心跳超时关闭            |
+| not_authorized | 认证失败关闭             |
+| disconnect     | 客户端主动关闭     |
+| other_kicked   | 集群互踢               |
+
+## ACK回复 <$EVENT.ACK>
+
+```ACK回复
+{
+    "messageId":10001,
+    "clientId": "A1212313",
+    "payload": {},
+    "topic": "test",
+    "qos": 1,
+    "timestamp": "1690599987495"
 }
 ```

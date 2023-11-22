@@ -4,15 +4,15 @@
 - 事件消息的主题以 "$EVENT." 开头，比如 "$EVENT.CONNECT","$EVENT.PING"
 - PUBLISH消息的支持以通配符 "#" 匹配主题，如 "mq/#" 匹配 "mq" 层级下的所有主题
 ### FROM 子句可用的事件主题
-| **事件主题名** | **释义**  |
-| --- |---------|
-| $EVENT.CONNECT | 连接完成    |
-| $EVENT.DISCONNECT | 客户端断开连接 |
-| $EVENT.CLOSE | 服务端关闭连接 |
-| $EVENT.PING | 心跳      |
-| $EVENT.PUBLISH | 消息发布    |
-| $EVENT.PUBLISH_ACK | 消息发布确认  |
-| $EVENT.SUBSCRIBE | 订阅      |
+| **事件主题名**          | **释义**  |
+|--------------------|---------|
+| $EVENT.CONNECT     | 连接完成    |
+| $EVENT.DISCONNECT  | 客户端断开连接 |
+| $EVENT.CLOSE       | 服务端关闭连接 |
+| $EVENT.PING        | 心跳      |
+| $EVENT.PUBLISH     | 消息发布    |
+| $EVENT.ACK         | Ack回复   |
+| $EVENT.SUBSCRIBE   | 订阅      |
 | $EVENT.UNSUBSCRIBE | 取消订阅    |
 ```SQL实例
 SELECT
