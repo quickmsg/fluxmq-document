@@ -45,14 +45,11 @@
 {
     "protocol":"MQTT",
     "messageId": 1,
-    "subscribeTopics": [
-        {
-            "topicFilter": "test",
-            "qos": 1
-        }
-    ],
+    "topic": "test",
+    "qos": 1,
     "timestamp": 1690599987495,
-    "clientId": "dev1212313"
+    "clientId": "dev1212313",
+    "clientIp": "183.136.225.31:21950"
 }
 ```
 ## 取消订阅数据 <$EVENT.UNSUBSCRIBE>
@@ -60,11 +57,10 @@
 {
     "protocol":"MQTT",
     "messageId": 1,
-    "topics": [
-        "test"
-    ],
+    "topic": "test" ,
     "timestamp": 1690599987495,
-    "clientId": "dev1212313"
+    "clientId": "dev1212313",
+    "clientIp": "183.136.225.31:21950"
 }
 ```
 ## PING数据 <$EVENT.PING>
