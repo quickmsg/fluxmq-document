@@ -23,16 +23,16 @@ SQL语句由SELECT子句和WHERE子句组成，每个子句不能大于500个字
 ### 使用案例
 > 当payload数据是Json字符串时候,FluxMQ可以通过SQL中:  `payload.<KEY>` 方式获取某一个值
 
-| **功能**                                                          | **SQL**                                                  |
-|-----------------------------------------------------------------|----------------------------------------------------------|
-| 获取Topic订阅匹配`test/#`所有消息                                         | select * from  "test/#"                                  |
-| 获取Topic订阅匹配`test/#` && `payload.temperature`大于28所有消息            | SELECT *from "test/#" Where payload.temperature>38       |
-| 只获取Topic订阅匹配`test/#`消息的payload字段                                | select payload from  "test/#"                            |
-| 只获取Topic订阅匹配`test/#`消息的payload字符(json字符串形式)                     | select json(payload) as payload from  "test/#"           |
-| 获取Topic订阅匹配`test/#`所有消息,并且添加一个key为：test value为：value的键值对        | select * , "value" as test from  "test/#"                |
-| 获取Topic订阅匹配`test/#`所有消息,并且添加一个key为：test value为：uuid字符串 的键值对     | select * , uuid() as test from  "test/#"                 |
-| 获取Topic订阅匹配`test/#` && `payload.temperature`大于28所有消息 && qos为1消息 | SELECT *from "test/#" Where payload.temperature>38 and qos=1 |
-| 获取Subscribe事件数据 &&  Topic订阅匹配`test/#`所有消息                       | SELECT * from "$EVENT.SUBSCRIBE" Where topic =~'test/#'         |
+| **功能**                                                          | **SQL**                                                       |
+|-----------------------------------------------------------------|---------------------------------------------------------------|
+| 获取Topic订阅匹配`test/#`所有消息                                         | select * from  "test/#"                                       |
+| 获取Topic订阅匹配`test/#` && `payload.temperature`大于28所有消息            | select * from "test/#" where payload.temperature>38           |
+| 只获取Topic订阅匹配`test/#`消息的`payload`字段                                | select payload from  "test/#"                                 |
+| 只获取Topic订阅匹配`test/#`消息的`payload`字符(json字符串形式)                     | select json(payload) as payload from  "test/#"                |
+| 获取Topic订阅匹配`test/#`所有消息,并且添加一个key为：`test` value为：`value` 的键值对   | select * , "value" as test from  "test/#"                     |
+| 获取Topic订阅匹配`test/#`所有消息,并且添加一个key为：`test` value为：`uuid字符串` 的键值对   | select * , uuid() as test from  "test/#"                      |
+| 获取Topic订阅匹配`test/#` && `payload.temperature`大于28所有消息 && `qos`为1消息 | select * from "test/#" where payload.temperature>38 AND qos=1 |
+| 获取Subscribe事件数据 &&  Topic订阅匹配`test/#`所有消息                       | select * from "$EVENT.SUBSCRIBE" where topic =~'test/#'       |
 
 sql语句所有字段都可以使用函数进行处理，具体支持的函数可以参看`函数章节`
 
