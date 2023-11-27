@@ -1,6 +1,6 @@
 # 事件数据
 > 系统内置的事件数据
-## 发布数据
+## 发布数据 <$EVENT.PUBLISH>
 > 支持多协议
 ```发布
 {
@@ -11,7 +11,8 @@
     "qos": 1,
     "retain": false,
     "timestamp": 1690599987495,
-    "clientIp": "183.136.225.31:21950"
+    "clientIp": "183.136.225.31",
+    "nodeIp": "192.168.0.1",
     "clientId": "dev1212313"
 }
 ```
@@ -49,7 +50,8 @@
     "qos": 1,
     "timestamp": 1690599987495,
     "clientId": "dev1212313",
-    "clientIp": "183.136.225.31:21950"
+     "clientIp": "183.136.225.31",
+    "nodeIp": "192.168.0.1"
 }
 ```
 ## 取消订阅数据 <$EVENT.UNSUBSCRIBE>
@@ -60,21 +62,26 @@
     "topic": "test" ,
     "timestamp": 1690599987495,
     "clientId": "dev1212313",
-    "clientIp": "183.136.225.31:21950"
+     "clientIp": "183.136.225.31",
+    "nodeIp": "192.168.0.1"
 }
 ```
 ## PING数据 <$EVENT.PING>
 ```心跳
 {
     "clientId": "dev1212313",
-    "timestamp": 1690599987495
+    "timestamp": 1690599987495,
+    "clientIp": "183.136.225.31",
+    "nodeIp": "192.168.0.1"
 }
 ```
 ## Disconnect数据 <$EVENT.DISCONNECT>
 ```断开连接
 {
     "timestamp": 1690599987495,
-    "clientId": "dev1212313"
+    "clientId": "dev1212313",
+    "clientIp": "183.136.225.31",
+    "nodeIp": "192.168.0.1"
 }
 ```
 ## Close数据 <$EVENT.CLOSE>
@@ -85,9 +92,13 @@
     "messageId": 1,
     "reason": "枚举值",
     "timestamp": 1690599987495,
-    "clientId": "dev1212313"
+    "clientId": "dev1212313",
+    "clientIp": "183.136.225.31",
+    "nodeIp": "192.168.0.1"
 }
 ```
+
+
 
 | **原因类型**       | **说明**                 |
 |----------------|------------------------|
@@ -107,6 +118,24 @@
     "payload": {},
     "topic": "test",
     "qos": 1,
-    "timestamp": "1690599987495"
+    "timestamp": "1690599987495",
+    "clientIp": "183.136.225.31",
+    "nodeIp": "192.168.0.1"
+}
+```
+
+## 离线消息数据 <$EVENT.OFFLINE>
+```离线消息数据
+{
+    "protocol":"MQTT",
+    "payload": {},
+    "messageId": 1,
+    "topic": "test",
+    "qos": 1,
+    "retain": false,
+    "timestamp": 1690599987495,
+    "clientIp": "183.136.225.31",
+    "nodeIp": "192.168.0.1",
+    "clientId": "dev1212313"
 }
 ```
