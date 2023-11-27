@@ -111,7 +111,8 @@ module.exports = {
                                     ['/views/gzyq/rule/MQTT', 'MQTT'],
                                     ['/views/gzyq/rule/RABBITMQ', 'RABBITMQ'],
                                     ['/views/gzyq/rule/REDIS', 'REDIS'],
-                                    ['/views/gzyq/rule/ROCKETMQ', 'ROCKETMQ']
+                                    ['/views/gzyq/rule/ROCKETMQ', 'ROCKETMQ'],
+                                    ['/views/gzyq/rule/OFFLINE_PG', '离线消息存储POSTGRESQL']
                                 ]
                             }
                         ]
