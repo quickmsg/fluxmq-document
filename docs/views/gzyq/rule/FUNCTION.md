@@ -10,6 +10,7 @@
 | int16               | 将对象转为Int16类型，相当于short                                                           |
 | int32               | 将对象转为Int32类型，相当于int                                                             |
 | int64               | 将对象转为Int64类型，相当于long                                                            |
+| intBool              | 将boolean对象转换成int：true = 1，false = 0                                             |
 | toDouble            | 将对象转为double类型                                                                   |
 | hexStr              | 将对象转成HEX字符串， 会先将对象JSON化，再转成对象的16进制字符串                                           |
 | date                | 格式化时间字符串：yyyy-MM-dd                                                             |
@@ -17,6 +18,7 @@
 | dateToTimestamp     | yyyy-MM-dd 时间字符串转成时间戳                                                           |
 | datetimeToTimestamp | yyyy-MM-dd HH:mm:ss 时间字符串转成时间戳                                                  |
 | uuid                | 生成32位随机小写字符串                                                                    |
+| uuidUpper | 生成32位随机大写字符串                                                                    |
 | uuidUpper | 生成32位随机大写字符串                                                                    |
 
 

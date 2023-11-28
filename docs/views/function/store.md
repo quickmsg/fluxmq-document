@@ -12,7 +12,7 @@
 > 本地存储，会持久化数据，重启后数据不会丢失
 ```yaml
 store:
-  storeType: LOCAL # MYSQL,LOCAL，MEMORY
+  storeType: LOCAL # MYSQL,LOCAL,MEMORY,POSTGRESQL
 ```
 
 ### MEMORY
@@ -20,7 +20,7 @@ store:
 
 ```yaml
 store:
-  storeType: MEMORY # MYSQL,LOCAL，MEMORY
+  storeType: MEMORY # MYSQL,LOCAL,MEMORY,POSTGRESQL
 ```
 
 
@@ -49,3 +49,30 @@ store:
 | username   | 用户名        | root                                             |
 | password   | 密码         | 123456                                           |
 
+
+### POSTGRESQL
+> POSTGRESQL模式，会持久化数据，重启后数据不会丢失
+
+下载SQL语句初始化FluxMQ持久化所需要的表结构：
+
+[点击下载初始化表SQL](https://fluxmq.obs.cn-east-3.myhuaweicloud.com/fluxmq-2.0.8-PG.sql)
+
+```yaml
+store:
+  storeType: POSTGRESQL # MYSQL,LOCAL,MEMORY,POSTGRESQL
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5432/fluxmq
+    username: postgres
+    password: mysecretpassword
+    schema: fluxmq
+```
+模式不指定时候，默认为public模式。
+
+| 参数名        | 描述         | 默认值                                              |
+|------------|------------|--------------------------------------------------|
+| storeType  | 存儲类型       | 默认LOCAL                                          |
+| datasource | 选择MYSQL存储时 | 选填                                               |
+| url        | 地址         | jdbc:mysql://127.0.0.1:3306/ignite2?useSSL=false |
+| username   | 用户名        | root                                             |
+| password   | 密码         | 123456                                           |
+| schema     | 模式         | public                                           |
