@@ -40,6 +40,7 @@ store:
     username: root
     password: 123456
 ```
+<div class="table-2">
 
 | 参数名        | 描述         | 默认值                                              |
 |------------|------------|--------------------------------------------------|
@@ -49,6 +50,7 @@ store:
 | username   | 用户名        | root                                             |
 | password   | 密码         | 123456                                           |
 
+</div>
 
 ### POSTGRESQL
 > POSTGRESQL模式，会持久化数据，重启后数据不会丢失
@@ -63,10 +65,12 @@ store:
   datasource:
     url: jdbc:postgresql://127.0.0.1:5432/fluxmq
     username: postgres
-    password: mysecretpassword
+    password: fluxmq
     schema: fluxmq
 ```
 模式不指定时候，默认为public模式。
+
+<div class="table-2">
 
 | 参数名        | 描述         | 默认值                                              |
 |------------|------------|--------------------------------------------------|
@@ -76,3 +80,5 @@ store:
 | username   | 用户名        | root                                             |
 | password   | 密码         | 123456                                           |
 | schema     | 模式         | public                                           |
+
+</div>
