@@ -36,7 +36,7 @@ store:
 store:
   storeType: MYSQL # MYSQL,LOCAL
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/ignite2?useSSL=false
+    url: jdbc:mysql://127.0.0.1:3306/fluxmq?useSSL=false
     username: root
     password: 123456
 ```
@@ -46,7 +46,7 @@ store:
 |------------|------------|--------------------------------------------------|
 | storeType  | 存儲类型       | 默认LOCAL                                          |
 | datasource | 选择MYSQL存储时 | 选填                                               |
-| url        | 地址         | jdbc:mysql://127.0.0.1:3306/ignite2?useSSL=false |
+| url        | 地址         | jdbc:mysql://127.0.0.1:3306/fluxmq?useSSL=false |
 | username   | 用户名        | root                                             |
 | password   | 密码         | 123456                                           |
 
