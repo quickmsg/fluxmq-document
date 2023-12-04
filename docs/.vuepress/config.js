@@ -113,8 +113,8 @@ module.exports = {
                                     ['/views/gzyq/rule/REDIS', 'Redis'],
                                     ['/views/gzyq/rule/ROCKETMQ', 'Rocketmq'],
                                     ['/views/gzyq/rule/OFFLINE_PG', '离线消息存储Postgresql'],
-                                    ['/views/gzyq/rule/OFFLINE_PG', '离线消息存储MySql'],
-                                    ['/views/gzyq/rule/OFFLINE_PG', '离线消息存储Redis'],
+                                    ['/views/gzyq/rule/OFFLINE_MYSQL', '离线消息存储MySql'],
+                                    ['/views/gzyq/rule/OFFLINE_Redis', '离线消息存储Redis'],
                                 ]
                             }
                         ]
