@@ -19,7 +19,7 @@
 | datetimeToTimestamp | yyyy-MM-dd HH:mm:ss 时间字符串转成时间戳                                                  |
 | uuid                | 生成32位随机小写字符串                                                                    |
 | uuidUpper | 生成32位随机大写字符串                                                                    |
-| uuidUpper | 生成32位随机大写字符串                                                                    |
+
 
 
 ## 函数使用
