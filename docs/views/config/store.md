@@ -17,4 +17,4 @@ store:
 | username | 用户名        | root                                            |
 | password | 密码         | 123456                                          |
 
-<div class="table-2">
+</div>
