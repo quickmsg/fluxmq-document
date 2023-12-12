@@ -76,7 +76,7 @@ store:
 |------------|------------|-------------------------------------------------|
 | storeType  | 存儲类型       | 默认LOCAL                                         |
 | datasource | 选择MYSQL存储时 | 选填                                              |
-| url        | 地址         | jdbc:mysql://127.0.0.1:3306/fluxmq?useSSL=false |
+| url        | 地址         | jdbc:postgresql://127.0.0.1:5432/fluxmq |
 | username   | 用户名        | root                                            |
 | password   | 密码         | 123456                                          |
 | schema     | 模式         | public                                          |
