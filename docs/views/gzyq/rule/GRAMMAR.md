@@ -1,85 +1,126 @@
-# 规则引擎语法
-创建数据转发规则时，需要编写SQL来解析和处理设备上报的JSON数据。本文主要介绍如何编写数据转发规则的SQL表达式。
-## SQL语法
+<a id="jump1">SQL 语法与示例</a>
+# SQL 语法与示例
 
-SQL语句由SELECT子句和WHERE子句组成，每个子句不能大于500个字符。SELECT子句和WHERE子句里的内容大小写敏感，SELECT和WHERE，AS等关键字大小写不敏感。
-以设备消息上报为SQL源数据示例:
+## SQL 语法
 
-```
-{
-    "payload": {
-      "temperature" : 40,
-      "humidity" : 24
-    },
-    "messageId": 1,
-    "topic": "test",
-    "qos": 1,
-    "retain": false,
-    "time": "2022 12-22 12:00:00",
-    "clientId": "A1212313"
-}
+### FROM、SELECT 和 WHERE 子句
+规则的 SQL 语句基本格式为:
+```plsql
+SELECT <字段名> FROM <事件类型> [WHERE <条件>]
 ```
 
-### 使用案例
-> 当payload数据是Json字符串时候,FluxMQ可以通过SQL中:  `payload.<KEY>` 方式获取某一个值
+- FROM 子句将规则挂载到某个事件类型上，可多选
+- SELECT 子句用于对数据进行变换，并选择出需要的字段
+- WHERE 子句用于对 SELECT 选择出来的某个字段施加条件过滤
+```plsql
+## SELECT 语句用于决定最终的输出结果里的字段。比如:
+## 下面 SQL 的输出结果中将只有两个字段 "a" 和 "b":
 
-| **功能**                                                          | **SQL**                                                       |
-|-----------------------------------------------------------------|---------------------------------------------------------------|
-| 获取Topic订阅匹配`test/#`所有消息                                         | select * from  "test/#"                                       |
-| 获取Topic订阅匹配`test/#` && `payload.temperature`大于28所有消息            | select * from "test/#" where payload.temperature>38           |
-| 只获取Topic订阅匹配`test/#`消息的`payload`字段                                | select payload from  "test/#"                                 |
-| 只获取Topic订阅匹配`test/#`消息的`payload`字符(json字符串形式)                     | select json(payload) as payload from  "test/#"                |
-| 获取Topic订阅匹配`test/#`所有消息,并且添加一个key为：`test` value为：`value` 的键值对   | select * , "value" as test from  "test/#"                     |
-| 获取Topic订阅匹配`test/#`所有消息,并且添加一个key为：`test` value为：`uuid字符串` 的键值对   | select * , uuid() as test from  "test/#"                      |
-| 获取Topic订阅匹配`test/#` && `payload.temperature`大于28所有消息 && `qos`为1消息 | select * from "test/#" where payload.temperature>38 AND qos=1 |
-| 获取Subscribe事件数据 &&  Topic订阅匹配`test/#`所有消息                       | select * from "$EVENT.SUBSCRIBE" where topic =~'test/#'       |
+SELECT a, b FROM "$EVENT.PUBLISH"
 
-sql语句所有字段都可以使用函数进行处理，具体支持的函数可以参看`函数章节`
+# 选取 username 为 'abc' 的建立连接消息，输出结果为所有可用字段:
 
-### WHERE
-在WHERE子句中，您可以用JSON变量进行布尔运算，进行一些非空判断，然后使用AND， OR关键字把结果组合起来。
-#### **为空判断 IS NULL， IS NOT NULL**
-为空判断可以用在WHERE子句中，如果JSON变量抽取不到数据，或者抽取到的数组为空，那么IS NULL成立，反之IS NOT NULL成立。
-```
-WHERE data IS NULL
-WHERE data IS NOT NULL
-```
-#### **包含判断 LIKE， NOT LIKE**
-LIKE运算符可以用于WHERE子句中，如果目标值包含指定字符，则匹配成功，那么LIKE成立，反之NOT LIKE成立，注意指定字符与源数据匹配区分大小写
-```
-WHERE client.product_id LIKE '%B2%'"
-WHERE client.product_id LIKE '%A2%'"
-```
-#### **大于小于运算符 > <**
-大于小于运算符可以用于WHERE子句中，当且仅当JSON变量的值为常量整数时，可以进行两个JSON变量的比较或者JSON变量和常量的比较。大于小于运算符也可以用于常量和常量的比较。也可以通过AND或者OR来连接起来运算
-比如
-```
-WHERE data.number > 5 可以抽取出json表达式大于5的信息 
-WHERE data.tag < 4 可以抽取出json表达式中小于4的信息 
-WHERE data.number > 5 AND data.tag < 4 可以抽取出json表达式data.number大于5的信息并且json表达式data.tag中小于4的信息
-```
-#### **等于运算符 =**
-=运算符可以用于WHERE子句中，用于JSON变量和JSON变量的比较、JSON变量整数和整数常量的比较、JSON变量字符串和字符串常量的比较。如果两个JSON变量IS NULL成立，那么=比较结果为false。也可以通过AND或者OR来连接起来运算
-```
-WHERE data.number = 5 可以抽取出json表达式等于5的信息 
-WHERE data.tag = 4 可以抽取出json表达式中等于4的信息 
-WHERE data.number = 5 OR data.tag = 4 可以抽取出json表达式data.number等于5的信息或者json表达式data.tag中等于4的信息
-```
-#### **Topic匹配运算符 =**
-  =~运算符可以用于WHERE子句中，用于MQTT中主题的通配符匹配
-```
-WHERE topic =~ 'test/#' 匹配主题满足 `test/#' 
+SELECT * FROM "$EVENT.CONNECT" WHERE auth.username = 'abc'
+
+## 选取 clientId 为 'abc' 的终端发来的消息，输出结果将只有 cid 一个字段。
+
+SELECT clientId as cid FROM "$EVENT.PUBLISH" WHERE clientId = 'abc'
+
+## 选取 qos 为 '1' 的发布消息，输出结果将只有 cid 一个字段。
+## 注意虽然 SELECT 语句中只选取了 cid 一个字段，所有消息发布事件中的可用字段 (比如 clientId、topic 等) 仍然可以在 WHERE 语句中使用:
+
+SELECT clientId as cid FROM "$EVENT.PUBLISH" WHERE qos = 1
+
+## 但下面这个 SQL 语句就不能工作了，因为变量 xyz 不是消息发布事件中的可用字段:
+
+SELECT clientId as cid FROM "$EVENT.PUBLISH" WHERE xyz = 'abc'
 ```
 
-### 使用限制
+### 比较符号
+| 函数名 | 函数作用                                           | 返回值         |
+|-----|------------------------------------------------|-------------|
+| >   | 大于                                             | true/false  |
+| <   | 小于                                             | true/false  |
+| <=  | 小于等于                                           | true/false  |
+| >=  | 大于等于                                           | true/false  |
+| <>  | 不等于                                            | true/false  |
+| !=  | 不等于                                            | true/false  |
+| =   | 比较两者是否完全相等。可用于比较变量和主题                          | true/false  |
+| =~  | 比较主题(topic)是否能够匹配到主题过滤器(topic filter)。只能用于主题匹配 | true/false  |
 
-SQL语句使用限制
 
+## SQL 语句示例
 
-| **对象** | **限制** |
-| --- | --- |
-|  FROM 子句 | 1个目标源 |
-| SELECT 子句 | 1个目标源 |
-### 调试SQL语句
-在创建规则时，可以通过调试SQL语句来查看SQL语句的执行结果，首先选择调试的数据类型，然后输入SQL语句，点击调试按钮，即可查看SQL语句的执行结果。
-![img.png](../../../assets/images/vs/testrule.png)
+### 基本语法举例
+
+- 从 topic 为 "t/a" 的消息中提取所有字段:
+```plsql
+SELECT * FROM "$EVENT.PUBLISH" WHERE topic = 't/a'
+```
+
+- 从 topic 为 "t/a" **或** "t/b" 的消息中提取所有字段:
+```plsql
+SELECT * FROM "$EVENT.PUBLISH" WHERE topic = 't/a' or topic = 't/b'
+```
+
+- 从 topic 能够匹配到 't/#' 的消息中提取所有字段。
+```plsql
+SELECT * FROM "$EVENT.PUBLISH" WHERE topic = "t/#"
+```
+
+- 从 topic 能够匹配到 't/#' 的消息中提取 qos、messageId 和 clientId 字段:
+```plsql
+SELECT qos, messageId, clientId FROM "$EVENT.PUBLISH" WHERE topic = "t/#"
+```
+
+- 从 建立连接 消息中提取 username 字段，并且筛选条件为 username = 'fluxmq':
+```plsql
+select auth.username as username from "$EVENT.CONNECT" where auth.username = 'fluxmq'
+```
+
+- 从任意 topic 的 JSON 消息体(payload) 中 **提取 x 字段**，并创建别名 x 以便在 WHERE 子句中使用。WHERE 子句限定条件为 x = 1。下面这个 SQL 语句可以匹配到消息体 {"x": 1}，但不能匹配到消息体 {"x": 2}:
+```plsql
+SELECT payload.x as x FROM "$EVENT.PUBLISH" WHERE payload.x = 1
+```
+
+- 类似于上面的 SQL 语句，但 **嵌套地提取 **消息体中的数据，下面的 SQL 语句可以匹配到 JSON 消息体 {"x": {"y": 1}}:
+```plsql
+SELECT payload FROM "$EVENT.PUBLISH" WHERE payload.x.y = 1
+```
+
+- 在 clientId = 'c1' 连接成功时，提取其来源 IP 地址:
+```plsql
+SELECT clientIp FROM "$EVENT.CONNECT" WHERE clientId = 'c1'
+```
+
+- 筛选所有订阅 't/#' 主题 **且** 订阅级别为 QoS 1 的 clientId:
+```plsql
+SELECT clientId FROM "$EVENT.SUBSCRIBE" WHERE topic = 't/#' and qos = 1
+```
+
+- 筛选所有订阅主题能匹配到 't/#' 且订阅级别为 QoS 1 的 clientId。注意与上例不同的是，这里用的是主题匹配操作符 **'=~'**，所以会匹配订阅 't' 或 't/+/a' 的订阅事件:
+```plsql
+SELECT clientId FROM "$EVENT.SUBSCRIBE" WHERE topic =~ 't/#' and qos = 1
+```
+
+- 从topic包含"fluxmq"字符的消息中提取所有字段，使用 '**like**' 语法，包含的字符用%包裹：
+```plsql
+SELECT * FROM "$EVENT.PUBLISH" WHERE topic like '%fluxmq%'
+```
+
+- 使用**常量字段**，用双引号""包裹字符串，作为常量值；as后面跟字段，作为输出的字段名：
+```plsql
+SELECT *, "test" as event FROM "$EVENT.PUBLISH"
+```
+
+- 可以直接使用Java的String API，如 **startsWith，endsWith**；获取以'test'开头的所有Publish消息：
+```plsql
+select * from "$EVENT.PUBLISH" where topic.startsWith('test')
+```
+**提示**
+
+- FROM 子句后面的主题需要用双引号 ""，或者单引号 '' 引起来。
+- WHERE 子句后面接筛选条件，如果使用到字符串需要用单引号 '' 引起来。
+- FROM 子句里如有多个事件，需要用逗号 "," 分隔。例如 SELECT * FROM "t/1", "t/2" 。
+- 可以使用使用 "." 符号对json字段进行嵌套选择。
+- 尽量不要给 payload 创建别名，否则会影响运行性能。即尽量不要这么写：SELECT payload as p

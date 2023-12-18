@@ -90,33 +90,10 @@ module.exports = {
                         sidebarDepth: 2,
                         children: [
                             ['/views/gzyq/rule/INTRODUCE', '介绍'],
-                            ['/views/gzyq/rule/GRAMMAR', '语法'],
-                            ['/views/gzyq/rule/FUNCTION', '函数'],
-                            ['/views/gzyq/rule/EVENTTOPIC', '事件主题'],
-                            ['/views/gzyq/rule/EVENTDATA', '事件数据'],
-                            {
-                                title: "创建规则",
-                                collapsable: true,
-                                sidebarDepth: 3,
-                                children: [
-                                    ['/views/gzyq/rule/MYSQL', 'Mysql'],
-                                    ['/views/gzyq/rule/ORACLE', 'Oracle'],
-                                    ['/views/gzyq/rule/POSTGRESQL', 'Postgresql'],
-                                    ['/views/gzyq/rule/SQLSERVER', 'Sqlserver'],
-                                    ['/views/gzyq/rule/TDENGINE', 'Tdengine'],
-                                    ['/views/gzyq/rule/CLICKHOUSE', 'Clickhouse'],
-                                    ['/views/gzyq/rule/WEBHOOK', 'Webhook'],
-                                    ['/views/gzyq/rule/KAFKA', 'Kafka'],
-                                    ['/views/gzyq/rule/LOG', '日志文件'],
-                                    ['/views/gzyq/rule/MQTT', 'MQTT'],
-                                    ['/views/gzyq/rule/RABBITMQ', 'Rabbitmq'],
-                                    ['/views/gzyq/rule/REDIS', 'Redis'],
-                                    ['/views/gzyq/rule/ROCKETMQ', 'Rocketmq'],
-                                    ['/views/gzyq/rule/OFFLINE_PG', '离线消息存储Postgresql'],
-                                    ['/views/gzyq/rule/OFFLINE_MYSQL', '离线消息存储MySql'],
-                                    ['/views/gzyq/rule/OFFLINE_Redis', '离线消息存储Redis'],
-                                ]
-                            }
+                            ['/views/gzyq/rule/STARTED', '创建规则'],
+                            ['/views/gzyq/rule/GRAMMAR', 'SQL 语法与示例'],
+                            ['/views/gzyq/rule/EVENT', 'SQL 事件类型与字段'],
+                            ['/views/gzyq/rule/FUNCTION', '内置 SQL 函数']
                         ]
                     },
                     {
