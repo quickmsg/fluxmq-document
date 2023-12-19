@@ -12,3 +12,9 @@ select bytes(payload) payload from '/mqtt/publish/#'
 ## FluxMQ同一个ClientID集群中可以重复连接吗？
 
 FluxMQ默认同一集群采用互踢策略，一个ClientID同一时间只允许一个在线，后者会将前者剔除下线
+
+## 部署集群安全组需要打开哪些端口？
+
+- 48880 集群内部通信端口
+- 48500 缓存同步端口
+- 47100 集群内部通信端口
