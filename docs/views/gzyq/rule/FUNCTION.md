@@ -18,6 +18,8 @@ FluxMQ为了增强功能，提供了函数功能，可以通过函数来实现�
 | datetimeToTimestamp | yyyy-MM-dd HH:mm:ss 时间字符串转成时间戳                                                 |
 | uuid                | 生成32位随机小写字符串                                                                   |
 | uuidUpper           | 生成32位随机大写字符串                                                                   |
+| isBytes           | 判断是否是字节数组                                                                      |
+| isJson           | 判断是否是json                                                                      |
 
 ```java
 json({"x":"1"}) = "{\"x\":\"1\"}"
