@@ -5,8 +5,9 @@
 ```YAML
 mqtt: # tcp配置
   port: 1887 # mqtt端口号
-  wiretap: false  # 二进制日志 前提是 smqtt.logLevel = DEBUG
+  wiretap: false  # 二进制日志 前提是 logLevel = DEBUG
   messageMaxSize: 4194304 # 接收消息的最大限制 默认4194304(4M)
+  proxy: false # 默认false, 支持HAProxy协议解析  
   options:
     SO_BACKLOG: 2000
 ```
@@ -16,6 +17,7 @@ mqtt: # tcp配置
 | port | mqtt启动的监听端口 | 必填项 |
 | wiretap | 打印二进制日志，生产环境禁止使用 | 必填项 |
 | messageMaxSize | 单个推送最大的负载字节数 | 必填项 |
+| proxy | HAProxy协议解析                    | 默认不启用 |
 | options | netty 的options配置 | 不推荐配置 |
 | childOptions | netty 的child channel options配置 | 不推荐配置 |
 
@@ -24,8 +26,9 @@ mqtt: # tcp配置
 ```YAML
 mqtts: # tcp配置
   port: 1883 # mqtt端口号
-  wiretap: false  # 二进制日志 前提是 smqtt.logLevel = DEBUG
+  wiretap: false  # 二进制日志 前提是 logLevel = DEBUG
   messageMaxSize: 4194304 # 接收消息的最大限制 默认4194304(4M)
+  proxy: false # 默认false, 支持HAProxy协议解析
   options:
     SO_BACKLOG: 2000
   ssl:
@@ -35,22 +38,24 @@ mqtts: # tcp配置
      
 ```
 
-| 参数名 | 描述 | 默认值 |
-| --- | --- | --- |
-| port | mqtt启动的监听端口 | 必填项 |
-| wiretap | 打印二进制日志，生产环境禁止使用 | 必填项 |
-| messageMaxSize | 单个推送最大的负载字节数 | 必填项 |
-| options | netty 的options配置 | 不推荐配置 |
+| 参数名 | 描述                             | 默认值   |
+| --- |--------------------------------|-------|
+| port | mqtt启动的监听端口                    | 必填项   |
+| wiretap | 打印二进制日志，生产环境禁止使用               | 必填项   |
+| messageMaxSize | 单个推送最大的负载字节数                   | 必填项   |
+| proxy | HAProxy协议解析                    | 默认不启用 |
+| options | netty 的options配置               | 不推荐配置 |
 | childOptions | netty 的child channel options配置 | 不推荐配置 |
-| ssl参数 | ssl启动参数 | 必填 |
+| ssl参数 | ssl启动参数                        | 必填    |
 
 ## MQTT over WEBSOCKET
 
 ```YAML
 ws: # tcp配置
   port: 8883 # mqtt端口号
-  wiretap: false  # 二进制日志 前提是 smqtt.logLevel = DEBUG
+  wiretap: false  # 二进制日志 前提是 logLevel = DEBUG
   messageMaxSize: 4194304 # 接收消息的最大限制 默认4194304(4M)
+  proxy: false # 默认false, 支持HAProxy协议解析
   options:
     SO_BACKLOG: 2000
      

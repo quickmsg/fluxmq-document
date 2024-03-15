@@ -4,7 +4,7 @@
 elasticsearch:
   url: 114.116.8.76:9200
   userName: elastic
-  password: smqttx  
+  password: fluxmq  
 ```
 | 参数名      | 描述   | 默认值            |
 |----------|------|----------------|

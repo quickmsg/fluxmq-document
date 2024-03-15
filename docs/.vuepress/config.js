@@ -156,6 +156,16 @@ module.exports = {
                 ]
             },
             {
+                title: "API",
+                collapsable: true,
+                sidebarDepth: 1,
+                children: [
+                    ['/views/api/Publish', '消息推送'],
+                    ['/views/api/Check', '客户端查询']
+
+                ]
+            },
+            {
                 title: "性能压测",
                 collapsable: true,
                 sidebarDepth: 1,

@@ -18,7 +18,7 @@ pool:
   # channelWriteSize: 单连接写字节数/s 默认不限制
 mqtt: # tcp配置
   port: 1887 # mqtt端口号
-  wiretap: false  # 二进制日志 前提是 smqtt.logLevel = DEBUG
+  wiretap: false  # 二进制日志 前提是 logLevel = DEBUG
   messageMaxSize: 4194304 # 接收消息的最大限制 默认4194304(4M)
   options:
     SO_RCVBUF: 65536

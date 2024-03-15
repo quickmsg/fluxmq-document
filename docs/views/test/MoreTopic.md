@@ -6,12 +6,12 @@
 
 发布脚本
 ```
-./emqtt_bench pub -t %i  -h 172.17.6.75   -p 1887 -u smqtt -P smqtt -s 1024 -q 0 -c 1 -I 1000  -i 2 -L 1000000
+./emqtt_bench pub -t %i  -h 172.17.6.75   -p 1887 -u fluxmq -P fluxmq -s 1024 -q 0 -c 1 -I 1000  -i 2 -L 1000000
 ```
 
 订阅脚本
 ```订阅
-./emqtt_bench sub -t %i  -h 172.17.6.75   -p 1887 -u smqtt -P smqtt -c 5000  -i 4 -q 0
+./emqtt_bench sub -t %i  -h 172.17.6.75   -p 1887 -u fluxmq -P fluxmq -c 5000  -i 4 -q 0
 ```
 
 ### 压测指标

@@ -65,12 +65,12 @@ SELECT * FROM "$EVENT.PUBLISH" WHERE topic = 't/a' or topic = 't/b'
 
 - 从 topic 能够匹配到 't/#' 的消息中提取所有字段。
 ```plsql
-SELECT * FROM "$EVENT.PUBLISH" WHERE topic = "t/#"
+SELECT * FROM "$EVENT.PUBLISH" WHERE topic =~ "t/#"
 ```
 
 - 从 topic 能够匹配到 't/#' 的消息中提取 qos、messageId 和 clientId 字段:
 ```plsql
-SELECT qos, messageId, clientId FROM "$EVENT.PUBLISH" WHERE topic = "t/#"
+SELECT qos, messageId, clientId FROM "$EVENT.PUBLISH" WHERE topic =~ "t/#"
 ```
 
 - 从 建立连接 消息中提取 username 字段，并且筛选条件为 username = 'fluxmq':
@@ -95,7 +95,7 @@ SELECT clientIp FROM "$EVENT.CONNECT" WHERE clientId = 'c1'
 
 - 筛选所有订阅 't/#' 主题 **且** 订阅级别为 QoS 1 的 clientId:
 ```plsql
-SELECT clientId FROM "$EVENT.SUBSCRIBE" WHERE topic = 't/#' and qos = 1
+SELECT clientId FROM "$EVENT.SUBSCRIBE" WHERE topic =~ 't/#' and qos = 1
 ```
 
 - 筛选所有订阅主题能匹配到 't/#' 且订阅级别为 QoS 1 的 clientId。注意与上例不同的是，这里用的是主题匹配操作符 **'=~'**，所以会匹配订阅 't' 或 't/+/a' 的订阅事件:

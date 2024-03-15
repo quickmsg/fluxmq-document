@@ -20,7 +20,7 @@ sh install_elk.sh filebeat ip1  ip2,ip3,ip4  log_path
 ```
 ## 2. ES验证
 ![img_2.png](../../assets/images/log/img_2.png)
-**curl -u elastic:smqttx  localhost:9200**
+**curl -u elastic:fluxmq  localhost:9200**
 返回结果如下：
 ```shell
 {
