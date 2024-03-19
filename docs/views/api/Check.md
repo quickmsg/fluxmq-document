@@ -17,29 +17,32 @@
 
 ### Response
 
-> 不存在时返回空JSON
+> code为0时成功
 
 ```json
 
-[{
-	"clientIp": "192.168.0.100",
-	"nodeIp": "127.0.0.1",
-	"version": "MQTT_3_1",
-	"keepalive": 120,
-	"cleanSession": false,
-	"auth": {
-		"username": "fluxmq",
-		"password": "fluxmq"
-	},
-	"will": {
-		"isRetain": false,
-		"willTopic": "willTest",
-		"willQos": 1,
-		"willMessage": ""
-	},
-	"timestamp": "1690599987495",
-	"clientId": "A1212313"
-}]
+{
+  "code" : 0,
+  "data": [{
+    "clientIp": "192.168.0.100",
+    "nodeIp": "127.0.0.1",
+    "version": "MQTT_3_1",
+    "keepalive": 120,
+    "cleanSession": false,
+    "auth": {
+      "username": "fluxmq",
+      "password": "fluxmq"
+    },
+    "will": {
+      "isRetain": false,
+      "willTopic": "willTest",
+      "willQos": 1,
+      "willMessage": ""
+    },
+    "timestamp": "1690599987495",
+    "clientId": "A1212313"
+  }]
+}
 
 ```
 
