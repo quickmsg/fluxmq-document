@@ -72,6 +72,7 @@ module.exports = {
                     ['/views/function/link', '连接管理'],
                     ['/views/function/topic', '主题管理'],
                     ['/views/function/monitor', '运维监控'],
+                    ['/views/function/proxysub', '代理订阅'],
                     ['/views/function/script', '脚本引擎'],
                     ['/views/function/device', '设备模拟'],
                     ['/views/function/cluster', '配置集群'],
