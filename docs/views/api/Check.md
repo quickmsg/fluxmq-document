@@ -2,10 +2,10 @@
 
 > 兼容EMQX消息发布接口
 
-| **参数名**      | **参数说明**                              |
-|--------------|---------------------------------------|
-| PATH         | POST  http://ip:8080/api/connection/check |
-| Context-Type | application/json                      |
+| **参数名**      | **参数说明**                             |
+|--------------|--------------------------------------|
+| PATH         | POST  http://ip:8080/api/check |
+| Context-Type | application/json                     |
 
 ### Request Body
 
