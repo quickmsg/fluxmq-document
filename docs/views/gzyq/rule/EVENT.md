@@ -325,19 +325,27 @@ from
 
 配置**离线消息**，将离线消息持久化到Mysql，Redis，PostgreSQL数据库中。<br />配置**订阅消息**，将离线消息根据订阅主题推送给客户端。<br />配置**发布回复**，根据客户端的ACK回复，从数据库中删除离线消息。<br />即同时选择：离线消息、订阅消息、发布回复三种类型。<br />可以为SQL添加topic过滤条件，比如topic =~ 'test/#'<br />![](../../../assets/images/gzyq/rule/rule_6.png)
 
-| **字段**    | **解释**             |
-|-----------|--------------------|
-| id        | 消息唯一标识             |
-| payload   | MQTT 消息体           |
-| messageId | MQTT 消息 ID         |
-| topic     | MQTT 主题            |
-| qos       | MQTT 消息的 QoS       |
-| retain    | MQTT 消息是否保持        |
-| timestamp | 事件触发时间 (单位：毫秒)     |
-| clientId  | 客户端 ID             |
-| clientIp  | 客户端的 IPAddress     |
-| nodeIp    | 事件触发所在节点 IPAddress |
+| **字段**    | **解释**              |
+|-----------|---------------------|
+| id        | 消息唯一标识              |
+| payload   | MQTT 消息体            |
+| messageId | MQTT 消息 ID          |
+| topic     | MQTT 主题             |
+| qos       | MQTT 消息的 QoS        |
+| retain    | MQTT 消息是否保持         |
+| timestamp | 事件触发时间 (单位：毫秒)      |
+| clientId  | 客户端 ID              |
+| clientIp  | 客户端的 IPAddress      |
+| nodeIp    | 事件触发所在节点 IPAddress  |
+| desc      | 回复描述，用于区分qos1,2消息回复 |
 
+| **字段** | **解释**    |
+|--------|-----------|
+| ack    | QoS1 回复   |
+| rec    | QoS2 发布确认 |
+| comp   | QoS2 发布完成 |
+
+   <br/> -  <br/> - 
 示例
 ```plsql
 select
