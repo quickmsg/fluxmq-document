@@ -71,6 +71,13 @@ from
 | clientId  | 客户端 ID             |
 | clientIp  | 客户端的 IPAddress     |
 | nodeIp    | 事件触发所在节点 IPAddress |
+| desc      | 回复描述，用于区分qos1,2消息回复 |
+
+| **字段** | **解释**    |
+|--------|-----------|
+| ack    | QoS1 回复   |
+| rec    | QoS2 发布确认 |
+| comp   | QoS2 发布完成 |
 
 示例
 ```plsql
@@ -90,7 +97,8 @@ from
     "qos": 1,
     "timestamp": "1690599987495",
     "clientIp": "183.136.225.31",
-    "nodeIp": "192.168.1.1"
+    "nodeIp": "192.168.1.1",
+    "desc": "ack"
 }
 ```
 
@@ -337,15 +345,8 @@ from
 | clientId  | 客户端 ID              |
 | clientIp  | 客户端的 IPAddress      |
 | nodeIp    | 事件触发所在节点 IPAddress  |
-| desc      | 回复描述，用于区分qos1,2消息回复 |
 
-| **字段** | **解释**    |
-|--------|-----------|
-| ack    | QoS1 回复   |
-| rec    | QoS2 发布确认 |
-| comp   | QoS2 发布完成 |
 
-   <br/> -  <br/> - 
 示例
 ```plsql
 select
