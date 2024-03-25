@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>V2C</title>
+    <meta name="generator" content="VuePress 1.9.2">
+    <link rel="icon" href="/img/logo.svg">
+    <script src="/js/iframeSizer.contentWindow.min.js"></script>
+    <meta name="description" content="这是fluxmq的官方文档">
+    
+    <link rel="preload" href="/assets/css/0.styles.137fa30b.css" as="style"><link rel="preload" href="/assets/js/app.68145017.js" as="script"><link rel="preload" href="/assets/js/3.d361d128.js" as="script"><link rel="preload" href="/assets/js/2.e3b5698d.js" as="script"><link rel="prefetch" href="/assets/js/10.be728078.js"><link rel="prefetch" href="/assets/js/11.11ac62c0.js"><link rel="prefetch" href="/assets/js/12.3ed6f694.js"><link rel="prefetch" href="/assets/js/13.d666fef9.js"><link rel="prefetch" href="/assets/js/14.3eff0ed7.js"><link rel="prefetch" href="/assets/js/15.9bb54f0c.js"><link rel="prefetch" href="/assets/js/16.8a625803.js"><link rel="prefetch" href="/assets/js/17.dac18461.js"><link rel="prefetch" href="/assets/js/18.9dcb46e2.js"><link rel="prefetch" href="/assets/js/19.dc9e5707.js"><link rel="prefetch" href="/assets/js/20.561c46c8.js"><link rel="prefetch" href="/assets/js/21.862a63cb.js"><link rel="prefetch" href="/assets/js/22.cb5589f2.js"><link rel="prefetch" href="/assets/js/23.8a7c97f8.js"><link rel="prefetch" href="/assets/js/24.8b795962.js"><link rel="prefetch" href="/assets/js/25.e7a0bfe6.js"><link rel="prefetch" href="/assets/js/26.1a1f5d6c.js"><link rel="prefetch" href="/assets/js/27.c6a36f98.js"><link rel="prefetch" href="/assets/js/28.c11192ec.js"><link rel="prefetch" href="/assets/js/29.1d5071dc.js"><link rel="prefetch" href="/assets/js/30.952d35b4.js"><link rel="prefetch" href="/assets/js/31.405370ad.js"><link rel="prefetch" href="/assets/js/32.ac0191da.js"><link rel="prefetch" href="/assets/js/33.b6cfbd50.js"><link rel="prefetch" href="/assets/js/34.b7f9800f.js"><link rel="prefetch" href="/assets/js/35.1cd37356.js"><link rel="prefetch" href="/assets/js/36.4263756f.js"><link rel="prefetch" href="/assets/js/37.e5b56748.js"><link rel="prefetch" href="/assets/js/38.41c59705.js"><link rel="prefetch" href="/assets/js/39.19d040e8.js"><link rel="prefetch" href="/assets/js/4.a12dcae2.js"><link rel="prefetch" href="/assets/js/40.e6828d1f.js"><link rel="prefetch" href="/assets/js/41.299069db.js"><link rel="prefetch" href="/assets/js/42.b5eb961c.js"><link rel="prefetch" href="/assets/js/43.f05f4fbf.js"><link rel="prefetch" href="/assets/js/44.5a0b9e3a.js"><link rel="prefetch" href="/assets/js/45.9c2cc43b.js"><link rel="prefetch" href="/assets/js/46.b5c65bb3.js"><link rel="prefetch" href="/assets/js/47.95bfd925.js"><link rel="prefetch" href="/assets/js/48.e5ac2e07.js"><link rel="prefetch" href="/assets/js/49.31f8946e.js"><link rel="prefetch" href="/assets/js/5.a1c50164.js"><link rel="prefetch" href="/assets/js/50.b7e1e2e7.js"><link rel="prefetch" href="/assets/js/51.0b6bf1e0.js"><link rel="prefetch" href="/assets/js/52.222645b0.js"><link rel="prefetch" href="/assets/js/53.ab612933.js"><link rel="prefetch" href="/assets/js/54.ad5f6111.js"><link rel="prefetch" href="/assets/js/55.5e1ef338.js"><link rel="prefetch" href="/assets/js/56.3a3eb399.js"><link rel="prefetch" href="/assets/js/57.f3b4d9a2.js"><link rel="prefetch" href="/assets/js/58.5d70b40d.js"><link rel="prefetch" href="/assets/js/59.6e9e86bd.js"><link rel="prefetch" href="/assets/js/6.4432e201.js"><link rel="prefetch" href="/assets/js/60.5b916218.js"><link rel="prefetch" href="/assets/js/61.98cd0d14.js"><link rel="prefetch" href="/assets/js/62.8d4e0b9d.js"><link rel="prefetch" href="/assets/js/63.d42299aa.js"><link rel="prefetch" href="/assets/js/64.66ac0b5d.js"><link rel="prefetch" href="/assets/js/65.5667d91e.js"><link rel="prefetch" href="/assets/js/66.a95f692c.js"><link rel="prefetch" href="/assets/js/67.44163d5b.js"><link rel="prefetch" href="/assets/js/68.2022f047.js"><link rel="prefetch" href="/assets/js/69.d4859d87.js"><link rel="prefetch" href="/assets/js/7.599df26a.js"><link rel="prefetch" href="/assets/js/70.5da5b236.js"><link rel="prefetch" href="/assets/js/71.c0c5b11c.js"><link rel="prefetch" href="/assets/js/72.39b3959e.js"><link rel="prefetch" href="/assets/js/73.f4407cbb.js"><link rel="prefetch" href="/assets/js/74.2b0b4f38.js"><link rel="prefetch" href="/assets/js/75.d1c6fff9.js"><link rel="prefetch" href="/assets/js/76.eac2778e.js"><link rel="prefetch" href="/assets/js/77.6ede6bab.js"><link rel="prefetch" href="/assets/js/78.7b160403.js"><link rel="prefetch" href="/assets/js/79.60161df1.js"><link rel="prefetch" href="/assets/js/8.6465229c.js"><link rel="prefetch" href="/assets/js/80.e8288987.js"><link rel="prefetch" href="/assets/js/81.233cf038.js"><link rel="prefetch" href="/assets/js/82.9bfb1b19.js"><link rel="prefetch" href="/assets/js/83.0058d912.js"><link rel="prefetch" href="/assets/js/84.3adf8fbd.js"><link rel="prefetch" href="/assets/js/85.e6c9bb4a.js"><link rel="prefetch" href="/assets/js/86.f68bae59.js"><link rel="prefetch" href="/assets/js/87.4ecb729d.js"><link rel="prefetch" href="/assets/js/88.8a32e1c1.js"><link rel="prefetch" href="/assets/js/89.d402caec.js"><link rel="prefetch" href="/assets/js/9.dca91057.js"><link rel="prefetch" href="/assets/js/90.8253d23b.js"><link rel="prefetch" href="/assets/js/91.2d74ce5b.js"><link rel="prefetch" href="/assets/js/92.6b64292a.js"><link rel="prefetch" href="/assets/js/93.a2dee640.js"><link rel="prefetch" href="/assets/js/94.f9396b22.js"><link rel="prefetch" href="/assets/js/95.8bf78b05.js"><link rel="prefetch" href="/assets/js/96.9f1c932b.js"><link rel="prefetch" href="/assets/js/97.c86154e0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.137fa30b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>FluxMQ</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>安装部署</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>配置指南</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>功能</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>规则引擎</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>指令消费</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>多协议</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/views/protocol/coap.html" class="sidebar-link">COAP</a></li><li><a href="/views/protocol/32960.html" class="sidebar-link">GBT32960</a></li><li><a href="/views/protocol/v2c.html" aria-current="page" class="active sidebar-link">V2C</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/views/protocol/v2c.html#启动服务" class="sidebar-link">启动服务</a></li><li class="sidebar-sub-header"><a href="/views/protocol/v2c.html#上行消息" class="sidebar-link">上行消息</a></li><li class="sidebar-sub-header"><a href="/views/protocol/v2c.html#下行" class="sidebar-link">下行</a></li></ul></li><li><a href="/views/protocol/ocpp.html" class="sidebar-link">OCPP</a></li><li><a href="/views/protocol/websocket.html" class="sidebar-link">WEBSOCKET</a></li><li><a href="/views/protocol/i1.html" class="sidebar-link">i1</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>工具</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>API</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>性能压测</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>可观测</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/views/vs.html" class="sidebar-link">VS EMQX</a></li><li><a href="/views/mqtt.html" class="sidebar-link">MQTT协议介绍</a></li><li><a href="/views/FAQ.html" class="sidebar-link">FAQ</a></li><li><a href="/views/License.html" class="sidebar-link">LICENSE</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="v2c"><a href="#v2c" class="header-anchor">#</a> V2C</h1> <blockquote><p>V2C基于《智能网联汽车云控系统》的第2部分。这个标准适用于智能网联汽车云控系统中智能网联汽车车载终端与云控基础平台的数据交互</p></blockquote> <h2 id="启动服务"><a href="#启动服务" class="header-anchor">#</a> 启动服务</h2> <blockquote><p>V2C协议插件启动支持6种认证方式,如果默认不加密报文则不需要传AES-128、RSA、SM2、SM4的密钥，具体加密方式由客户端决定。服务端解析协议拿到加密方式后，再动态解密报文</p></blockquote> <h2 id="上行消息"><a href="#上行消息" class="header-anchor">#</a> 上行消息</h2> <h3 id="结构体"><a href="#结构体" class="header-anchor">#</a> 结构体</h3> <div class="language-JSON extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> 0x15<span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="车辆注册"><a href="#车辆注册" class="header-anchor">#</a> 车辆注册</h3> <p><img src="/assets/img/register.6f176d66.jpg" alt="img.png"></p> <div class="language-JSON extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+     <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> 0x62<span class="token punctuation">,</span>
+     <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+     <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+		<span class="token property">&quot;vehicleBrand&quot;</span><span class="token operator">:</span> <span class="token string">&quot;qm123456&quot;</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;vehicleType&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;fuelType&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;adLevel&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;conLevel&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;plateNumber&quot;</span><span class="token operator">:</span> <span class="token string">&quot;苏A123456&quot;</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;terminalType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;123456&quot;</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;userdefinedData&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="车辆准静态参数信息"><a href="#车辆准静态参数信息" class="header-anchor">#</a> 车辆准静态参数信息</h3> <p><img src="/assets/img/static.b44407e7.jpg" alt="img.png"></p> <div class="language-JSON extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+     <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> 0x34<span class="token punctuation">,</span>
+     <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+     <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> 
+        <span class="token property">&quot;vehicleId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;123456789&quot;</span><span class="token punctuation">,</span> 
+        <span class="token property">&quot;swVersion&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1.0.0&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;hwVersion&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2.0.0&quot;</span><span class="token punctuation">,</span> 
+        <span class="token property">&quot;adVersion&quot;</span><span class="token operator">:</span> <span class="token string">&quot;3.0.0&quot;</span><span class="token punctuation">,</span> 
+        <span class="token property">&quot;comType&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> 
+        <span class="token property">&quot;posConfidence&quot;</span><span class="token operator">:</span> <span class="token number">90</span><span class="token punctuation">,</span> 
+        <span class="token property">&quot;timeSync&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> 
+        <span class="token property">&quot;gnssType&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> 
+        <span class="token property">&quot;userdefinedData&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Test Data&quot;</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="车辆运行状态信息"><a href="#车辆运行状态信息" class="header-anchor">#</a> 车辆运行状态信息</h3> <h4 id="车辆基础信息"><a href="#车辆基础信息" class="header-anchor">#</a> 车辆基础信息</h4> <p><img src="/assets/img/basic.c640b6bb.jpg" alt="img.png"></p> <h4 id="车辆辅助驾驶系统信息"><a href="#车辆辅助驾驶系统信息" class="header-anchor">#</a> 车辆辅助驾驶系统信息</h4> <p><img src="/assets/img/driver_ast.4244ccac.jpg" alt="img.png"> <img src="/assets/img/driver_ast_1.e8fcbad1.jpg" alt="img.png"></p> <h4 id="自动驾驶系统信息"><a href="#自动驾驶系统信息" class="header-anchor">#</a> 自动驾驶系统信息</h4> <p><img src="/assets/img/auto_driver.1d2035a1.jpg" alt="img.png"></p> <div class="language-JSON extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+     <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> 0x15<span class="token punctuation">,</span>
+     <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+     <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+	    <span class="token property">&quot;vehicleId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;123456789&quot;</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;messageId&quot;</span><span class="token operator">:</span> <span class="token number">12345</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;timestampGNSS&quot;</span><span class="token operator">:</span> <span class="token number">1629372000000</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;velocityGNSS&quot;</span><span class="token operator">:</span> <span class="token number">80</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;position&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	    	<span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">37.123456</span><span class="token punctuation">,</span>
+	    	<span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">-122.987654</span><span class="token punctuation">,</span>
+	    	<span class="token property">&quot;elevation&quot;</span><span class="token operator">:</span> <span class="token number">100</span>
+	    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;heading&quot;</span><span class="token operator">:</span> <span class="token number">90</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;tapPos&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;steeringAngle&quot;</span><span class="token operator">:</span> <span class="token number">45</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;velocityCAN&quot;</span><span class="token operator">:</span> <span class="token number">60</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;accelerationLon&quot;</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;accelerationLat&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;accelerationVer&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;yawRate&quot;</span><span class="token operator">:</span> <span class="token number">30</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;accelPos&quot;</span><span class="token operator">:</span> <span class="token number">70</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;engineSpeed&quot;</span><span class="token operator">:</span> <span class="token number">3000</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;engineTorque&quot;</span><span class="token operator">:</span> <span class="token number">250</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;brakeFlag&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;brakePos&quot;</span><span class="token operator">:</span> <span class="token number">50</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;brakePressure&quot;</span><span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;fuelConsumtion&quot;</span><span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;driveMode&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;destLocation&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	    	<span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">37.987654</span><span class="token punctuation">,</span>
+	    	<span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">-122.123456</span>
+	    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">]</span>
+</code></pre></div><div class="language-JSON extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> 0x15<span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;vehicleId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;123456789&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;messageId&quot;</span><span class="token operator">:</span> <span class="token number">12345</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;timestampGNSS&quot;</span><span class="token operator">:</span> <span class="token number">1629372000000</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;velocityGNSS&quot;</span><span class="token operator">:</span> <span class="token number">80</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;position&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">37.123456</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">-122.987654</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;elevation&quot;</span><span class="token operator">:</span> <span class="token number">100</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;heading&quot;</span><span class="token operator">:</span> <span class="token number">90</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;tapPos&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;steeringAngle&quot;</span><span class="token operator">:</span> <span class="token number">45</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;velocityCAN&quot;</span><span class="token operator">:</span> <span class="token number">60</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;accelerationLon&quot;</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;accelerationLat&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;accelerationVer&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;yawRate&quot;</span><span class="token operator">:</span> <span class="token number">30</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;accelPos&quot;</span><span class="token operator">:</span> <span class="token number">70</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;engineSpeed&quot;</span><span class="token operator">:</span> <span class="token number">3000</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;engineTorque&quot;</span><span class="token operator">:</span> <span class="token number">250</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;brakeFlag&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;brakePos&quot;</span><span class="token operator">:</span> <span class="token number">50</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;brakePressure&quot;</span><span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;fuelConsumtion&quot;</span><span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;driveMode&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;destLocation&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">37.987654</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">-122.123456</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;absFlag&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;tcsFlag&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;espFlag&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;lkaFlag&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;accMode&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;fcwFlag&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;ldwFlag&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;aebFlag&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;lcaFlag&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;dmsFlag&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;mileage&quot;</span><span class="token operator">:</span> <span class="token number">50000</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;fuelGauge&quot;</span><span class="token operator">:</span> <span class="token number">75</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;soc&quot;</span><span class="token operator">:</span> <span class="token number">50</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;temperature&quot;</span><span class="token operator">:</span> <span class="token number">25</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;endurance&quot;</span><span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;vehFault&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;motorspeed&quot;</span><span class="token operator">:</span> <span class="token number">3000</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;motortorque&quot;</span><span class="token operator">:</span> <span class="token number">250</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;vehMode&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;chargeState&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;battVol&quot;</span><span class="token operator">:</span> <span class="token number">12</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;battCur&quot;</span><span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;hornState&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;wheelVelocity&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token number">60</span><span class="token punctuation">,</span>
+        <span class="token number">55</span><span class="token punctuation">,</span>
+        <span class="token number">65</span><span class="token punctuation">,</span>
+        <span class="token number">60</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;tirePressure&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token number">30</span><span class="token punctuation">,</span>
+        <span class="token number">32</span><span class="token punctuation">,</span>
+        <span class="token number">31</span><span class="token punctuation">,</span>
+        <span class="token number">30</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;lights&quot;</span><span class="token operator">:</span> <span class="token number">7</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;doors&quot;</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;userdefinedData&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Test Data&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-JSON extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+     <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> 0x15<span class="token punctuation">,</span>
+     <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+     <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+	    <span class="token property">&quot;vehicleId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;123456789&quot;</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;messageId&quot;</span><span class="token operator">:</span> <span class="token number">12345</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;timestampGNSS&quot;</span><span class="token operator">:</span> <span class="token number">1629372000000</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;velocityGNSS&quot;</span><span class="token operator">:</span> <span class="token number">80</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;position&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	    	<span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">37.123456</span><span class="token punctuation">,</span>
+	    	<span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">-122.987654</span><span class="token punctuation">,</span>
+	    	<span class="token property">&quot;elevation&quot;</span><span class="token operator">:</span> <span class="token number">100</span>
+	    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;heading&quot;</span><span class="token operator">:</span> <span class="token number">90</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;tapPos&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;steeringAngle&quot;</span><span class="token operator">:</span> <span class="token number">45</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;velocityCAN&quot;</span><span class="token operator">:</span> <span class="token number">60</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;accelerationLon&quot;</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;accelerationLat&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;accelerationVer&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;yawRate&quot;</span><span class="token operator">:</span> <span class="token number">30</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;accelPos&quot;</span><span class="token operator">:</span> <span class="token number">70</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;engineSpeed&quot;</span><span class="token operator">:</span> <span class="token number">3000</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;engineTorque&quot;</span><span class="token operator">:</span> <span class="token number">250</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;brakeFlag&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;brakePos&quot;</span><span class="token operator">:</span> <span class="token number">50</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;brakePressure&quot;</span><span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;fuelConsumtion&quot;</span><span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;driveMode&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;destLocation&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	    	<span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">37.987654</span><span class="token punctuation">,</span>
+	    	<span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">-122.123456</span>
+	    <span class="token punctuation">}</span>
+           <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span>
+	    <span class="token property">&quot;absFlag&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;tcsFlag&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;espFlag&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;lkaFlag&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;accMode&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;fcwFlag&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;ldwFlag&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;aebFlag&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;lcaFlag&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;dmsFlag&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;mileage&quot;</span><span class="token operator">:</span> <span class="token number">50000</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;fuelGauge&quot;</span><span class="token operator">:</span> <span class="token number">75</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;soc&quot;</span><span class="token operator">:</span> <span class="token number">50</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;temperature&quot;</span><span class="token operator">:</span> <span class="token number">25</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;endurance&quot;</span><span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;vehFault&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;motorspeed&quot;</span><span class="token operator">:</span> <span class="token number">3000</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;motortorque&quot;</span><span class="token operator">:</span> <span class="token number">250</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;vehMode&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;chargeState&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;battVol&quot;</span><span class="token operator">:</span> <span class="token number">12</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;battCur&quot;</span><span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;hornState&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;wheelVelocity&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">60</span><span class="token punctuation">,</span> <span class="token number">55</span><span class="token punctuation">,</span> <span class="token number">65</span><span class="token punctuation">,</span> <span class="token number">60</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;tirePressure&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">30</span><span class="token punctuation">,</span> <span class="token number">32</span><span class="token punctuation">,</span> <span class="token number">31</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;lights&quot;</span><span class="token operator">:</span> <span class="token number">7</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;doors&quot;</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;userdefinedData&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Test Data&quot;</span>
+       <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span>
+	    <span class="token property">&quot;cloudMessageId&quot;</span><span class="token operator">:</span> <span class="token number">123456789</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;accelCmd&quot;</span><span class="token operator">:</span> <span class="token number">50</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;torqueCmd&quot;</span><span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;velocityCmd&quot;</span><span class="token operator">:</span> <span class="token number">70</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;planningLocs&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+	    	<span class="token property">&quot;expLongitude&quot;</span><span class="token operator">:</span> <span class="token number">37.123456</span><span class="token punctuation">,</span>
+	    	<span class="token property">&quot;expLatitude&quot;</span><span class="token operator">:</span> <span class="token number">-122.987654</span><span class="token punctuation">,</span>
+	    	<span class="token property">&quot;expSpeed&quot;</span><span class="token operator">:</span> <span class="token number">60</span><span class="token punctuation">,</span>
+	    	<span class="token property">&quot;expAcceleration&quot;</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+	    	<span class="token property">&quot;expHeading&quot;</span><span class="token operator">:</span> <span class="token number">90</span>
+	    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+	    	<span class="token property">&quot;expLongitude&quot;</span><span class="token operator">:</span> <span class="token number">37.987654</span><span class="token punctuation">,</span>
+	    	<span class="token property">&quot;expLatitude&quot;</span><span class="token operator">:</span> <span class="token number">-122.123456</span><span class="token punctuation">,</span>
+	    	<span class="token property">&quot;expSpeed&quot;</span><span class="token operator">:</span> <span class="token number">65</span><span class="token punctuation">,</span>
+	    	<span class="token property">&quot;expAcceleration&quot;</span><span class="token operator">:</span> <span class="token number">7</span><span class="token punctuation">,</span>
+	    	<span class="token property">&quot;expHeading&quot;</span><span class="token operator">:</span> <span class="token number">100</span>
+	    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;decisionLaneChange&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;decisionAccel&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;decisionTurnSignal&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;decisionVehicleStatus&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;detectionData&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+	    	<span class="token property">&quot;objectType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Car&quot;</span><span class="token punctuation">,</span>
+	    	<span class="token property">&quot;distance&quot;</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+	    	<span class="token property">&quot;velocity&quot;</span><span class="token operator">:</span> <span class="token number">30</span>
+	    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+	    	<span class="token property">&quot;objectType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Pedestrian&quot;</span><span class="token punctuation">,</span>
+	    	<span class="token property">&quot;distance&quot;</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+	    	<span class="token property">&quot;velocity&quot;</span><span class="token operator">:</span> <span class="token number">10</span>
+	    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;autoDrivingSysFault&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;EPB&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;userdefinedData&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Test Data&quot;</span>
+     <span class="token punctuation">}</span><span class="token punctuation">]</span>
+</code></pre></div><h3 id="车辆运行状态信息补发"><a href="#车辆运行状态信息补发" class="header-anchor">#</a> 车辆运行状态信息补发</h3> <p><img src="/assets/img/resend.335fb1a9.jpg" alt="img.png"></p> <div class="language-JSON extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+     <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> 0x60<span class="token punctuation">,</span>
+     <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+     <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+	    <span class="token property">&quot;vehicleId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;123456789&quot;</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;messageId&quot;</span><span class="token operator">:</span> <span class="token number">12345</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;timestampGNSS&quot;</span><span class="token operator">:</span> <span class="token number">1629372000000</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;velocityGNSS&quot;</span><span class="token operator">:</span> <span class="token number">80</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;position&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	    	<span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">37.123456</span><span class="token punctuation">,</span>
+	    	<span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">-122.987654</span><span class="token punctuation">,</span>
+	    	<span class="token property">&quot;elevation&quot;</span><span class="token operator">:</span> <span class="token number">100</span>
+	    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;heading&quot;</span><span class="token operator">:</span> <span class="token number">90</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;tapPos&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;steeringAngle&quot;</span><span class="token operator">:</span> <span class="token number">45</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;velocityCAN&quot;</span><span class="token operator">:</span> <span class="token number">60</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;accelerationLon&quot;</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;accelerationLat&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;accelerationVer&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;yawRate&quot;</span><span class="token operator">:</span> <span class="token number">30</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;accelPos&quot;</span><span class="token operator">:</span> <span class="token number">70</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;engineSpeed&quot;</span><span class="token operator">:</span> <span class="token number">3000</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;engineTorque&quot;</span><span class="token operator">:</span> <span class="token number">250</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;brakeFlag&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;brakePos&quot;</span><span class="token operator">:</span> <span class="token number">50</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;brakePressure&quot;</span><span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;fuelConsumtion&quot;</span><span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;driveMode&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;destLocation&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	    	<span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">37.987654</span><span class="token punctuation">,</span>
+	    	<span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">-122.123456</span>
+	    <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span>
+	    <span class="token property">&quot;vehicleId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;123456789&quot;</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;messageId&quot;</span><span class="token operator">:</span> <span class="token number">12345</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;timestampGNSS&quot;</span><span class="token operator">:</span> <span class="token number">1629372000000</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;velocityGNSS&quot;</span><span class="token operator">:</span> <span class="token number">80</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;position&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	    	<span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">37.123456</span><span class="token punctuation">,</span>
+	    	<span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">-122.987654</span><span class="token punctuation">,</span>
+	    	<span class="token property">&quot;elevation&quot;</span><span class="token operator">:</span> <span class="token number">100</span>
+	    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;heading&quot;</span><span class="token operator">:</span> <span class="token number">90</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;tapPos&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;steeringAngle&quot;</span><span class="token operator">:</span> <span class="token number">45</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;velocityCAN&quot;</span><span class="token operator">:</span> <span class="token number">60</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;accelerationLon&quot;</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;accelerationLat&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;accelerationVer&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;yawRate&quot;</span><span class="token operator">:</span> <span class="token number">30</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;accelPos&quot;</span><span class="token operator">:</span> <span class="token number">70</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;engineSpeed&quot;</span><span class="token operator">:</span> <span class="token number">3000</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;engineTorque&quot;</span><span class="token operator">:</span> <span class="token number">250</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;brakeFlag&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;brakePos&quot;</span><span class="token operator">:</span> <span class="token number">50</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;brakePressure&quot;</span><span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;fuelConsumtion&quot;</span><span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;driveMode&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+	    <span class="token property">&quot;destLocation&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	    	<span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">37.987654</span><span class="token punctuation">,</span>
+	    	<span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">-122.123456</span>
+	    <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span>
+</code></pre></div><h3 id="心跳信息"><a href="#心跳信息" class="header-anchor">#</a> 心跳信息</h3> <div class="language-JSON extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> 0x0C<span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="自定义上行数据"><a href="#自定义上行数据" class="header-anchor">#</a> 自定义上行数据</h3> <div class="language-JSON extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> 0x5C<span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+     <span class="token property">&quot;vehicleId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;123456789&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">72</span><span class="token punctuation">,</span> <span class="token number">101</span><span class="token punctuation">,</span> <span class="token number">108</span><span class="token punctuation">,</span> <span class="token number">108</span><span class="token punctuation">,</span> <span class="token number">111</span><span class="token punctuation">,</span> <span class="token number">44</span><span class="token punctuation">,</span> <span class="token number">32</span><span class="token punctuation">,</span> <span class="token number">87</span><span class="token punctuation">,</span> <span class="token number">111</span><span class="token punctuation">,</span> <span class="token number">114</span><span class="token punctuation">,</span> <span class="token number">108</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">]</span>
+       <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="下行"><a href="#下行" class="header-anchor">#</a> 下行</h2> <blockquote><p>下行指令通过MQTT下发给具体的设备</p></blockquote> <div class="language-JSON extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> 0x5C<span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;controllerData&quot;</span><span class="token operator">:</span> <span class="token number">24</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+       <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="车辆功能订阅信息"><a href="#车辆功能订阅信息" class="header-anchor">#</a> 车辆功能订阅信息</h3> <p><img src="/assets/img/subs.ba4d0716.jpg" alt="img.png"></p> <div class="language-JSON extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> 0x36<span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;controllerData&quot;</span><span class="token operator">:</span> <span class="token number">24</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+     <span class="token property">&quot;vehicleId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;123456789&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">72</span><span class="token punctuation">,</span> <span class="token number">101</span><span class="token punctuation">,</span> <span class="token number">108</span><span class="token punctuation">,</span> <span class="token number">108</span><span class="token punctuation">]</span>
+       <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="实时决策建议"><a href="#实时决策建议" class="header-anchor">#</a> 实时决策建议</h3> <h4 id="信号灯路口车速引导"><a href="#信号灯路口车速引导" class="header-anchor">#</a> 信号灯路口车速引导</h4> <p><img src="/assets/img/glosa.94e24566.jpg" alt="img.png"></p> <div class="language-JSON extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> 0x3C<span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;controllerData&quot;</span><span class="token operator">:</span> <span class="token number">24</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	 <span class="token property">&quot;vehicleId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;123456789&quot;</span><span class="token punctuation">,</span>
+	 <span class="token property">&quot;dataLen&quot;</span><span class="token operator">:</span> <span class="token number">63</span><span class="token punctuation">,</span>
+	 <span class="token property">&quot;adviceType&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+	 <span class="token property">&quot;seq&quot;</span><span class="token operator">:</span> <span class="token number">12345</span><span class="token punctuation">,</span>
+	 <span class="token property">&quot;uuid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;abcdefg123456&quot;</span><span class="token punctuation">,</span>
+	 <span class="token property">&quot;timestamp&quot;</span><span class="token operator">:</span> <span class="token number">1628765432</span><span class="token punctuation">,</span>
+	 <span class="token property">&quot;valid&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+	 <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+	 <span class="token property">&quot;spdMax&quot;</span><span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+	 <span class="token property">&quot;spdMin&quot;</span><span class="token operator">:</span> <span class="token number">30</span><span class="token punctuation">,</span>
+	 <span class="token property">&quot;spdExp&quot;</span><span class="token operator">:</span> <span class="token number">60</span><span class="token punctuation">,</span>
+	 <span class="token property">&quot;d2StopLine&quot;</span><span class="token operator">:</span> <span class="token number">50</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="无信号灯路口右转"><a href="#无信号灯路口右转" class="header-anchor">#</a> 无信号灯路口右转</h4> <p><img src="/assets/img/ntlar.e790f178.jpg" alt="img.png"></p> <div class="language-JSON extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> 0x3C<span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;controllerData&quot;</span><span class="token operator">:</span> <span class="token number">24</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	 <span class="token property">&quot;vehicleId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;123456789&quot;</span><span class="token punctuation">,</span>
+	 <span class="token property">&quot;dataLen&quot;</span><span class="token operator">:</span> <span class="token number">55</span><span class="token punctuation">,</span>
+	 <span class="token property">&quot;adviceType&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+	 <span class="token property">&quot;seq&quot;</span><span class="token operator">:</span> <span class="token number">12345</span><span class="token punctuation">,</span>
+	 <span class="token property">&quot;uuid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ijklmnop123456&quot;</span><span class="token punctuation">,</span>
+	 <span class="token property">&quot;timestamp&quot;</span><span class="token operator">:</span> <span class="token number">1628765432</span><span class="token punctuation">,</span>
+	 <span class="token property">&quot;adviceFlag&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+	 <span class="token property">&quot;level&quot;</span><span class="token operator">:</span> <span class="token number">2</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="动态车道级限速"><a href="#动态车道级限速" class="header-anchor">#</a> 动态车道级限速</h4> <p><img src="/assets/img/lanespdlmt.6871d4d1.jpg" alt="img.png"></p> <div class="language-JSON extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> 0x3C<span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;controllerData&quot;</span><span class="token operator">:</span> <span class="token number">24</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	 <span class="token property">&quot;vehicleId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;123456789&quot;</span><span class="token punctuation">,</span>
+	 <span class="token property">&quot;dataLen&quot;</span><span class="token operator">:</span> <span class="token number">120</span><span class="token punctuation">,</span>
+	 <span class="token property">&quot;adviceType&quot;</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+	 <span class="token property">&quot;seq&quot;</span><span class="token operator">:</span> <span class="token number">12345</span><span class="token punctuation">,</span>
+	 <span class="token property">&quot;uuid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;qrstuvwx123456&quot;</span><span class="token punctuation">,</span>
+	 <span class="token property">&quot;timestamp&quot;</span><span class="token operator">:</span> <span class="token number">1628765432</span><span class="token punctuation">,</span>
+	 <span class="token property">&quot;alertRadius&quot;</span><span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+	 <span class="token property">&quot;pointNum&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+	 <span class="token property">&quot;alertPath&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+	 	<span class="token property">&quot;expLongitude&quot;</span><span class="token operator">:</span> <span class="token number">37.123456</span><span class="token punctuation">,</span>
+	 	<span class="token property">&quot;expLatitude&quot;</span><span class="token operator">:</span> <span class="token number">-122.987654</span><span class="token punctuation">,</span>
+	 	<span class="token property">&quot;expSpeed&quot;</span><span class="token operator">:</span> <span class="token number">60</span><span class="token punctuation">,</span>
+	 	<span class="token property">&quot;expAcceleration&quot;</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+	 	<span class="token property">&quot;expHeading&quot;</span><span class="token operator">:</span> <span class="token number">90</span>
+	 <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+	 	<span class="token property">&quot;expLongitude&quot;</span><span class="token operator">:</span> <span class="token number">37.987654</span><span class="token punctuation">,</span>
+	 	<span class="token property">&quot;expLatitude&quot;</span><span class="token operator">:</span> <span class="token number">-122.123456</span><span class="token punctuation">,</span>
+	 	<span class="token property">&quot;expSpeed&quot;</span><span class="token operator">:</span> <span class="token number">65</span><span class="token punctuation">,</span>
+	 	<span class="token property">&quot;expAcceleration&quot;</span><span class="token operator">:</span> <span class="token number">7</span><span class="token punctuation">,</span>
+	 	<span class="token property">&quot;expHeading&quot;</span><span class="token operator">:</span> <span class="token number">100</span>
+	 <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+	 <span class="token property">&quot;laneNum&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+	 <span class="token property">&quot;speedLmt&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+	 	<span class="token property">&quot;laneId&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+	 	<span class="token property">&quot;speedLimit&quot;</span><span class="token operator">:</span> <span class="token number">40</span>
+	 <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+	 	<span class="token property">&quot;laneId&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+	 	<span class="token property">&quot;speedLimit&quot;</span><span class="token operator">:</span> <span class="token number">50</span>
+	 <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+	 	<span class="token property">&quot;laneId&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+	 	<span class="token property">&quot;speedLimit&quot;</span><span class="token operator">:</span> <span class="token number">60</span>
+	 <span class="token punctuation">}</span><span class="token punctuation">]</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="匝道汇回预警"><a href="#匝道汇回预警" class="header-anchor">#</a> 匝道汇回预警</h4> <p><img src="/assets/img/ramp_intent_change.33a3894c.jpg" alt="img.png"></p> <div class="language-JSON extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> 0x3C<span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;controllerData&quot;</span><span class="token operator">:</span> <span class="token number">24</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	<span class="token property">&quot;vehicleId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;123456789&quot;</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;dataLen&quot;</span><span class="token operator">:</span> <span class="token number">128</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;adviceType&quot;</span><span class="token operator">:</span> <span class="token number">7</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;seq&quot;</span><span class="token operator">:</span> <span class="token number">12345</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;uuid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;yzabcdef123456&quot;</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;timestamp&quot;</span><span class="token operator">:</span> <span class="token number">1628765432</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;alertRadius&quot;</span><span class="token operator">:</span> <span class="token number">50</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;pointNum&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;alertPath&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+		<span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">37.123456</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">-122.987654</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;elevation&quot;</span><span class="token operator">:</span><span class="token number">34</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+		<span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">37.987654</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">-122.123456</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;elevation&quot;</span><span class="token operator">:</span><span class="token number">34</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+		<span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">38.765432</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">-121.234567</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;elevation&quot;</span><span class="token operator">:</span><span class="token number">34</span>
+	<span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;dtc&quot;</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;ttc&quot;</span><span class="token operator">:</span> <span class="token number">5</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="前向碰撞预警"><a href="#前向碰撞预警" class="header-anchor">#</a> 前向碰撞预警</h4> <p><img src="/assets/img/fcw.bd8a5946.jpg" alt="img.png"></p> <div class="language-JSON extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> 0x3C<span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;controllerData&quot;</span><span class="token operator">:</span> <span class="token number">24</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	<span class="token property">&quot;vehicleId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;123456789&quot;</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;dataLen&quot;</span><span class="token operator">:</span><span class="token number">123</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;adviceType&quot;</span><span class="token operator">:</span> <span class="token number">9</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;seq&quot;</span><span class="token operator">:</span> <span class="token number">12345</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;uuid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;abcdefg123456&quot;</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;timestamp&quot;</span><span class="token operator">:</span> <span class="token number">1628765432</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;alertRadius&quot;</span><span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;pointNum&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;alertPath&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+		<span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">37.123456</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">-122.987654</span><span class="token punctuation">,</span>
+		elevation<span class="token operator">:</span><span class="token number">34</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+		<span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">37.987654</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">-122.123456</span><span class="token punctuation">,</span>
+		elevation<span class="token operator">:</span><span class="token number">34</span>
+	<span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;objType&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;fcwLevel&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;fcwDistance&quot;</span><span class="token operator">:</span> <span class="token number">50</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;fcwLaneId&quot;</span><span class="token operator">:</span> <span class="token number">1</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="异常车辆预警"><a href="#异常车辆预警" class="header-anchor">#</a> 异常车辆预警</h4> <p><img src="/assets/img/avw.886d6a71.jpg" alt="img.png"></p> <div class="language-JSON extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> 0x3C<span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;controllerData&quot;</span><span class="token operator">:</span> <span class="token number">24</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	<span class="token property">&quot;vehicleId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;123456789&quot;</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;dataLen&quot;</span><span class="token operator">:</span> <span class="token number">123</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;adviceType&quot;</span><span class="token operator">:</span> <span class="token number">11</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;seq&quot;</span><span class="token operator">:</span> <span class="token number">12345</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;uuid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;hijklmno123456&quot;</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;timestamp&quot;</span><span class="token operator">:</span> <span class="token number">1628765432</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;alertType&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;alertRadius&quot;</span><span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;pointNum&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;alertPath&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+		<span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">37.123456</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">-122.987654</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;elevation&quot;</span><span class="token operator">:</span> <span class="token number">100</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+		<span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">37.987654</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">-122.123456</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;elevation&quot;</span><span class="token operator">:</span> <span class="token number">200</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+		<span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">38.765432</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">-121.234567</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;elevation&quot;</span><span class="token operator">:</span> <span class="token number">300</span>
+	<span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;velocity&quot;</span><span class="token operator">:</span> <span class="token number">80</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;heading&quot;</span><span class="token operator">:</span> <span class="token number">90</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="紧急车辆预警"><a href="#紧急车辆预警" class="header-anchor">#</a> 紧急车辆预警</h4> <p><img src="/assets/img/evw.0233581d.jpg" alt="img.png"></p> <div class="language-JSON extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> 0x3C<span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;controllerData&quot;</span><span class="token operator">:</span> <span class="token number">24</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	<span class="token property">&quot;vehicleId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;123456789&quot;</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;dataLen&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;adviceType&quot;</span><span class="token operator">:</span> <span class="token number">13</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;seq&quot;</span><span class="token operator">:</span> <span class="token number">12345</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;uuid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pqrstuvwxyz123456&quot;</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;timestamp&quot;</span><span class="token operator">:</span> <span class="token number">1628765432</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;alertRadius&quot;</span><span class="token operator">:</span> <span class="token number">150</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;alertType&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;pointNum&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;alertPath&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+		<span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">37.123456</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">-122.987654</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;elevation&quot;</span><span class="token operator">:</span> <span class="token number">200</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+		<span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">37.987654</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">-122.123456</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;elevation&quot;</span><span class="token operator">:</span> <span class="token number">200</span>
+	<span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;velocity&quot;</span><span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;heading&quot;</span><span class="token operator">:</span> <span class="token number">180</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="匝道辅助功能"><a href="#匝道辅助功能" class="header-anchor">#</a> 匝道辅助功能</h4> <p><img src="/assets/img/ramp_assist.9ee593a6.jpg" alt="img.png"></p> <div class="language-JSON extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> 0x3C<span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;controllerData&quot;</span><span class="token operator">:</span> <span class="token number">24</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	<span class="token property">&quot;vehicleId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;123456789&quot;</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;dataLen&quot;</span><span class="token operator">:</span> <span class="token number">78</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;adviceType&quot;</span><span class="token operator">:</span> <span class="token number">15</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;seq&quot;</span><span class="token operator">:</span> <span class="token number">12345</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;uuid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;abcdefg123456&quot;</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;timestamp&quot;</span><span class="token operator">:</span> <span class="token number">1628765432</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;alertRadius&quot;</span><span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;pointNum&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;alertPath&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+		<span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">37.123456</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">-122.987654</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;elevation&quot;</span><span class="token operator">:</span> <span class="token number">200</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+		<span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">37.987654</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">-122.123456</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;elevation&quot;</span><span class="token operator">:</span> <span class="token number">200</span>
+	<span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;velocity&quot;</span><span class="token operator">:</span> <span class="token number">80</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;direction&quot;</span><span class="token operator">:</span> <span class="token number">1</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="通用-rsi"><a href="#通用-rsi" class="header-anchor">#</a> 通用 RSI</h4> <p><img src="/assets/img/rsi.fc6f3686.jpg" alt="img.png"> <img src="/assets/img/rsi1.a0e838bf.jpg" alt="img.png"></p> <div class="language-JSON extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> 0x3C<span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;controllerData&quot;</span><span class="token operator">:</span> <span class="token number">24</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	<span class="token property">&quot;vehicleId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;123456789&quot;</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;dataLen&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;adviceType&quot;</span><span class="token operator">:</span> <span class="token number">17</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;seq&quot;</span><span class="token operator">:</span> <span class="token number">12345</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;rsisNum&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;rsis&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+		<span class="token property">&quot;uuid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;abcdefg123456&quot;</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;timestamp&quot;</span><span class="token operator">:</span> <span class="token number">1628765432</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;eventPosition&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+			<span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">37.123456</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">-122.987654</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;elevation&quot;</span><span class="token operator">:</span> <span class="token number">100</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;eventType&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;eventSource&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;eventRadius&quot;</span><span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;referenceLinksNum&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;referenceLinks&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+			<span class="token property">&quot;upstreamNodeId&quot;</span><span class="token operator">:</span> <span class="token number">123</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;downstreamNodeId&quot;</span><span class="token operator">:</span> <span class="token number">456</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;referenceLanesNum&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;referenceLanes&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span>
+		<span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;priority&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;alertPath&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+			<span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">37.765432</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">-121.234567</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;elevation&quot;</span><span class="token operator">:</span> <span class="token number">300</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;pathRadius&quot;</span><span class="token operator">:</span> <span class="token number">150</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;status&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;userdefinedData&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Example data&quot;</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+		<span class="token property">&quot;uuid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;hijklmno123456&quot;</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;timestamp&quot;</span><span class="token operator">:</span> <span class="token number">1628765432</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;eventPosition&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+			<span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">38.123456</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">-123.987654</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;elevation&quot;</span><span class="token operator">:</span> <span class="token number">200</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;eventType&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;eventSource&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;eventRadius&quot;</span><span class="token operator">:</span> <span class="token number">300</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;referenceLinksNum&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;referenceLinks&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+			<span class="token property">&quot;upstreamNodeId&quot;</span><span class="token operator">:</span> <span class="token number">789</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;downstreamNodeId&quot;</span><span class="token operator">:</span> <span class="token number">12</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;referenceLanesNum&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;referenceLanes&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+			<span class="token property">&quot;upstreamNodeId&quot;</span><span class="token operator">:</span> <span class="token number">345</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;downstreamNodeId&quot;</span><span class="token operator">:</span> <span class="token number">678</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;referenceLanesNum&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;referenceLanes&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">]</span>
+		<span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;priority&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;alertPath&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+			<span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">38.543210</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">-121.345678</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;elevation&quot;</span><span class="token operator">:</span> <span class="token number">500</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;pathRadius&quot;</span><span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;status&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;userdefinedData&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Another example data&quot;</span>
+	<span class="token punctuation">}</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="路线规划功能"><a href="#路线规划功能" class="header-anchor">#</a> 路线规划功能</h4> <p><img src="/assets/img/ramp_assist.9ee593a6.jpg" alt="img.png"></p> <div class="language-JSON extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> 0x3C<span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;controllerData&quot;</span><span class="token operator">:</span> <span class="token number">24</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	<span class="token property">&quot;vehicleId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;123456789&quot;</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;dataLen&quot;</span><span class="token operator">:</span> <span class="token number">78</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;adviceType&quot;</span><span class="token operator">:</span> <span class="token number">21</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;seq&quot;</span><span class="token operator">:</span> <span class="token number">12345</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;uuid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;abcdefg123456&quot;</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;timestamp&quot;</span><span class="token operator">:</span> <span class="token number">1628765432</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;pathLength&quot;</span><span class="token operator">:</span> <span class="token number">5000</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;destLocation&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+		<span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">37.123456</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">-122.987654</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;destinationHeading&quot;</span><span class="token operator">:</span> <span class="token number">180</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;roadNum&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;roadName&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">123456789</span><span class="token punctuation">,</span> <span class="token number">987654321</span><span class="token punctuation">,</span> <span class="token number">456789123</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="实时控制建议"><a href="#实时控制建议" class="header-anchor">#</a> 实时控制建议</h3> <p><img src="/assets/img/instruct.3edfbac3.jpg" alt="img.png"> <img src="/assets/img/instruct1.51b98f38.jpg" alt="img.png"> <img src="/assets/img/instruct2.986f6f22.jpg" alt="img.png"></p> <div class="language-JSON extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> 0x1E<span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;controllerData&quot;</span><span class="token operator">:</span> <span class="token number">24</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	<span class="token property">&quot;vehicleId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;123456789&quot;</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;instructMode&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;cloudMessageId&quot;</span><span class="token operator">:</span> <span class="token number">12345</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;workState&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;errCode&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;instructCommand&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;instructDirection&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;minFollowDist&quot;</span><span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;instructDataLen&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;instructData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+		<span class="token property">&quot;expNum&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;expSpeed&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">60</span><span class="token punctuation">,</span> <span class="token number">80</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;expAcceleration&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">15</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;equationNum&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;equation&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+			<span class="token property">&quot;coefficientA&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;coefficientB&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;coefficientC&quot;</span><span class="token operator">:</span> <span class="token number">3</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+			<span class="token property">&quot;coefficientA&quot;</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;coefficientB&quot;</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;coefficientC&quot;</span><span class="token operator">:</span> <span class="token number">6</span>
+		<span class="token punctuation">}</span><span class="token punctuation">]</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-JSON extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> 0x1E<span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;controllerData&quot;</span><span class="token operator">:</span> <span class="token number">24</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	<span class="token property">&quot;vehicleId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;123456789&quot;</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;instructMode&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;cloudMessageId&quot;</span><span class="token operator">:</span> <span class="token number">12345</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;workState&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;errCode&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;instructCommand&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;instructDirection&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;minFollowDist&quot;</span><span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;instructDataLen&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;instructData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+		<span class="token property">&quot;traceLength&quot;</span><span class="token operator">:</span> <span class="token number">1000</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;GNSSPointNum&quot;</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;GNSSPoint&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+			<span class="token property">&quot;expLongitude&quot;</span><span class="token operator">:</span> <span class="token number">123456789</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;expLatitude&quot;</span><span class="token operator">:</span> <span class="token number">987654321</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;expSpeed&quot;</span><span class="token operator">:</span> <span class="token number">60</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;expAcceleration&quot;</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;expHeading&quot;</span><span class="token operator">:</span> <span class="token number">180</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+			<span class="token property">&quot;expLongitude&quot;</span><span class="token operator">:</span> <span class="token number">987654321</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;expLatitude&quot;</span><span class="token operator">:</span> <span class="token number">123456789</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;expSpeed&quot;</span><span class="token operator">:</span> <span class="token number">80</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;expAcceleration&quot;</span><span class="token operator">:</span> <span class="token number">15</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;expHeading&quot;</span><span class="token operator">:</span> <span class="token number">270</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+			<span class="token property">&quot;expLongitude&quot;</span><span class="token operator">:</span> <span class="token number">456789123</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;expLatitude&quot;</span><span class="token operator">:</span> <span class="token number">789123456</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;expSpeed&quot;</span><span class="token operator">:</span> <span class="token number">70</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;expAcceleration&quot;</span><span class="token operator">:</span> <span class="token number">12</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;expHeading&quot;</span><span class="token operator">:</span> <span class="token number">90</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+			<span class="token property">&quot;expLongitude&quot;</span><span class="token operator">:</span> <span class="token number">789123456</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;expLatitude&quot;</span><span class="token operator">:</span> <span class="token number">456789123</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;expSpeed&quot;</span><span class="token operator">:</span> <span class="token number">90</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;expAcceleration&quot;</span><span class="token operator">:</span> <span class="token number">18</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;expHeading&quot;</span><span class="token operator">:</span> <span class="token number">135</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+			<span class="token property">&quot;expLongitude&quot;</span><span class="token operator">:</span> <span class="token number">234567890</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;expLatitude&quot;</span><span class="token operator">:</span> <span class="token number">567890123</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;expSpeed&quot;</span><span class="token operator">:</span> <span class="token number">75</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;expAcceleration&quot;</span><span class="token operator">:</span> <span class="token number">11</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;expHeading&quot;</span><span class="token operator">:</span> <span class="token number">45</span>
+		<span class="token punctuation">}</span><span class="token punctuation">]</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="远程控制"><a href="#远程控制" class="header-anchor">#</a> 远程控制</h3> <p><img src="/assets/img/remotectl.01c2455a.jpg" alt="img.png"> <img src="/assets/img/remotectl1.23423117.jpg" alt="img.png"> <img src="/assets/img/remotectl2.4b718e09.jpg" alt="img.png"></p> <div class="language-JSON extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> 0x1F<span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;controllerData&quot;</span><span class="token operator">:</span> <span class="token number">24</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	<span class="token property">&quot;vehicleId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;123456789&quot;</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;cloudMessageId&quot;</span><span class="token operator">:</span> <span class="token number">12345</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;controlType&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;controlData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+		<span class="token property">&quot;steeringAngle&quot;</span><span class="token operator">:</span> <span class="token number">30</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;steeringAngularVelocity&quot;</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;accelPos&quot;</span><span class="token operator">:</span> <span class="token number">50</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;brakeFlag&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;brakePos&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;tapPos&quot;</span><span class="token operator">:</span> <span class="token number">2</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-JSON extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> 0x1F<span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;controllerData&quot;</span><span class="token operator">:</span> <span class="token number">24</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	<span class="token property">&quot;vehicleId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;123456789&quot;</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;cloudMessageId&quot;</span><span class="token operator">:</span> <span class="token number">12345</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;controlType&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;controlData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+		<span class="token property">&quot;lights&quot;</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;wipers&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;doors&quot;</span><span class="token operator">:</span> <span class="token number">7</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;windows&quot;</span><span class="token operator">:</span> <span class="token number">3</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="辅助功能"><a href="#辅助功能" class="header-anchor">#</a> 辅助功能</h3> <h4 id="云端请求车辆视频流"><a href="#云端请求车辆视频流" class="header-anchor">#</a> 云端请求车辆视频流</h4> <p><img src="/assets/img/stream_video.4d84ee3b.jpg" alt="img.png"></p> <div class="language-JSON extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> 0x3E<span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;controllerData&quot;</span><span class="token operator">:</span> <span class="token number">24</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	<span class="token property">&quot;vehicleId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;123456789&quot;</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;dataLen&quot;</span><span class="token operator">:</span> <span class="token number">36</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;assistantFunctionData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	    <span class="token property">&quot;astFuncType&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;uuid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;abcdefg123456789&quot;</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;astFuncFlag&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;protoType&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;camId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;camera1&quot;</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;videoQual&quot;</span><span class="token operator">:</span> <span class="token number">720</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;urlAddr&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://example.com/stream&quot;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="车辆历史视频上传"><a href="#车辆历史视频上传" class="header-anchor">#</a> 车辆历史视频上传</h4> <p><img src="/assets/img/hist_video.b6f1766f.jpg" alt="img.png"> <img src="/assets/img/hist_video1.5bf26b5a.jpg" alt="img.png"></p> <div class="language-JSON extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> 0x3E<span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;controllerData&quot;</span><span class="token operator">:</span> <span class="token number">24</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	<span class="token property">&quot;vehicleId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;123456789&quot;</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;dataLen&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;assistantFunctionData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	    <span class="token property">&quot;astFuncType&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;uuid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;abcdefg123456789&quot;</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;videoType&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;fileFormat&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;camId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;camera1&quot;</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;startTime&quot;</span><span class="token operator">:</span> <span class="token number">1635331200000</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;endTime&quot;</span><span class="token operator">:</span> <span class="token number">1635417599000</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;urlAddr&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://example.com/history&quot;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="车端事件数据记录系统数据"><a href="#车端事件数据记录系统数据" class="header-anchor">#</a> 车端事件数据记录系统数据</h4> <p><img src="/assets/img/hist_edr.0a8ad01a.jpg" alt="img.png"></p> <div class="language-JSON extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> 0x3E<span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;controllerData&quot;</span><span class="token operator">:</span> <span class="token number">24</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	<span class="token property">&quot;vehicleId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;123456789&quot;</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;dataLen&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;assistantFunctionData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	    <span class="token property">&quot;astFuncType&quot;</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;uuid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;abcdefg123456789&quot;</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;startTime&quot;</span><span class="token operator">:</span> <span class="token number">1635331200000</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;endTime&quot;</span><span class="token operator">:</span> <span class="token number">1635417599000</span><span class="token punctuation">,</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="云端下发信号灯信息"><a href="#云端下发信号灯信息" class="header-anchor">#</a> 云端下发信号灯信息</h4> <p><img src="/assets/img/tlm.f2b57726.jpg" alt="img.png"> <img src="/assets/img/tlm1.93800402.jpg" alt="img.png"> <img src="/assets/img/tlm2.aee545ed.jpg" alt="img.png"></p> <div class="language-JSON extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> 0x3E<span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;controllerData&quot;</span><span class="token operator">:</span> <span class="token number">24</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	<span class="token property">&quot;vehicleId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;123456789&quot;</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;dataLen&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;assistantFunctionData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	    <span class="token property">&quot;astFuncType&quot;</span><span class="token operator">:</span> <span class="token number">7</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;seq&quot;</span><span class="token operator">:</span> <span class="token number">12345</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;lightType&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;phaseNumber&quot;</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;phaseState&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+			<span class="token property">&quot;phaseID&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;lightState&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;timeLeft&quot;</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;nextLightState&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;nextLightTime&quot;</span><span class="token operator">:</span> <span class="token number">5</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+			<span class="token property">&quot;phaseID&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;lightState&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;timeLeft&quot;</span><span class="token operator">:</span> <span class="token number">8</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;nextLightState&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;nextLightTime&quot;</span><span class="token operator">:</span> <span class="token number">7</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+			<span class="token property">&quot;phaseID&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;lightState&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;timeLeft&quot;</span><span class="token operator">:</span> <span class="token number">12</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;nextLightState&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;nextLightTime&quot;</span><span class="token operator">:</span> <span class="token number">6</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+			<span class="token property">&quot;phaseID&quot;</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;lightState&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;timeLeft&quot;</span><span class="token operator">:</span> <span class="token number">15</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;nextLightState&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;nextLightTime&quot;</span><span class="token operator">:</span> <span class="token number">10</span>
+		<span class="token punctuation">}</span><span class="token punctuation">]</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="云端下发定位增强信息"><a href="#云端下发定位增强信息" class="header-anchor">#</a> 云端下发定位增强信息</h4> <p><img src="/assets/img/rtcm.a3c30e1f.jpg" alt="img.png"></p> <div class="language-JSON extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> 0x3E<span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;controllerData&quot;</span><span class="token operator">:</span> <span class="token number">24</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	<span class="token property">&quot;vehicleId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;123456789&quot;</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;dataLen&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;assistantFunctionData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	    <span class="token property">&quot;astFuncType&quot;</span><span class="token operator">:</span> <span class="token number">9</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;timestamp&quot;</span><span class="token operator">:</span> <span class="token number">1635417599000</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;seq&quot;</span><span class="token operator">:</span> <span class="token number">12345</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;rtcmVersion&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;rtcmPayload&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="云端下发实时感知信息"><a href="#云端下发实时感知信息" class="header-anchor">#</a> 云端下发实时感知信息</h4> <p><img src="/assets/img/rsm.53983b43.jpg" alt="img.png"></p> <div class="language-JSON extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> 0x3E<span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;controllerData&quot;</span><span class="token operator">:</span> <span class="token number">24</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	<span class="token property">&quot;vehicleId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;123456789&quot;</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;dataLen&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;assistantFunctionData&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	    <span class="token property">&quot;astFuncType&quot;</span><span class="token operator">:</span> <span class="token number">11</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;timestamp&quot;</span><span class="token operator">:</span> <span class="token number">1635417599000</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;seq&quot;</span><span class="token operator">:</span> <span class="token number">12345</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;source&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;objNum&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+		<span class="token property">&quot;detectionData&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+			<span class="token property">&quot;uuid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;abcdefg123456789&quot;</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;objId&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;status&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;len&quot;</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;width&quot;</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;height&quot;</span><span class="token operator">:</span> <span class="token number">6</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;position&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+				<span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">123456789</span><span class="token punctuation">,</span>
+				<span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">987654321</span>
+			<span class="token punctuation">}</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;locEast&quot;</span><span class="token operator">:</span> <span class="token number">12345</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;locNorth&quot;</span><span class="token operator">:</span> <span class="token number">67890</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;posConfidence&quot;</span><span class="token operator">:</span> <span class="token number">7</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;elevation&quot;</span><span class="token operator">:</span> <span class="token number">54321</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;elevConfidence&quot;</span><span class="token operator">:</span> <span class="token number">8</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;speed&quot;</span><span class="token operator">:</span> <span class="token number">9</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;speedConfidence&quot;</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;speedEast&quot;</span><span class="token operator">:</span> <span class="token number">11</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;speedEastConfidence&quot;</span><span class="token operator">:</span> <span class="token number">12</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;speedNorth&quot;</span><span class="token operator">:</span> <span class="token number">13</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;speedNorthConfidence&quot;</span><span class="token operator">:</span> <span class="token number">14</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;heading&quot;</span><span class="token operator">:</span> <span class="token number">15</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;headConfidence&quot;</span><span class="token operator">:</span> <span class="token number">16</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;accelVert&quot;</span><span class="token operator">:</span> <span class="token number">17</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;accelVertConfidence&quot;</span><span class="token operator">:</span> <span class="token number">18</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;trackedTimes&quot;</span><span class="token operator">:</span> <span class="token number">19</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;histLocs&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+				<span class="token property">&quot;position&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+					<span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">123456789</span><span class="token punctuation">,</span>
+					<span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">987654321</span>
+				<span class="token punctuation">}</span><span class="token punctuation">,</span>
+				<span class="token property">&quot;posConfidence&quot;</span><span class="token operator">:</span> <span class="token number">7</span><span class="token punctuation">,</span>
+				<span class="token property">&quot;speed&quot;</span><span class="token operator">:</span> <span class="token number">9</span><span class="token punctuation">,</span>
+				<span class="token property">&quot;speedConfidence&quot;</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+				<span class="token property">&quot;heading&quot;</span><span class="token operator">:</span> <span class="token number">15</span><span class="token punctuation">,</span>
+				<span class="token property">&quot;headConfidence&quot;</span><span class="token operator">:</span> <span class="token number">16</span>
+			<span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;predLocs&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+				<span class="token property">&quot;position&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+					<span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">123456789</span><span class="token punctuation">,</span>
+					<span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">987654321</span>
+				<span class="token punctuation">}</span><span class="token punctuation">,</span>
+				<span class="token property">&quot;posConfidence&quot;</span><span class="token operator">:</span> <span class="token number">7</span><span class="token punctuation">,</span>
+				<span class="token property">&quot;speed&quot;</span><span class="token operator">:</span> <span class="token number">9</span><span class="token punctuation">,</span>
+				<span class="token property">&quot;speedConfidence&quot;</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+				<span class="token property">&quot;heading&quot;</span><span class="token operator">:</span> <span class="token number">15</span><span class="token punctuation">,</span>
+				<span class="token property">&quot;headConfidence&quot;</span><span class="token operator">:</span> <span class="token number">16</span>
+			<span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;laneId&quot;</span><span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;filterInfoType&quot;</span><span class="token operator">:</span> <span class="token number">21</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;filterInfo&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+				<span class="token property">&quot;varIndex&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+				<span class="token property">&quot;covs&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+				<span class="token property">&quot;covsPred&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">]</span>
+			<span class="token punctuation">}</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;plateNo&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ABC123&quot;</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;plateType&quot;</span><span class="token operator">:</span> <span class="token number">22</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;plateColor&quot;</span><span class="token operator">:</span> <span class="token number">23</span><span class="token punctuation">,</span>
+			<span class="token property">&quot;objColor&quot;</span><span class="token operator">:</span> <span class="token number">24</span>
+		<span class="token punctuation">}</span><span class="token punctuation">]</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="上行自定义"><a href="#上行自定义" class="header-anchor">#</a> 上行自定义</h3> <div class="language-JSON extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> 0x5C<span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;controllerData&quot;</span><span class="token operator">:</span> <span class="token number">24</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+	<span class="token property">&quot;vehicleId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;123456789&quot;</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;dataLen&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+	<span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/views/protocol/32960.html" class="prev">
+        GBT32960
+      </a></span> <span class="next"><a href="/views/protocol/ocpp.html">
+        OCPP
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.68145017.js" defer></script><script src="/assets/js/3.d361d128.js" defer></script><script src="/assets/js/2.e3b5698d.js" defer></script>
+  </body>
+</html>
