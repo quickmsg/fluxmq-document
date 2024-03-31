@@ -28,7 +28,7 @@ mqtts: # tcp配置
   port: 1883 # mqtt端口号
   wiretap: false  # 二进制日志 前提是 logLevel = DEBUG
   messageMaxSize: 4194304 # 接收消息的最大限制 默认4194304(4M)
-  proxy: false # 默认false, 支持HAProxy协议解析
+  proxy: false # 默认false, 支持proxy_protocol协议解析
   options:
     SO_BACKLOG: 2000
   ssl:
@@ -70,3 +70,5 @@ ws: # tcp配置
 | options | netty 的options配置 | 不推荐配置 |
 | childOptions | netty 的child channel options配置 | 不推荐配置 |
 | ssl参数 | ssl启动参数 | 选填   |
+| proxy | proxy_protocol 协议解析            | 默认不启用 |
+
