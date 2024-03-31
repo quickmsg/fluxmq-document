@@ -1,4 +1,5 @@
 #  ELASTICSEARCH
+>   2.0.11 版本移除此功能
 
 ```yaml
 elasticsearch:

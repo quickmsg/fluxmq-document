@@ -2,8 +2,10 @@
 完整配置文件如下：
 
 ```YAML
-logLevel: DEBUG # 系统日志
+logLevel: INFO # 系统日志
 logAll: true
+allowEmptyMessage: true # 是否允许空消息传递规则引擎
+allowAnonymousAccess: true # 是否允许匿名访问
 pool:
   bossThreadSize: 1
   workThreadSize: 20
@@ -38,10 +40,6 @@ cluster: # 集群配置
   addresses: ["127.0.0.1" ]
 meter:
   meterType: PROMETHEUS # INFLUXDB , PROMETHEUS
-elasticsearch:
-  url: 127.0.0.1:9200
-  userName: elastic
-  password: fluxmq
 eventbus:
   compressed: true
   batch: true
@@ -51,7 +49,7 @@ shareSubscribe:
   strategy: RANDOM
   maxShareSubscribeSize: 100
 store:
-  storeType: LOCAL # MYSQL,LOCAL
+  storeType: LOCAL # MYSQL,LOCAL,MEMORY,POSTGRESQL
   datasource:
     url: jdbc:mysql://121.40.92.152:3306/ignite2?useSSL=false
     username:  root
