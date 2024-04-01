@@ -194,6 +194,7 @@ module.exports = {
                 collapsable: true,
                 sidebarDepth: 1,
                 children: [
+                    ['/views/view/api', 'Prometheus+Grafana'],
                     ['/views/view/metrics', 'Metrics'],
                 ]
             },
