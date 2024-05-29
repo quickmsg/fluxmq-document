@@ -52,7 +52,7 @@ module.exports = {
                     ['/views/config/eventbus', 'EVENTBUS配置'],
                     ['/views/config/store', '配置持久化'],
                     ['/views/config/shareSubscribe', '共享订阅配置'],
-                    ['/views/config/es', 'ES配置'],
+                    ['/views/config/retry', '重试配置'],
                     ['/views/config/application', '应用配置']
                 ]
             },

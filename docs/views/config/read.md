@@ -6,6 +6,9 @@ logLevel: INFO # 系统日志
 logAll: true
 allowEmptyMessage: true # 是否允许空消息传递规则引擎
 allowAnonymousAccess: true # 是否允许匿名访问
+onHeap: false
+license: license.base64
+
 pool:
   bossThreadSize: 1
   workThreadSize: 20
@@ -25,7 +28,11 @@ mqtt: # tcp配置
   options:
     SO_RCVBUF: 65536
     SO_BACKLOG: 2000
-http: # http相关配置 端口固定60000
+retry: # 重试配置
+  retrySize : 10
+  retryPeriod : 10
+  maxUnConfirmMessageSize : 200
+http: # http配置
   host: 127.0.0.1
   port: 60000
   accessLog: false # http访问日志
@@ -56,6 +63,5 @@ store:
     password:  lxr7293209
 application:
   name: fluxmq
-license: license.base64  
 
 ```
