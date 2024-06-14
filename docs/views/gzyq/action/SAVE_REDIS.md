@@ -3,6 +3,17 @@
 ![img.png](../../../assets/images/gzyq/action/save-redis.png)
 ##  支持设置redis脚本
 
+### 支持动态获取字段
+fluxmq新增redis存储，只需要根据对应的[数据类型](../rule/EVENT.md)数据格式，选择对应的占位符插入即可，
+
+```SHELL
+set ${clientId} 1 && set ${clientId} ${timestamp}
+```
+
+### Redis指令
+
+
+
 目前支持的指令如下：
 
 | 指令                   | 描述              |

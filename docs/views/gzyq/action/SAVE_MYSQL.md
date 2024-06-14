@@ -3,7 +3,7 @@
 ![img.png](../../../assets/images/gzyq/rule/save_mysql.png)
 
 ##  Sql脚本
-fluxmq新增mysql存储的时候默认提供插入的sql脚本,只需要根据对应的数据类型数据格式，选择对应的占位符插入即可，
+fluxmq新增mysql存储的时候默认提供插入的sql脚本,只需要根据对应的[数据类型](../rule/EVENT.md)数据格式，选择对应的占位符插入即可，
 
 ```sql
 insert into
