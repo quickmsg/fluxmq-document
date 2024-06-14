@@ -102,6 +102,8 @@ module.exports = {
                         collapsable: true,
                         sidebarDepth: 2,
                         children: [
+                            ['/views/gzyq/action/SAVE_KAFKA', '保存到Kafka'],
+                            ['/views/gzyq/action/SAVE_MYSQL', '保存到Mysql'],
                             ['/views/gzyq/action/SAVE_REDIS', '保存到Redis'],
                         ]
                     },
