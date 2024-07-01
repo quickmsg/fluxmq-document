@@ -161,7 +161,6 @@ module.exports = {
                 collapsable: true,
                 sidebarDepth: 1,
                 children: [
-                    ['/views/tools/monitor', '系统监控'],
                     ['/views/tools/log', '日志监控'],
                     ['/views/tools/ssl', '证书生成']
                 ]
@@ -196,7 +195,7 @@ module.exports = {
                 collapsable: true,
                 sidebarDepth: 1,
                 children: [
-                    ['/views/view/api', 'Prometheus+Grafana'],
+                    ['/views/view/api', '监控安装'],
                     ['/views/view/metrics', 'Metrics'],
                 ]
             },
