@@ -20,8 +20,8 @@ module.exports = {
                 text: '版本',
                 icon: 'reco-document',
                 items: [
-                    {text: '2.0.13', link: '/views/install'},
-                    {text: '2.0.12', link: '/views/install'}
+                    {text: '2.0.13', link: '/views/install/Linux'},
+                    {text: '2.0.12', link: '/views/install/Windows'}
                 ]
             }
         ],
