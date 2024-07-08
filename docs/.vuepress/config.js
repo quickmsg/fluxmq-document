@@ -31,7 +31,6 @@ module.exports = {
                 {
                     title: "FluxMQ",
                     collapsable: true,
-                    sidebarDepth: 1,
                     children: [
                         ['/views/product/introduction', '产品介绍'],
                         ['/views/product/core', '功能概览']
@@ -40,7 +39,6 @@ module.exports = {
                 {
                     title: "安装部署",
                     collapsable: true,
-                    sidebarDepth: 1,
                     children: [
                         ['/views/install/optimize', '系统优化'],
                         ['/views/install/docker', 'Docker'],
@@ -53,7 +51,6 @@ module.exports = {
                 {
                     title: "配置指南",
                     collapsable: true,
-                    sidebarDepth: 1,
                     children: [
                         ['/views/config/read', '前言'],
                         ['/views/config/mqtt', 'MQTT配置'],
@@ -70,7 +67,6 @@ module.exports = {
                 {
                     title: "功能",
                     collapsable: true,
-                    sidebarDepth: 1,
                     children: [
                         ['/views/function/admin', '管理页面'],
                         ['/views/function/dashboard', 'Dashboard'],
@@ -94,12 +90,10 @@ module.exports = {
                 {
                     title: "规则引擎",
                     collapsable: true,
-                    sidebarDepth: 1,
                     children: [
                         {
                             title: "规则配置",
                             collapsable: true,
-                            sidebarDepth: 2,
                             children: [
                                 ['/views/gzyq/rule/INTRODUCE', '介绍'],
                                 ['/views/gzyq/rule/STARTED', '创建规则'],
@@ -111,7 +105,6 @@ module.exports = {
                         {
                             title: "动作类型",
                             collapsable: true,
-                            sidebarDepth: 2,
                             children: [
                                 ['/views/gzyq/action/SAVE_KAFKA', '保存到Kafka'],
                                 ['/views/gzyq/action/SAVE_MYSQL', '保存到Mysql'],
@@ -121,7 +114,6 @@ module.exports = {
                         {
                             title: "数据源配置",
                             collapsable: true,
-                            sidebarDepth: 2,
                             children: [
                                 ['/views/gzyq/source/BEFORE', '前言'],
                                 ['/views/gzyq/source/MYSQL', 'Mysql'],
@@ -144,7 +136,6 @@ module.exports = {
                 {
                     title: "指令消费",
                     collapsable: true,
-                    sidebarDepth: 1,
                     children: [
                         ['/views/command/KAFKA', 'KAFKA'],
                         ['/views/command/ROCKETMQ', 'ROCKETMQ'],
@@ -156,7 +147,6 @@ module.exports = {
                 {
                     title: "多协议",
                     collapsable: true,
-                    sidebarDepth: 1,
                     children: [
                         ['/views/protocol/coap', 'COAP'],
                         ['/views/protocol/32960', 'GBT32960'],
@@ -170,7 +160,6 @@ module.exports = {
                 {
                     title: "工具",
                     collapsable: true,
-                    sidebarDepth: 1,
                     children: [
                         ['/views/tools/log', '日志监控'],
                         ['/views/tools/ssl', '证书生成']
@@ -179,7 +168,6 @@ module.exports = {
                 {
                     title: "API",
                     collapsable: true,
-                    sidebarDepth: 1,
                     children: [
                         ['/views/api/Publish', '消息推送'],
                         ['/views/api/Check', '客户端查询']
@@ -189,7 +177,6 @@ module.exports = {
                 {
                     title: "性能压测",
                     collapsable: true,
-                    sidebarDepth: 1,
                     children: [
                         ['/views/test/Conn', '连接数压测'],
                         ['/views/test/Broad', '广播压测'],
@@ -204,7 +191,6 @@ module.exports = {
                 {
                     title: "可观测",
                     collapsable: true,
-                    sidebarDepth: 1,
                     children: [
                         ['/views/view/api', '监控安装'],
                         ['/views/view/metrics', 'Metrics'],
