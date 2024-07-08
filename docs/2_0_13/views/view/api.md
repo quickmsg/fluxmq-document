@@ -30,7 +30,7 @@ grafana ui界面：http://ip:3000/login
 ## 4. 导入json
 > 下载下面2个json文件，分别是mqtt-info.json、mqtt-jvm.json，导入即可监控fluxmq系统
 
-[MQTT监控](https://fluxmq.obs.cn-east-3.myhuaweicloud.com/mqtt-info.json)
+[MQTT监控](https://fluxmq.obs.cn-east-3.myhuaweicloud.com/mqtt-info-2.0.13.json)
 
 [JVM监控](https://fluxmq.obs.cn-east-3.myhuaweicloud.com/mqtt-jvm.json)
 
