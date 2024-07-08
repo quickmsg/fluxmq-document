@@ -251,11 +251,11 @@ module.exports = {
                             title: "认证鉴权",
                             collapsable: true,
                             children: [
-                                ['views/auh/before', '介绍'],
-                                ['views/auh/db', '数据库认证'],
-                                ['views/auh/redis', 'redis认证'],
-                                ['views/auh/rest', 'http认证'],
-                                ['views/auh/fixed', '密码认证']
+                                ['views/auth/before', '介绍'],
+                                ['views/auth/db', '数据库认证'],
+                                ['views/auth/redis', 'redis认证'],
+                                ['views/auth/rest', 'http认证'],
+                                ['views/auth/fixed', '密码认证']
                             ]
                         },
                         ['views/function/control', '访问控制'],
