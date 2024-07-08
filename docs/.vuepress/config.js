@@ -29,7 +29,7 @@ module.exports = {
         sidebar: {
             "/2_0_12/": [
                 {
-                    title: "fluxmq",
+                    title: "前言",
                     collapsable: true,
                     children: [
                         ['views/product/introduction', '产品介绍'],
@@ -203,7 +203,7 @@ module.exports = {
             ],
             "/2_0_13/": [
                 {
-                    title: "fluxmq",
+                    title: "前言",
                     collapsable: true,
                     children: [
                         ['views/product/introduction', '产品介绍'],
