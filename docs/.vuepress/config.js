@@ -9,6 +9,7 @@ module.exports = {
     description: '这是fluxmq的官方文档',
     dest: 'public',
     base: '/',
+    sidebar: 'auto',
     head: [
         ['link', {rel: 'icon', href: '/img/logo.svg'}],
         ['script', {src: '/js/iframeSizer.contentWindow.min.js'}]
@@ -20,13 +21,13 @@ module.exports = {
                 text: '版本',
                 icon: 'reco-document',
                 items: [
-                    {text: '2.0.13', link: '/2_0_13'},
-                    {text: '2.0.12', link: '/2_0_12'}
+                    {text: '2.0.13', link: '/2_0_13/views/product/introduction'},
+                    {text: '2.0.12', link: '/2_0_12/views/product/introduction'}
                 ]
             }
         ],
         sidebar: {
-            "/2_0_12/": [
+            "/2_0_12": [
                 {
                     title: "FluxMQ",
                     collapsable: true,
