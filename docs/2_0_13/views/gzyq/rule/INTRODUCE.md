@@ -32,14 +32,23 @@ SELECT clientid, connected_at FROM "$EVENT.CONNECT" WHERE username = 'fluxmq'
 ```规则、动作、资源的关系:
 规则: {
     SQL 语句,
-    动作: 
+    动作:[
         {
             动作1,
             动作参数,
             绑定资源: {
                 资源配置
             }
-        }
+        },
+        {
+            动作2,
+            动作参数,
+            绑定资源: {
+                资源配置
+            }
+        },
+    ] 
+        
 }
 ```
 
