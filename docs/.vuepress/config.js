@@ -248,7 +248,17 @@ module.exports = {
                         ['views/function/share', '共享订阅'],
                         ['views/function/session', '会话消息'],
                         ['views/function/delay', '延迟消息'],
-                        ['views/function/auth', '认证鉴权'],
+                        {
+                            title: "认证鉴权",
+                            collapsable: true,
+                            children: [
+                                ['views/auh/before', '介绍'],
+                                ['views/auh/db', '数据库认证'],
+                                ['views/auh/redis', 'redis认证'],
+                                ['views/auh/rest', 'http认证'],
+                                ['views/auh/fixed', '密码认证']
+                            ]
+                        },
                         ['views/function/control', '访问控制'],
                         ['views/function/link', '连接管理'],
                         ['views/function/topic', '主题管理'],
