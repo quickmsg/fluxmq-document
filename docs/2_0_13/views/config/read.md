@@ -8,7 +8,6 @@ allowEmptyMessage: true # 是否允许空消息传递规则引擎
 allowAnonymousAccess: true # 是否允许匿名访问
 onHeap: false
 license: license.base64
-
 pool:
   bossThreadSize: 1
   workThreadSize: 20
@@ -17,10 +16,10 @@ pool:
   eventMessageSize: 500000 # 业务线程数 默认=cpu核心数*10
   # lowWaterMark:  低水位： 默认32768
   # highWaterMark: 高水位: 默认65536
-  # globalReadSize:  全局读字节数/s 默认不限制
-  # globalWriteSize: 全局写字节数/s 默认不限制
-  # channelReadSize: 单连接读字节数/s 默认不限制
-  # channelWriteSize: 单连接写字节数/s 默认不限制
+  # globalReadSize:  全局读字节数/s 默认不限制 2.0.13版本已经移除,不生效
+  # globalWriteSize: 全局写字节数/s 默认不限制 2.0.13版本已经移除,不生效
+  # channelReadSize: 单连接读字节数/s 默认不限制 
+  # channelWriteSize: 单连接写字节数/s 默认不限制 
 mqtt: # tcp配置
   port: 1887 # mqtt端口号
   wiretap: false  # 二进制日志 前提是 logLevel = DEBUG
