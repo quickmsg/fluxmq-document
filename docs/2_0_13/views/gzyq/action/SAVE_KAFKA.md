@@ -1,6 +1,6 @@
 # 保存至kafka
 
-![img.png](../../../../assets/images/gzyq/rule/save_kafka.png)
+![img.png](../../../../assets/images/gzyq/action/kafka-new.png)
 
 ## 主题设置
 fluxmq支持动态设置kafka主题，主题分为以下2种，

@@ -1,6 +1,6 @@
 # 保存至redis
 
-![img.png](../../../../assets/images/gzyq/action/save-redis.png)
+![img.png](../../../../assets/images/gzyq/action/redis-new.png)
 ##  支持设置redis脚本
 
 ### 支持动态获取字段
