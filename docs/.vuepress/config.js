@@ -134,8 +134,15 @@ module.exports = {
                                 ['views/gzyq/action/SAVE_KAFKA', '保存到Kafka'],
                                 ['views/gzyq/action/SAVE_MYSQL', '保存到Mysql'],
                                 ['views/gzyq/action/SAVE_REDIS', '保存到Redis'],
-                                ['views/gzyq/action/OFFLINE_REDIS', '离线消息保存到Redis'],
-                                ['views/gzyq/action/OFFLINE_MYSQL', '离线消息保存到MYSQL'],
+                                {
+                                    title: "离线消息存储",
+                                    collapsable: true,
+                                    children: [
+                                        ['views/gzyq/action/OFFLINE', '前沿'],
+                                        ['views/gzyq/action/OFFLINE_REDIS', '离线消息保存到Redis'],
+                                        ['views/gzyq/action/OFFLINE_MYSQL', '离线消息保存到MYSQL'],
+                                    ]
+                                },
                             ]
                         },
                         {
