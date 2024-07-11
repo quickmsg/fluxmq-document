@@ -206,7 +206,7 @@ from
     "messageId": 1,
     "topic": "test",
     "qos": 1,
-    "clientIp": "183.136.225.31:21950",
+    "clientIp": "183.136.225.31",
     "timestamp": "1690599987495",
     "clientId": "A1212313",
     "nodeIp": "192.168.1.12"
@@ -237,7 +237,7 @@ from
 {
     "messageId": 1,
     "topic": "test",
-    "clientIp": "183.136.225.31:21950",
+    "clientIp": "183.136.225.31",
     "timestamp": "1690599987495",
     "clientId": "A1212313",
     "nodeIp": "192.168.1.1"
