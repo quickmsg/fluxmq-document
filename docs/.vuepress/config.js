@@ -124,7 +124,6 @@ module.exports = {
                                 ['views/gzyq/rule/INTRODUCE', '介绍'],
                                 ['views/gzyq/rule/STARTED', '创建规则'],
                                 ['views/gzyq/rule/GRAMMAR', 'SQL 语法与示例'],
-                                ['views/gzyq/rule/EVENT', 'SQL 事件类型与字段'],
                                 ['views/gzyq/rule/FUNCTION', '内置 SQL 函数']
                             ]
                         },
