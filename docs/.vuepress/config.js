@@ -138,7 +138,7 @@ module.exports = {
                                     title: "离线消息存储",
                                     collapsable: true,
                                     children: [
-                                        ['views/gzyq/action/OFFLINE', '前沿'],
+                                        ['views/gzyq/action/OFFLINE', '前言'],
                                         ['views/gzyq/action/OFFLINE_REDIS', '离线消息保存到Redis'],
                                         ['views/gzyq/action/OFFLINE_MYSQL', '离线消息保存到MYSQL'],
                                     ]
