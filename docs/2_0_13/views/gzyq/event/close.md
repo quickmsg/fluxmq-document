@@ -14,26 +14,14 @@
 
 `reason`连接断开原因：
 
-    NORMAL("normal", "客户端主动关闭"),
-
-    KICKED("kicked", "服务端主动关闭"),
-
-    TIMEOUT("timeout", "客户端心跳超时关闭"),
-
-    NOT_AUTHORIZED("not_authorized", "认证失败关闭"),
-
-    DISCONNECT("disconnect", "客户端主动关闭"),
-
-    OTHER_KICKED("other_kicked", "集群互踢");
-
-| **字段**         | **解释**    |
-|----------------|-----------|
-| normal         | 客户端主动关闭   |
-| kicked         | 服务端主动关闭   |
+| **字段**         | **解释**  |
+|----------------|---------|
+| normal         | 客户端关闭   |
+| kicked         | 服务端主动关闭 |
 | timeout        | 客户端心跳超时关闭 |
-| not_authorized | 认证失败关闭    |
-| other_kicked   | 集群互踢      |
-| disconnect     | 客户端主动关闭   |
+| not_authorized | 认证失败关闭  |
+| other_kicked   | 集群互踢    |
+| disconnect     | 客户端主动关闭 |
 
 示例
 
