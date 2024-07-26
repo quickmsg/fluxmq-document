@@ -112,8 +112,6 @@ module.exports = {
                                 ['views/gzyq/event/publish', '消息发布事件'],
                                 ['views/gzyq/event/ack', '消息确认事件'],
                                 ['views/gzyq/event/ping', '心跳事件'],
-                                ['views/gzyq/event/disconnect', '关闭连接事件'],
-                                ['views/gzyq/event/disconnect', '关闭连接事件'],
                                 ['views/gzyq/event/offline', '离线消息事件']
                             ]
                         },
