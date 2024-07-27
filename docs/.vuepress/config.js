@@ -193,7 +193,6 @@ module.exports = {
                     title: "工具",
                     collapsable: true,
                     children: [
-                        ['views/tools/log', '日志监控'],
                         ['views/tools/ssl', '证书生成']
                     ]
                 },

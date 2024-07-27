@@ -31,7 +31,7 @@
 ```
 @FeignClient("fluxmq")//服务名称
 public interface MqttPulishService {
-    @PostMapping("/public/mqtt/publish")
+    @PostMapping("/api/publish")
     void send(@RequestBody PublishBody body);
 }
 
@@ -40,13 +40,15 @@ public class PublishBody {
     private String topic;
     private int qos;
     private boolean retain;
-    private DataType dataType;
-    private Object message;
+    private String payload_encoding;
+    private String payload;
 }
 
-public enum DataType {
-    JSON,
-    STRING,
-    HEX
-}
 ```
+
+`payload_encoding`取值
+
+| **参数名**      | **参数说明**                         |
+|--------------|----------------------------------|
+| plain         | 明文 |
+| base64 | base加密               |
