@@ -201,7 +201,8 @@ module.exports = {
                     collapsable: true,
                     children: [
                         ['views/api/Publish', '消息推送'],
-                        ['views/api/Check', '客户端查询']
+                        ['views/api/Check', '客户端查询'],
+                        ['views/api/kick', '客户端关闭']
 
                     ]
                 },
