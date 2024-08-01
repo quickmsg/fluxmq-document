@@ -13,7 +13,7 @@ backend mqtt_backend
   stick-table type string len 32 size 100k expire 30m
   stick on req.payload(0,0), mqtt_field_value(connect,client_identifier)
 
-  # 增加 send-proxy 会把真实带IP透传给fluxmq，fluxmq配置中需要启用 proxy_protocol
+  # 增加 send-proxy 会把真实带IP透传给fluxmq，fluxmq配置中需要将proxy字段设置为true
   # server fluxmq1 fluxmq1.com:1883 check send-proxy-v2
 
   server fluxmq1 fluxmq1.com:1883 check
@@ -40,7 +40,7 @@ backend mqtts_backend
   server flmxmq3 fluxmq3.com:1883 check
 
 frontend mqtts_frontend
-  bind *:8883 ssl crt /etc/haproxy/certs/server.pem 
+  bind *:1883 ssl crt /etc/haproxy/certs/server.pem 
   # 双向认证
   # bind *:8883 ssl ca-file /etc/haproxy/certs/cacert.pem crt /etc/haproxy/certs/server.pem verify required
   mode tcp
@@ -51,12 +51,12 @@ frontend mqtts_frontend
 backend mqtt_ws_backend
   mode tcp
   balance roundrobin
-  server fluxmq1 fluxmq1.com:8083 check
-  server fluxmq2 fluxmq2.com:8083 check
-  server flmxmq3 fluxmq3.com:8083 check
+  server fluxmq1 fluxmq1.com:8883 check
+  server fluxmq2 fluxmq2.com:8883 check
+  server flmxmq3 fluxmq3.com:8883 check
 
 frontend mqtt_ws_frontend
-  bind *:8083 
+  bind *:8883 
   mode tcp
   default_backend mqtt_ws_backend
 ```
@@ -65,12 +65,12 @@ frontend mqtt_ws_frontend
 backend mqtt_wss_backend
   mode tcp
   balance roundrobin
-  server fluxmq1 fluxmq1.com:8083 check
-  server fluxmq2 fluxmq2.com:8083 check
-  server flmxmq3 fluxmq3.com:8083 check
+  server fluxmq1 fluxmq1.com:8883 check
+  server fluxmq2 fluxmq2.com:8883 check
+  server flmxmq3 fluxmq3.com:8883 check
 
 frontend mqtt_wss_frontend
-  bind *:8084 ssl crt /etc/haproxy/certs/server.pem
+  bind *:8883 ssl crt /etc/haproxy/certs/server.pem
   mode tcp 
   default_backend mqtt_wss_backend
 ```
