@@ -194,6 +194,7 @@ module.exports = {
                     collapsable: true,
                     children: [
                         ['views/tools/ssl', '证书生成']
+                        ['views/tools/haproxy', 'HaProxy配置']
                     ]
                 },
                 {
