@@ -1,7 +1,7 @@
 # Dashboard
 FluxMQ提供一个后台控制台，用户可通过页面直接看到当前系统的一些运行指标。
-![img.png](dashboard.png)
-![img.png](dashboard2.png)
+![img.png](../../../assets/images/function/dashboard.png)
+![img.png](../../../assets/images/function/dashboard2.png)
 
 ## 节点信息
 > 单节点统计
