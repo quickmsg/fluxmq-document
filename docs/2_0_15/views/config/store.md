@@ -3,7 +3,7 @@
 store:
   storeType: MYSQL # MYSQL,LOCAL,MEMORY,POSTGRESQL
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/ignite2?useSSL=false
+    url: jdbc:mysql://127.0.0.1:3306/fluxmq?useSSL=false
     username:  root
     password:  123456
 ```
