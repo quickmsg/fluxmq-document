@@ -29,7 +29,7 @@ store:
 
 下载SQL语句初始化FluxMQ持久化所需要的表结构：
 
-[点击下载初始化表SQL](https://fluxmq.obs.cn-east-3.myhuaweicloud.com/fluxmq-2.0.13-MYSQL.sql)
+[点击下载初始化表SQL](https://fluxmq.obs.cn-east-3.myhuaweicloud.com/fluxmq-2.0.15-MYSQL.sql)
 
 
 ```yaml
@@ -57,7 +57,7 @@ store:
 
 下载SQL语句初始化FluxMQ持久化所需要的表结构：
 
-[点击下载初始化表SQL](https://fluxmq.obs.cn-east-3.myhuaweicloud.com/fluxmq-2.0.13-PG.sql)
+[点击下载初始化表SQL](https://fluxmq.obs.cn-east-3.myhuaweicloud.com/fluxmq-2.0.15-PG.sql)
 
 ```yaml
 store:
