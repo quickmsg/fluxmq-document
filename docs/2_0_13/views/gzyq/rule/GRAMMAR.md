@@ -1,4 +1,3 @@
-<a id="jump1">SQL 语法与示例</a>
 # SQL 语法与示例
 
 ## SQL 语法
