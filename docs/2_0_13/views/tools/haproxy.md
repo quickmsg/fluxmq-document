@@ -1,14 +1,21 @@
-# 源码编译安装
-1. 源码下载
+# 源码安装
+## 源码下载
 haproxy [源码地址](https://www.haproxy.org/download/)
-2. 源码编译
-    1. [官方文档地址](https://github.com/haproxy/haproxy/blob/master/INSTALL)
-    2. 常规编译方法
-        1. make clean
-        2. make -j $(nproc) TARGET=linux-glibc USE_OPENSSL=1 USE_QUIC=1 USE_QUIC_OPENSSL_COMPAT=1 USE_LUA=1 USE_PCRE2=1 
-        3. sudo make install
-# 配置文件
-创建/etc/haproxy/haproxy.cfg文件，根据需要对下面的配置文件进行修改并粘贴在该文件中。
+## 源码编译
+
+> [官方文档地址](https://github.com/haproxy/haproxy/blob/master/INSTALL)
+
+```shell
+make clean
+make -j $(nproc) TARGET=linux-glibc USE_OPENSSL=1 USE_QUIC=1 USE_QUIC_OPENSSL_COMPAT=1 USE_LUA=1 USE_PCRE2=1 
+sudo make install
+```
+
+        
+## 配置文件
+
+> 创建/etc/haproxy/haproxy.cfg文件，根据需要对下面的配置文件进行修改并粘贴在该文件中。
+
 ```bash
 global  
   log 127.0.0.1 local3 info 
@@ -86,8 +93,10 @@ frontend mqtt_wss_frontend
   mode tcp 
   default_backend mqtt_wss_backend
 ```
-# haproxy service 文件 
-将下述文件按照对应操作系统的规范置于对应位置，根据haprxoy二进制文件的位置修改execStart和execReload中的路径，然后使用systemctl命令进行服务的启动。
+## Systemd 启动
+
+> 将下述文件按照对应操作系统的规范置于对应位置，根据haprxoy二进制文件的位置修改execStart和execReload中的路径，然后使用systemctl命令进行服务的启动。
+
 ```
 [Unit]
 Description=HAProxy Load Balancer
