@@ -1,6 +1,6 @@
 # 编译安装
 1. 源码下载
-haproxy 源码地址(3.0版本) https://www.haproxy.org/download/3.0/src/
+haproxy [源码地址(3.0版本)] (https://www.haproxy.org/download/3.0/src/)
 2. 源码编译
     1. make clean
     2. make -j $(nproc) TARGET=linux-glibc USE_OPENSSL=1 USE_QUIC=1 USE_QUIC_OPENSSL_COMPAT=1 USE_LUA=1 USE_PCRE2=1 (USE_OPENSSL和之后的选项可根据需要自行删除)
