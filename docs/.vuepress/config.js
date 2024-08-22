@@ -64,7 +64,7 @@ module.exports = {
                         ['views/config/shareSubscribe', '共享订阅配置'],
                         ['views/config/retry', '重试配置'],
                         ['views/config/application', '应用配置'],
-                        ['views/function/license', '配置license']
+                        ['views/config/license', '配置license']
                     ]
                 },
                 {
