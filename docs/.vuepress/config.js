@@ -91,7 +91,7 @@ module.exports = {
                             collapsable: true,
                             children: [
                                 ['views/acl/before', '介绍'],
-                                ['views/acl/db', 'SQL配置'],
+                                ['views/acl/sql', 'SQL配置'],
                                 ['views/acl/config', '配置文件']
                             ]
                         },
