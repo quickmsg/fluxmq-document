@@ -92,7 +92,7 @@ module.exports = {
                             children: [
                                 ['views/acl/before', '介绍'],
                                 ['views/acl/sql', 'SQL配置'],
-                                ['views/acl/config', '配置文件']
+                                ['views/acl/config', '文件配置']
                             ]
                         },
                         ['views/function/link', '连接管理'],
