@@ -63,7 +63,8 @@ module.exports = {
                         ['views/config/store', '配置持久化'],
                         ['views/config/shareSubscribe', '共享订阅配置'],
                         ['views/config/retry', '重试配置'],
-                        ['views/config/application', '应用配置']
+                        ['views/config/application', '应用配置'],
+                        ['views/function/license', '配置license']
                     ]
                 },
                 {
@@ -97,13 +98,19 @@ module.exports = {
                         },
                         ['views/function/link', '连接管理'],
                         ['views/function/topic', '主题管理'],
-                        ['views/function/monitor', '运维监控'],
+                        {
+                            title: "指令消费",
+                            collapsable: true,
+                            children: [
+                                ['views/command/KAFKA', 'KAFKA'],
+                                ['views/command/ROCKETMQ', 'ROCKETMQ'],
+                                ['views/command/RABBITMQ', 'RABBITMQ'],
+                                ['views/command/PULSAR', 'PULSAR'],
+                                ['views/command/NACOS', 'NACOS']
+                            ]
+                        },
                         ['views/function/proxysub', '代理订阅'],
-                        ['views/function/script', '脚本引擎'],
-                        ['views/function/device', '设备模拟'],
-                        ['views/function/cluster', '配置集群'],
-                        ['views/function/store', '配置持久化'],
-                        ['views/function/license', '配置license']
+                        ['views/function/script', '脚本引擎']
                     ]
                 },
                 {
@@ -173,17 +180,6 @@ module.exports = {
                                 ['views/gzyq/source/ROCKETMQ', 'Rocketmq'],
                             ]
                         }
-                    ]
-                },
-                {
-                    title: "指令消费",
-                    collapsable: true,
-                    children: [
-                        ['views/command/KAFKA', 'KAFKA'],
-                        ['views/command/ROCKETMQ', 'ROCKETMQ'],
-                        ['views/command/RABBITMQ', 'RABBITMQ'],
-                        ['views/command/PULSAR', 'PULSAR'],
-                        ['views/command/NACOS', 'NACOS']
                     ]
                 },
                 {
