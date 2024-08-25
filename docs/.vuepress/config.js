@@ -43,6 +43,7 @@ module.exports = {
                     collapsable: true,
                     children: [
                         ['views/install/optimize', '系统优化'],
+                        ['views/install/kubernetes', 'Kubernetes'],
                         ['views/install/docker', 'Docker'],
                         ['views/install/docker-compose', 'Docker-Compose'],
                         ['views/install/Linux', "Linux安装"],
