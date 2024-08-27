@@ -29,12 +29,23 @@
 | 更多属性               | 通过点击【添加属性字段】，设置更多自定义属性           |
 
 #### 主题映射
-| **参数名** | **参数说明**             |
-|---------|----------------------|
-| 订阅源主题    | 自kafka消费主题名          |
-| MQTT主题  |  发送mqtt的主题名（如果下发的指令是JSON格式，可以通过${变量名}动态映射互踢）           |
-| Qos    | 消息语义（至多一次，至少一次，精准一次） |
-| Retain  | 指定mqtt主题接收的数据是否保留    |
+| **参数名** | **参数说明**                                            |
+|---------|-----------------------------------------------------|
+| 订阅源主题    | 自rocketmq消费主题名                                      |
+| MQTT主题  | 发送mqtt的主题名（如果下发的指令是JSON格式，可以通过${变量名}动态映射互踢）,参考下面参数集 |
+| Qos    | 消息语义（至多一次，至少一次，精准一次）                                |
+| Retain  | 指定mqtt主题接收的数据是否保留                                   |
 
-3. 管理指令消费实例，可以通过看板界面继续编辑、启停用、删除操作
-![rocketmq_cmd_3.png](../../../assets/images/command/rocketmq_cmd_3.png)
+#### 变量集
+
+
+| **参数名**      | **参数说明**                                      | **参数结构** |
+|--------------|-----------------------------------------------|------|
+| value        | rocketmq的报文体，如果是`json`格式，可以通过`value.{key}`获取变量 | Object |
+| ts           | rocketmq消息的时间戳                                | Long |
+| queue_id     | rocketmq消息的队列id                               | Int  |
+| queue_offset | rocketmq消息的队列偏移量                              | Long  |
+| topic        | rocketmq主题                                    | String |
+| msg_id       | rocketmq消息id                                  | Long  |
+| keys         | rocketmq的key集合        | String |
+| headers      | 消息header,可以通过 `headers.{key}`获取header         | Map  |

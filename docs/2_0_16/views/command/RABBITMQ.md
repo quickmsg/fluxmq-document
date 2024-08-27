@@ -23,20 +23,29 @@
 #### 数据源配置
 | **参数名**  | **参数说明**                     |
 |----------|------------------------------|
-| host     | 指定RabbitMQ集群地址ip，如：127.0.0.1 |
-| port     | RabbitMQ通信连接端口，如：5672        |
-| username | RabbitMQ用户名，如：guest          |
-| password | RabbitMQ密码，如：guest           |
+| host     | 指定rabbitmq集群地址ip，如：127.0.0.1 |
+| port     | rabbitmq通信连接端口，如：5672        |
+| username | rabbitmq用户名，如：guest          |
+| password | rabbitmqQ密码，如：guest           |
 | vhost    | 指定虚拟主机，如：/                   |
 | 更多属性     | 通过点击【添加属性字段】，设置更多自定义属性       |
 
 #### 主题映射
 | **参数名** | **参数说明**             |
 |---------|----------------------|
-| 订阅源主题    | 自kafka消费主题名          |
-| MQTT主题  |  发送mqtt的主题名（如果下发的指令是JSON格式，可以通过${变量名}动态映射互踢）           |
+| 订阅源主题    | 自rabbitmq消费主题名          |
+| MQTT主题  |  发送mqtt的主题名（如果下发的指令是JSON格式，可以通过${变量名}动态映射互踢）,参考下面参数集            |
 | Qos    | 消息语义（至多一次，至少一次，精准一次） |
 | Retain  | 指定mqtt主题接收的数据是否保留    |
 
-3. 管理指令消费实例，可以通过看板界面继续编辑、启停用、删除操作
-![rabbitmq_cmd_3.png](../../../assets/images/command/rabbitmq_cmd_3.png)
+#### 变量集
+
+| **参数名**            | **参数说明**                                       | **参数结构**          |
+|--------------------|------------------------------------------------|-------------------|
+| value  | rabbitmq的报文体，如果是`json`格式，可以通过`value.{key}`获取变量 | Object            |
+| ts         | rabbitmq消息的时间戳                                 | Long              |
+| message_id   | rabbitmq消息的序列号id                               | Long            |
+| topic | rabbitmq主题                                     | String            |
+| exchange | rabbitmq交换机                                    | String            |
+| routing_key             | rabbitmq路由key                                  | String              |
+| headers             | 消息header,可以通过 `headers.{key}`获取header          | Map|
