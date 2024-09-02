@@ -41,11 +41,12 @@
 
 #### 变量集
 
-| **参数名**            | **参数说明**                                    | **参数结构**          |
-|--------------------|---------------------------------------------|-------------------|
-| value  | kafka的报文体，如果是`json`格式，可以通过`value.{key}`获取变量 | Object            |
-| ts         | kafka消息的时间戳                                 | Long              |
-| ts_type   | kafka消息的类型                                  | String            |
-| topic | kafka主题                                     | String            |
-| offset             | 消息偏移量                                       | Long              |
-| headers             | 消息header,可以通过 `headers.{key}`获取header       | Map|
+| **参数名** | **参数说明**                                    | **参数结构**          |
+|---------|---------------------------------------------|-------------------|
+| value   | kafka的报文体，如果是`json`格式，可以通过`value.{key}`获取变量 | Object            |
+| ts      | kafka消息的时间戳                                 | Long              |
+| ts_type | kafka消息的类型                                  | String            |
+| topic   | kafka主题                                     | String            |
+| key     | kafka分区key                                  | String            |
+| offset  | 消息偏移量                                       | Long              |
+| headers | 消息header,可以通过 `headers.{key}`获取header       | Map|
