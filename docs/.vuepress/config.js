@@ -21,6 +21,7 @@ module.exports = {
                 text: '版本',
                 icon: 'reco-document',
                 items: [
+                    {text: '2.0.17', link: '/2_0_17/views/product/introduction'},
                     {text: '2.0.16', link: '/2_0_16/views/product/introduction'},
                     {text: '2.0.15', link: '/2_0_15/views/product/introduction'},
                     {text: '2.0.13', link: '/2_0_13/views/product/introduction'},
