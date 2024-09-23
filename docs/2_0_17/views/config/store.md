@@ -33,7 +33,7 @@ store:
 
 ```yaml
 store:
-  storeType: MYSQL # MYSQL,LOCAL
+  storeType: MYSQL
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/fluxmq?useSSL=false
     username: root
