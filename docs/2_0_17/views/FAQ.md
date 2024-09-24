@@ -1,27 +1,23 @@
 # FAQ
 
-## 采用数据库存储，如何从`2.0.15`版本升级到`2.0.17`?
+## 采用数据库存储，如何从`2.0.16`版本升级到`2.0.17`?
 
 ### MYSQL存储升级
-在2.0.13版本存储的数据库中执行一下指令即可：
+在2.0.16版本存储的数据库中执行一下指令即可：
 ```sql
-SET NAMES utf8mb4;
-SET FOREIGN_KEY_CHECKS = 0;
-
--- ----------------------------
--- Table structure for PolicyModel
--- ----------------------------
-DROP TABLE IF EXISTS `PolicyModel`;
-CREATE TABLE `PolicyModel`  (
-                                `id` varchar(60) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-                                `f_acl_model` varchar(60) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL,
-                                `f_dsl_models` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL,
-                                `f_sql_model` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL,
-                                `f_time` varchar(60) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL,
-                                PRIMARY KEY (`id`) USING BTREE
+DROP TABLE IF EXISTS `DelayMessage`;
+CREATE TABLE `DelayMessage`  (
+                                 `id` varchar(60) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+                                 `f_client_id` varchar(60) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+                                 `f_topic` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL,
+                                 `f_qos` tinyint(5) NULL DEFAULT NULL,
+                                 `f_retain` bit(1) NULL DEFAULT NULL,
+                                 `f_execute_node` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL,
+                                 `f_body` blob NULL,
+                                 `f_delay_duration` bigint(20) NULL DEFAULT NULL,
+                                 `f_submit_timestamp` bigint(20) NULL DEFAULT NULL,
+                                 PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = DYNAMIC;
-
-SET FOREIGN_KEY_CHECKS = 1;
 ```
 
 
