@@ -2,14 +2,20 @@
 
 ## 操作系统参数优化
 
-### 内存分配策略
-> 必须修改
+[//]: # (### 内存分配策略)
 
-编辑: vim /etc/sysctl.conf
-```shell    
-vm.overcommit_memory=1
-```
-执行`sysctl -p`刷新
+[//]: # (> 必须修改)
+
+[//]: # ()
+[//]: # (编辑: vim /etc/sysctl.conf)
+
+[//]: # (```shell    )
+
+[//]: # (vm.overcommit_memory=1)
+
+[//]: # (```)
+
+[//]: # (执行`sysctl -p`刷新)
 
 ### 系统全局最大文件句柄
 ```shell    
