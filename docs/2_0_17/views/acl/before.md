@@ -18,5 +18,5 @@ ACL访问控制可以用来控制客户端的发布订阅权限，保证数据�
 | acl_strategy   | 控制策略: <br/>  allow 允许 <br/>  deny 拒绝                                        |
 | acl_type     | acl类型: <br/>  ip 客户端ip <br/>  clientId 客户端id <br/> user 用户名 <br/> all 所有客户端 |
 | acl_action    | acl动作K <br/> publish 发布 <br/> subscribe 订阅    <br/> pubsub 发布订阅             |
-| topic  | 匹配的主题                                                                       |
+| topic  | 主题TOPIC,支持通配符（# 多级;+ 单级），支持占位符( 客户端ID: `${clientId}`; 用户名: `${user}`)       |
 | subject  | acl类型对应的acl实体内容                                                             |
