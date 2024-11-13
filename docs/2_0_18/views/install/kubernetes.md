@@ -128,7 +128,7 @@ kind: Secret
 metadata:
   name: fluxmq-license
 data:
-  license.base64: 5q2k5aSE5pS+572uYmFzZTY057yW56CB5ZCO55qEbGljZW5zZeOAgg== # 将 5q2k5aSE5pS+572uYmFzZTY057yW56CB5ZCO55qEbGljZW5zZeOAgg== 替换为授权证书license.base64中的内容
+  license.base64: 5q2k5aSE5pS+572uYmFzZTY057yW56CB5ZCO55qEbGljZW5zZeOAgg== # 使用授权证书license.base64中的内容进行base64编码，然后替换掉5q2k.....Agg==
 ```
 ## Deployment资源创建
 如果购买了授权证书，且添加了上述的secret，需要将此文件末尾的证书挂载描述注释取消。
