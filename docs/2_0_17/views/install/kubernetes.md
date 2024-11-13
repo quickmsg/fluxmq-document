@@ -119,7 +119,19 @@ data:
     application:
       name: fluxmq
 ```
+## 证书secret创建
+该secret用于存放license信息，如果没有购买商业版授权，则跳过该步骤，fluxmq镜像内置一个用于测试的免费license。
+将购买的证书用base64编码后，复制到下面的注释处。
+```yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: fluxmq-license
+data:
+  license.base64: 5q2k5aSE5pS+572uYmFzZTY057yW56CB5ZCO55qEbGljZW5zZeOAgg== #   license.base64: 5q2k5aSE5pS+572uYmFzZTY057yW56CB5ZCO55qEbGljZW5zZeOAgg== # 使用授权证书license.base64中的内容进行base64编码，然后替换掉5q2k.....Agg==
+```
 ## Deployment资源创建
+如果购买了授权证书，且添加了上述的secret，需要将此文件末尾的证书挂载描述注释取消。
 ```yaml
 apiVersion: apps/v1
 kind: Deployment
@@ -157,14 +169,22 @@ spec:
         - name: config
           mountPath: /app/config
           readOnly: true  
+        # 证书挂载点，如有购买证书，且添加了授权证书secret，可取消下面的注释
+        # - name: license
+          # mountPath: /app/license.base64
+          # subPath: license.base64
       volumes:
       - name: config
         configMap:
           name: fluxmq
+      # 证书挂载信息，如有购买证书，且添加了授权证书secret，可取消下面的注释
+      # - name: license
+        # secret:
+          # secretName: fluxmq-license 
 ```
 
 ## Service资源创建
-可根据对应云厂商的服务自行调整server类型。
+可根据对应云厂商的服务自行调整service类型。
 ```yaml
 apiVersion: v1
 kind: Service
