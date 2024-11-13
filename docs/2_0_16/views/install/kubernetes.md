@@ -128,7 +128,7 @@ kind: Secret
 metadata:
   name: fluxmq-license
 data:
-  license.base64: 5q2k5aSE5pS+572uYmFzZTY057yW56CB5ZCO55qEbGljZW5zZeOAgg== # 将 5q2k5aSE5pS+572uYmFzZTY057yW56CB5ZCO55qEbGljZW5zZeOAgg== 替换为授权证书base64编码后的内容
+  license.base64: 5q2k5aSE5pS+572uYmFzZTY057yW56CB5ZCO55qEbGljZW5zZeOAgg== # 将 5q2k5aSE5pS+572uYmFzZTY057yW56CB5ZCO55qEbGljZW5zZeOAgg== 替换为授权证书license.base64中的内容
 ```
 ## Deployment资源创建
 如果购买了授权证书，且添加了上述的secret，需要将此文件末尾的证书挂载描述注释取消。
@@ -173,7 +173,6 @@ spec:
         # - name: license
           # mountPath: /app/license.base64
           # subPath: license.base64
-          # readOnly: true
       volumes:
       - name: config
         configMap:
@@ -182,11 +181,10 @@ spec:
       # - name: license
         # secret:
           # secretName: fluxmq-license 
-          # optional: true
 ```
 
 ## Service资源创建
-可根据对应云厂商的服务自行调整server类型。
+可根据对应云厂商的服务自行调整service类型。
 ```yaml
 apiVersion: v1
 kind: Service
