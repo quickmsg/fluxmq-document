@@ -4,13 +4,18 @@
 ```YAML
 allowEmptyMessage: true # 是否允许空消息传递规则引擎
 allowAnonymousAccess: true # 是否允许匿名访问
+logAll: false # 支持开启全量日志，开启后日志追踪功能将失效
 pool:
   # bossThreadSize: 4  # 默认 4 不建议配置
   # workThreadSize: 20 # 默认cpu核心数 不建议配置
   # eventThreadSize: 24 # 默认cpu核心数+2 不建议配置
   bufferSize: 4096
-  eventMessageSize: 500000 # 业务线程数 默认=cpu核心数*10
-  waitStrategy: BLOCKING # 
+  # eventThreadSize: 业务线程数默认CPU+2
+  # eventMessageSize: 500000 # 业务线程队列大小
+  waitStrategy: BLOCKING # 线程等待策略 
+  # ruleEngineAsync 规则引擎异步 默认开启
+  # ruleEngineThreadSize 规则引擎线程数 默认CPU数
+  # ruleEngineMessageSize 规则引擎线程队列大小
   # lowWaterMark:  低水位： 默认32768 不建议配置
   # highWaterMark: 高水位: 默认65536 不建议配置
   # channelReadSize: 单连接读字节数/s ，默认不限制，不建议配置
