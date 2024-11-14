@@ -3,30 +3,16 @@
 ## 采用数据库存储，如何从`2.0.17`版本升级到`2.0.18`?
 
 ### MYSQL存储升级
-在2.0.16版本存储的数据库中执行一下指令即可：
+
+在2.0.17版本存储的数据库中执行一下指令即可：
 ```sql
-DROP TABLE IF EXISTS `LogTrace`;
-CREATE TABLE `LogTrace` (
-                            `id` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL,
-                            `f_name` varchar(30) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-                            `f_log_type` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-                            `f_filter` varchar(60) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-                            `f_start_time` varchar(30) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-                            `f_end_time` varchar(30) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-                            `f_create_time` varchar(30) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-                            `f_timezone` int(5) DEFAULT NULL,
-                            PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC;
-DROP TABLE IF EXISTS `ProxySubConfig`;
-CREATE TABLE `ProxySubConfig` (
-                                  `id` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL,
-                                  `f_sub_type` varchar(10) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-                                  `f_sub_infos` text COLLATE utf8mb4_unicode_ci,
-                                  `f_sql` text COLLATE utf8mb4_unicode_ci,
-                                  `f_create_time` varchar(60) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-                                  `f_enable` bit(1) DEFAULT NULL,
-                                  PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=DYNAMIC;
+
+ALTER TABLE `PolicyModel` ADD `f_http_model`  TEXT;
+
+ALTER TABLE `LogTrace` ADD `f_timezone`  int(5) DEFAULT 0;
+
+ALTER TABLE `ProxySubConfig` ADD `f_enable`  bit(1) DEFAULT 0;
+
 ```
 
 
