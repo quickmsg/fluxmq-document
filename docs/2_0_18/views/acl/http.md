@@ -28,16 +28,16 @@
 ```JSON
 [
   {
-    "acl_strategy": "allow",
-    "acl_type": "all",
-    "acl_action": "publish",
+    "aclStrategy": "allow",
+    "aclType": "all",
+    "action": "publish",
     "topic": "test/test/#",
     "subject": "*"
   },
   {
-    "acl_strategy": "allow",
-    "acl_type": "ip",
-    "acl_action": "publish",
+    "aclStrategy": "allow",
+    "aclType": "ip",
+    "action": "publish",
     "topic": "test/test/#",
     "subject": "192.168.10.111"
   }
