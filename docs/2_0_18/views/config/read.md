@@ -51,6 +51,7 @@ http: # http相关配置 端口固定60000
   accessLog: false # http访问日志
   username: fluxmq # 访问用户名
   password: fluxmq # 访问密码
+  bridge: false # 走规则引擎(publish消息)
 cluster: # 集群配置
   localAddress: 127.0.0.1
   addresses: ["127.0.0.1"]
