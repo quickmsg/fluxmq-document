@@ -45,12 +45,14 @@ module.exports = {
                     collapsable: true,
                     children: [
                         ['views/install/optimize', '系统优化'],
-                        ['views/install/Linux', "Linux安装"],
-                        ['views/install/Windows', "Windows安装"],
-                        ['views/install/MacOS', "MacOS安装"],
-                        ['views/install/docker', 'Docker'],
-                        ['views/install/docker-compose', 'Docker-Compose'],
-                        ['views/install/kubernetes', 'Kubernetes']
+                        ['views/install/Linux', "linux安装"],
+                        ['views/install/Windows', "windows安装"],
+                        ['views/install/MacOS', "macos安装"],
+                        ['views/install/Linux-aarch64', "linux-aarch64安装"],
+                        ['views/install/MacOS-aarch64', "macos-aarch64安装"],
+                        ['views/install/docker', 'docker'],
+                        ['views/install/docker-compose', 'docker-compose'],
+                        ['views/install/kubernetes', 'kubernetes']
                     ]
                 },
                 {
